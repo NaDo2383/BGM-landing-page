@@ -1,3 +1,5 @@
+"use client"
+
 import { useTranslations } from "next-intl"
 import Logo from "./Logo"
 import LanguageSelector from "./LanguageSelector"

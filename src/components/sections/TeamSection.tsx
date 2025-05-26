@@ -35,10 +35,10 @@ export default function TeamSection() {
           {team.map((member) => (
             <div key={member.id} className='text-center group'>
               <div className='relative overflow-hidden rounded-lg mb-4'>
-                <div className='w-full h-64 bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center'>
+                <div className='w-full h-64 bg-linear-to-br from-gray-600 to-gray-800 flex items-center justify-center'>
                   <span className='text-gray-500'>Photo</span>
                 </div>
-                <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
+                <div className='absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
               </div>
               <h3 className='text-lg font-semibold text-white'>{member.name}</h3>
               <p className='text-gray-400'>{member.position}</p>

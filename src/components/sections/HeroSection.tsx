@@ -8,9 +8,9 @@ export default function HeroSection() {
 
   return (
     <section className='relative min-h-screen flex items-center justify-center overflow-hidden'>
-      <div className='absolute inset-0 bg-gradient-to-b from-purple-900/20 to-blue-900/20' />
+      <div className='absolute inset-0 bg-linear-to-b from-purple-900/20 to-blue-900/20' />
       <div className='absolute inset-0'>
-        <div className='w-full h-full bg-gradient-to-r from-purple-600/30 to-blue-600/30 blur-3xl' />
+        <div className='w-full h-full bg-linear-to-r from-purple-600/30 to-blue-600/30 blur-3xl' />
       </div>
 
       <div className='relative z-10 text-center px-4 max-w-4xl mx-auto'>

@@ -48,7 +48,7 @@ export default function NewsSection() {
               key={item.id}
               className='bg-gray-800 rounded-lg overflow-hidden group cursor-pointer'>
               <div className='h-48 bg-gray-700 overflow-hidden'>
-                <div className='w-full h-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center'>
+                <div className='w-full h-full bg-linear-to-br from-gray-600 to-gray-800 flex items-center justify-center'>
                   <span className='text-gray-500'>Image</span>
                 </div>
               </div>

@@ -21,7 +21,7 @@ export default function ClientLogos() {
             {allLogos.map((logo, index) => (
               <div
                 key={index}
-                className='flex-shrink-0 w-48 mx-8 flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all duration-300'>
+                className='shrink-0 w-48 mx-8 flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all duration-300'>
                 <div className='h-12 w-24 bg-gray-700 rounded flex items-center justify-center'>
                   <span className='text-gray-500 text-sm'>{logo.name}</span>
                 </div>
