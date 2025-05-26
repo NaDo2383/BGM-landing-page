@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "about": "About Us",
+    "management": "Asset Management",
+    "careers": "Careers",
+    "news": "News & Insight",
+    "contact": "Contact Us",
+    "faq": "FAQ",
+    "subscribe": "Subscribe"
+  },
+  "hero": {
+    "title": "BALANCED GROWTH MANAGEMENT",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan.",
+    "cta": "Get Started"
+  },
+  "stats": {
+    "experts": "EXPERTS",
+    "marketers": "MARKETERS",
+    "solutions": "SOLUTIONS"
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "card1": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    },
+    "card2": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    },
+    "card3": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    }
+  },
+  "news": {
+    "title": "News & Insight"
+  },
+  "team": {
+    "title": "Our Experts",
+    "subtitle": "Are Like No Other"
+  },
+  "faq": {
+    "title": "Questions"
+  },
+  "footer": {
+    "newsletter": "LET'S KEEP IN TOUCH",
+    "subscribe": "Subscribe"
+  }
+}

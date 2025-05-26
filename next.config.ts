@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+/** @type {import('tailwindcss').Config} */
+const nextConfig = {
+  images: {
+    domains: ['firebasestorage.googleapis.com'],
+  },
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const withNextIntl = require('next-intl/plugin')('./src/lib/i18n.ts');
 
-export default nextConfig;
+module.exports = withNextIntl(nextConfig);

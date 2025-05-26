@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "about": "Бидний тухай",
+    "management": "Хөрөнгийн удирдлага",
+    "careers": "Ажлын байр",
+    "news": "Мэдээ & Ойлголт",
+    "contact": "Холбоо барих",
+    "faq": "Түгээмэл асуулт",
+    "subscribe": "Бүртгүүлэх"
+  },
+  "hero": {
+    "title": "ТЭНЦВЭРТЭЙ ӨСӨЛТИЙН УДИРДЛАГА",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan.",
+    "cta": "Эхлэх"
+  },
+  "stats": {
+    "experts": "МЭРГЭЖИЛТНҮҮД",
+    "marketers": "МАРКЕТЕРУУД",
+    "solutions": "ШИЙДЛҮҮД"
+  },
+  "capabilities": {
+    "title": "Чадварууд",
+    "card1": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    },
+    "card2": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    },
+    "card3": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    }
+  },
+  "news": {
+    "title": "Мэдээ & Ойлголт"
+  },
+  "team": {
+    "title": "Манай мэргэжилтнүүд",
+    "subtitle": "Өөр хэнтэй ч адилгүй"
+  },
+  "faq": {
+    "title": "Асуултууд"
+  },
+  "footer": {
+    "newsletter": "ХОЛБООТОЙ БАЙЦГААЯ",
+    "subscribe": "Бүртгүүлэх"
+  }
+}
