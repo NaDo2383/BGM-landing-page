@@ -1,10 +1,19 @@
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
 
+:root {
+  --font-xwide: "font-xwide";
+}
 @layer base {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+  }
+
+  .font-xwide {
+    font-family: var(--font-xwide);
   }
 
   body {

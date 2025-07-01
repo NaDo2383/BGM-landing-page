@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl"
 import Card from "../ui/Card"
+import { ArrowBtn } from "../ui/ArrowBtn"
 
 export default function CapabilitiesSection() {
   const t = useTranslations("capabilities")
@@ -25,13 +26,30 @@ export default function CapabilitiesSection() {
   ]
 
   return (
-    <section className='py-24 bg-gray-800/50'>
-      <div className='max-w-7xl mx-auto px-4'>
-        <h2 className='text-4xl font-bold text-white text-center mb-16'>{t("title")}</h2>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+    <section className='p-[100px] bg-[#020618]'>
+      <div className='max-w-[1240px] flex flex-col gap-[50px]  mx-auto px-4'>
+        <div className='flex flex-col gap-[8px]'>
+          <div className='flex justify-center gap-2'>
+            <h2 className='text-[40px] font-[Roboto] text-white text-center '>
+              {t("title1")}
+            </h2>
+            <h2 className='text-[40px] font-[Roboto] text-[#F1573F] text-center'>
+              {t("title2")}
+            </h2>
+          </div>
+          <div className='font-sans text-[#90A1B9] font-normal text-base leading-none tracking-normal text-center capitalize'>
+            {t("text")}
+          </div>
+        </div>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-[50px]'>
           {capabilities.map((cap, index) => (
             <Card key={index} {...cap} />
           ))}
+        </div>
+        <div className=' self-center'>
+          <ArrowBtn arrowBg='black' onClick={() => alert("Go!")}>
+            {t("seeMore")}
+          </ArrowBtn>
         </div>
       </div>
     </section>

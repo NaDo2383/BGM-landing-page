@@ -7,6 +7,8 @@ import CapabilitiesSection from "@/components/sections/CapabilitiesSection"
 import NewsSection from "@/components/sections/NewsSection"
 import TeamSection from "@/components/sections/TeamSection"
 import FAQSection from "@/components/sections/FAQSection"
+import AboutUs from "@/components/sections/AboutUs"
+import ContactUsForm from "@/components/sections/ContactUsForm"
 
 export default function Home() {
   return (
@@ -14,11 +16,13 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <ClientLogos />
+      <AboutUs />
       <StatsSection />
       <CapabilitiesSection />
       <NewsSection />
       <TeamSection />
       <FAQSection />
+      <ContactUsForm />
       <Footer />
     </main>
   )

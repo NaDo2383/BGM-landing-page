@@ -1,25 +1,37 @@
 {
+  "general": {
+    "seeMore": "Дэлгэрэнгүй"
+  },
   "nav": {
-    "about": "Бидний тухай",
-    "management": "Хөрөнгийн удирдлага",
+    "about": "Бидний \nтухай",
+    "management": "Хөрөнгийн \nудирдлага",
     "careers": "Ажлын байр",
     "news": "Мэдээ & Ойлголт",
-    "contact": "Холбоо барих",
-    "faq": "Түгээмэл асуулт",
+    "contact": "Холбоо \nбарих",
+    "faq": "Түгээмэл \nасуулт",
     "subscribe": "Бүртгүүлэх"
   },
+  "aboutCard": {
+    "title": "Бидний тухай",
+    "companyName": "Балансэд Грөүт Менежмент",
+    "cardText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "seeMore": "Дэлгэрэнгүй"
+  },
   "hero": {
-    "title": "ТЭНЦВЭРТЭЙ ӨСӨЛТИЙН УДИРДЛАГА",
+    "title": "Modern and trusted asset \nmanager in Mongolia",
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan.",
     "cta": "Эхлэх"
   },
   "stats": {
-    "experts": "МЭРГЭЖИЛТНҮҮД",
-    "marketers": "МАРКЕТЕРУУД",
-    "solutions": "ШИЙДЛҮҮД"
+    "users": "хэрэглэгч",
+    "status": "амжилттай",
+    "number": "их наяд"
   },
   "capabilities": {
-    "title": "Чадварууд",
+    "title1": "Бидний",
+    "title2": "Чадварууд",
+    "seeMore": "Дэлгэрэнгүй",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "card1": {
       "title": "Lorem Ipsum Dolor Sit Amet",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
@@ -34,17 +46,28 @@
     }
   },
   "news": {
-    "title": "Мэдээ & Ойлголт"
+    "title1": "Мэдээ & ",
+    "title2": "Мэдэгдэл",
+    "seeMore": "Дэлгэрэнгүй"
   },
   "team": {
-    "title": "Манай мэргэжилтнүүд",
-    "subtitle": "Өөр хэнтэй ч адилгүй"
+    "title1": "Манай мэргэжилтнүүд ",
+    "title2": "бусадтай адилгүй",
+    "seeMore": "Дэлгэрэнгүй",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum."
   },
   "faq": {
-    "title": "Асуултууд"
+    "title1": "Түгээмэл",
+    "title2": "Асуултууд"
   },
   "footer": {
     "newsletter": "ХОЛБООТОЙ БАЙЦГААЯ",
     "subscribe": "Бүртгүүлэх"
+  },
+  "contactUs": {
+    "contactUs": "Холбоо барих",
+    "name": "Нэр",
+    "email": "И-Мэйл",
+    "msg": "Зурвас"
   }
 }

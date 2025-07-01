@@ -1,4 +1,7 @@
 {
+  "general": {
+    "seeMore": "Learn More"
+  },
   "nav": {
     "about": "About Us",
     "management": "Asset Management",
@@ -8,18 +11,27 @@
     "faq": "FAQ",
     "subscribe": "Subscribe"
   },
+  "aboutCard": {
+    "title": "About us",
+    "companyName": "Balanced Growth Management",
+    "cardText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "seeMore": "See more"
+  },
   "hero": {
-    "title": "BALANCED GROWTH MANAGEMENT",
+    "title": "Modern and trusted asset \nmanager in Mongolia",
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan.",
     "cta": "Get Started"
   },
   "stats": {
-    "experts": "EXPERTS",
-    "marketers": "MARKETERS",
-    "solutions": "SOLUTIONS"
+    "users": "users",
+    "status": "successful",
+    "number": "trilliion"
   },
   "capabilities": {
-    "title": "Capabilities",
+    "title1": "Our",
+    "title2": "Capabilities",
+    "seeMore": "See more",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "card1": {
       "title": "Lorem Ipsum Dolor Sit Amet",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
@@ -30,21 +42,32 @@
     },
     "card3": {
       "title": "Lorem Ipsum Dolor Sit Amet",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
     }
   },
   "news": {
-    "title": "News & Insight"
+    "title1": "News & ",
+    "title2": "Insight",
+    "seeMore": "See more"
   },
   "team": {
-    "title": "Our Experts",
-    "subtitle": "Are Like No Other"
+    "title1": "Our Experts ",
+    "title2": "Are Like no Others",
+    "seeMore": "See more",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum."
   },
   "faq": {
-    "title": "Questions"
+    "title1": "frequently \nasked",
+    "title2": "questions"
   },
   "footer": {
     "newsletter": "LET'S KEEP IN TOUCH",
     "subscribe": "Subscribe"
+  },
+  "contactUs": {
+    "contactUs": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "msg": "Message"
   }
 }

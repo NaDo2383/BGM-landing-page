@@ -1,13 +1,14 @@
 "use client"
 
 import { useTranslations } from "next-intl"
+import { ArrowBtn } from "../ui/ArrowBtn"
+import NewsCard from "../ui/NewsCard"
 
 interface NewsItem {
   id: string
   title: string
   description: string
-  image: string
-  date: string
+  img: string
 }
 
 export default function NewsSection() {
@@ -17,48 +18,49 @@ export default function NewsSection() {
   const news: NewsItem[] = [
     {
       id: "1",
-      title: "Lorem ipsum dolor sit amet",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "/api/placeholder/400/300",
-      date: "2024-03-20",
+      title: "OINBASE – S&P 500 ИНДЕКСИЙН АНХНЫ КРИПТО БИРЖ БОЛЛОО",
+      description:
+        "АНУ-ын тэргүүлэгч криптовалютын бирж болох Coinbase Global Inc. (COIN.O) энэ сарын 19-нөөс эхлэн S&P 500 индексэд багтах болсноор, тус индексэд багтсан анхны крипто бирж болж, тус салбарын хувьд түүхэн үйл явдал тохиолоо. Энэхүү шийдвэрийн дараа Coinbase-ийн хувьцаа өргөтгөсөн арилжаанд 8–10%-иар өссөн байна. Шинжээчдийн үзэж буйгаар, индексийг дагадаг хөрөнгө оруулалтын сангууд уг хувьцааг багцдаа нэмэх шаардлагатай тул эрэлт нэмэгдэж, үнэ $293 хүрч өсөх боломжтой гэж Oppenheimer онцолжээ. Үүнээс гадна Coinbase нь олон улсын тэлэлтийн стратегийн хүрээнд, крипто деривативын гол тоглогч болох Deribit биржийг $2.9 тэрбумын үнээр худалдан авахаар тохиролцоонд хүрээд байгаа нь тус компанийн гадаад зах зээл дэх байр суурийг улам бататгах хүлээлттэй байна.",
+      img: "/card_img_1.png",
     },
     {
       id: "2",
-      title: "Consectetur adipiscing elit",
-      description: "Sed do eiusmod tempor incididunt ut labore et dolore magna.",
-      image: "/api/placeholder/400/300",
-      date: "2024-03-19",
+      title: "Ам.долларын индекс сүүлийн гурван жилийн доод түвшинд хүрлээ",
+      description:
+        "Тариф, эдийн засгийн хэтийн төлөв болон Холбооны нөөцийн сангийн хараат бус байдал алдагдах зэрэг хүчин зүйлс нь хөрөнгө оруулагчдын хүлээлтийг бууруулж буйтай холбоотойгоор ам.долларын индекс сүүлийн гурван жилийн доод түвшинд хүрч 2025 он гарснаас хойш 8.8%-иар сулраад байна. Goldman Sachs-ийн шинжээчид долларын индексийн 90, 95, 101 болон 107 гэсэн үнийн түвшнүүд гол анхаарал хандуулах бүс гэж үзэж байгаа бөгөөд одоогийн уналтын шалтгааныг дараах байдлаар тайлбарлаж байна: • Худалдааны бодлого ба тарифууд – АНУ-ын Ерөнхийлөгчийн зүгээс өргөн хүрээтэй тарифуудыг хэрэгжүүлж эхэлсэн нь, дэлхийн эдийн засгийн өсөлтөд сөргөөр нөлөөлөх нөхцөл байдалд хүргэж байна. Энэ нь хөрөнгө оруулагчдын итгэлийг бууруулж, долларын ханшид дарамт учруулж байгаа",
+      img: "/card_img_2.png",
     },
     {
       id: "3",
-      title: "Ut enim ad minim veniam",
-      description: "Quis nostrud exercitation ullamco laboris nisi ut aliquip.",
-      image: "/api/placeholder/400/300",
-      date: "2024-03-18",
+      title: "АНУ-д 3 дугаар сарын байдлаар зэсийн импорт 600% өслөө",
+      description:
+        "АНУ-ын ерөнхийлөгч Д.Трамд өнгөрсөн 2 дугаар сард худалдааны яамандаа зэсийн импортын тарифын асуудлаар судалгаа хийхийг үүрэгдсэний дараа 3 дугаар сард тус улсын зэсийн импорт 70,000 тонноос 500,000 орчим тоннд хүрч 600 гаруй хувиар өссөн тухай Mercuria Energy Group мэдээллээ. АНУ-ын зэсийн жилийн хэрэглээ 1.6 сая тоннд хүрсэн ч дотоодын үйлдвэрлэл жилийн нийт хэрэглээний 50%-ийг л хангахуйц байгаа тул тус улсын засгийн газрын зүгээс дотоодын үйлдвэрлэлийг сэргээх зорилгоор тариф ногдуулахаар төлөвлөж байгаа аж. Иймд тариф хэрэгжихээс урьтан импортын хэмжээ өссөн бөгөөд Нью-Йоркийн Comex дээрх үнэ Лондонгийн металлын биржийн үнээс давсан нь арбитражийн боломжийг ч үүсгээд байгаа аж. Хэрэв тариф хэрэгжвэл зэсийн үнэ 12,000-13,000 ам.долларт хүрч өсөх магадлалтай байна.",
+      img: "/card_img_3.png",
     },
   ]
 
   return (
-    <section className='py-24 bg-gray-900'>
-      <div className='max-w-7xl mx-auto px-4'>
-        <h2 className='text-4xl font-bold text-white text-center mb-16'>{t("title")}</h2>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-          {news.map((item) => (
-            <div
-              key={item.id}
-              className='bg-gray-800 rounded-lg overflow-hidden group cursor-pointer'>
-              <div className='h-48 bg-gray-700 overflow-hidden'>
-                <div className='w-full h-full bg-linear-to-br from-gray-600 to-gray-800 flex items-center justify-center'>
-                  <span className='text-gray-500'>Image</span>
-                </div>
-              </div>
-              <div className='p-6'>
-                <p className='text-gray-400 text-sm mb-2'>{item.date}</p>
-                <h3 className='text-xl font-semibold text-white mb-3'>{item.title}</h3>
-                <p className='text-gray-400'>{item.description}</p>
-              </div>
-            </div>
+    <section className='p-[100px] bg-[#0F172B]'>
+      <div className='max-w-[1240px] flex flex-col gap-[50px]  mx-auto px-4'>
+        <div className='flex flex-col gap-[8px]'>
+          <div className='flex justify-center gap-2'>
+            <h2 className='text-[40px] font-[Roboto] text-white text-center '>
+              {t("title1")}
+            </h2>
+            <h2 className='text-[40px] font-[Roboto] text-[#F1573F] text-center'>
+              {t("title2")}
+            </h2>
+          </div>
+        </div>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-[50px]'>
+          {news.map((news, index) => (
+            <NewsCard key={index} {...news} />
           ))}
+        </div>
+        <div className=' self-center'>
+          <ArrowBtn arrowBg='black' onClick={() => alert("Go!")}>
+            {t("seeMore")}
+          </ArrowBtn>
         </div>
       </div>
     </section>

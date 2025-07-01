@@ -1,6 +1,6 @@
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode
-  variant?: "primary" | "secondary"
+  variant?: "primary" | "secondary" | "transparent"
   className?: string
 }
 
@@ -17,6 +17,8 @@ export default function Button({
     primary: "bg-blue-600 text-white hover:bg-blue-700",
     secondary:
       "bg-transparent text-white border border-white hover:bg-white hover:text-gray-900",
+    transparent:
+      "text-white border border-[#22369e] bg-blend-overlay!  rounded-[21px] px-3 py-2 flex items-center gap-2 hover:bg-blue-500 hover:text-shadow-white transition-colors",
   }
 
   return (

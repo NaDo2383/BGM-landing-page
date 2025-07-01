@@ -2,29 +2,29 @@
 
 import { useRouter, usePathname } from "next/navigation"
 import { useLocale } from "next-intl"
+import { US } from "country-flag-icons/react/3x2"
+import { MN } from "country-flag-icons/react/3x2"
 
 export default function LanguageSelector() {
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
 
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newLocale = e.target.value
+  const handleToggle = () => {
+    const newLocale = locale === "en" ? "mn" : "en"
     const path = pathname.replace(`/${locale}`, `/${newLocale}`)
     router.push(path)
   }
 
+  const CurrentFlag = locale === "en" ? US : MN
+  const currentText = locale === "en" ? "EN" : "MN"
+
   return (
-    <select
-      value={locale}
-      onChange={handleChange}
-      className='bg-transparent text-white border border-gray-600 rounded px-2 py-1 text-sm'>
-      <option value='en' className='bg-gray-800'>
-        EN
-      </option>
-      <option value='mn' className='bg-gray-800'>
-        MN
-      </option>
-    </select>
+    <button
+      onClick={handleToggle}
+      className=' text-white border border-[#22369e] bg-blend-overlay!  rounded-[21px] px-3 py-2 flex items-center gap-2 hover:bg-blue-500 hover:text-shadow-white transition-colors'>
+      <CurrentFlag className='w-3 h-2' />
+      <span className='text-sm font-medium'>{currentText}</span>
+    </button>
   )
 }
