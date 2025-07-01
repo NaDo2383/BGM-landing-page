@@ -1,13 +1,11 @@
-// app/[locale]/layout.tsx
 import { Inter } from "next/font/google"
 import type { ReactNode } from "react"
 import { notFound } from "next/navigation"
-import getRequestConfig, { locales } from "@/lib/i18n"
+import getRequestConfig, { locales, Locale } from "@/lib/i18n"
 import { LocaleClientProvider } from "./components/LocaleClientProvider"
 
 const inter = Inter({ subsets: ["latin"] })
 
-// Tell Next.js which locale routes to pre-render
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
 }
@@ -17,12 +15,11 @@ export default async function LocaleLayout({
   params,
 }: {
   children: ReactNode
-  params: { locale: string }
+  params: any
 }) {
-  const { locale } = params
+  const locale = params.locale as Locale
 
-  // 1️⃣ Validate the locale
-  if (!locales.includes(locale as any)) {
+  if (!locales.includes(locale)) {
     notFound()
   }
 
