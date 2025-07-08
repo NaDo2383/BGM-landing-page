@@ -3,19 +3,13 @@
 import { useTranslations } from "next-intl"
 import { ArrowBtn } from "../ui/ArrowBtn"
 import NewsCard from "../ui/NewsCard"
-
-interface NewsItem {
-  id: string
-  title: string
-  description: string
-  img: string
-}
+import { NewsItem1 } from "@/types"
 
 export default function NewsSection() {
   const t = useTranslations("news")
 
   // Mock data for now
-  const news: NewsItem[] = [
+  const news: NewsItem1[] = [
     {
       id: "1",
       title: "OINBASE – S&P 500 ИНДЕКСИЙН АНХНЫ КРИПТО БИРЖ БОЛЛОО",

@@ -24,7 +24,7 @@ export default function FAQSection() {
   ]
 
   return (
-    <section className='p-[100px] bg-[#020618] '>
+    <section id='faq' className='p-[100px] bg-[#020618] '>
       <div className='max-w-7xl flex gap-[196px] mx-auto'>
         <div className='text-white text-[40px] capitalize font-[Roboto] leading-tight'>
           <span className=' whitespace-pre'>{t("title1")}</span>{" "}

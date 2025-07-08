@@ -8,7 +8,7 @@ export default function ContactUsForm() {
   const t = useTranslations("contactUs")
 
   return (
-    <section className='bg-[#050B1A] py-10 px-6 md:px-12'>
+    <section id='contact-us' className='bg-[#050B1A] py-10 px-6 md:px-12'>
       <div className='max-w-7xl mx-auto flex flex-col md:flex-row  items-stretch rounded-md overflow-hidden'>
         {/* Left Side - Image + Title */}
         <div

@@ -16,6 +16,14 @@ export interface NewsItem {
   author?: string;
 }
 
+
+export interface NewsItem1 {
+  id: string
+  title: string
+  description: string
+  img: string
+}
+
 export interface TeamMember {
   id: string;
   name: string;
