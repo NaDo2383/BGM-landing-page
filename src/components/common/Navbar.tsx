@@ -4,11 +4,9 @@ import { useTranslations } from "next-intl"
 import LanguageSelector from "./LanguageSelector"
 import Button from "../ui/Button"
 import Image from "next/image"
-import { useParams } from "next/navigation"
 
 export default function Navbar() {
   const t = useTranslations("nav")
-  const params = useParams<{ locale: string }>()
 
   return (
     <nav className='fixed top-0 w-full  backdrop-blur-sm z-50'>
@@ -19,7 +17,7 @@ export default function Navbar() {
           </a>
           <div className='hidden md:flex items-center gap-[30px]'>
             <a
-              href={`/${params.locale}/about-us`}
+              href={`/about-us`}
               className='text-[#FFFFFF] text-[14px] hover:text-white transition whitespace-pre text-center'>
               {t("about")}
             </a>
@@ -34,17 +32,17 @@ export default function Navbar() {
               {t("careers")}
             </a>
             <a
-              href={`/${params.locale}/newsInsight`}
+              href={`/newsInsight`}
               className='text-[#FFFFFF] text-[14px] hover:text-white transition whitespace-pre text-center'>
               {t("news")}
             </a>
             <a
-              href={`/${params.locale}/#contact-us`}
+              href={`/#contact-us`}
               className='text-[#FFFFFF] text-[14px] hover:text-white transition whitespace-pre text-center'>
               {t("contact")}
             </a>
             <a
-              href={`/${params.locale}/#faq`}
+              href={`/#faq`}
               className='text-[#FFFFFF] text-[14px] hover:text-white transition whitespace-pre text-center'>
               {t("faq")}
             </a>
