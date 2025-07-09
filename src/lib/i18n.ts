@@ -1,23 +1,24 @@
 // src/lib/i18n.ts
-import { getRequestConfig } from 'next-intl/server'
+import { cookies } from "next/headers"
 
-export const locales = ['en', 'mn'] as const
+export const locales = ["en", "mn"] as const
 export type Locale = (typeof locales)[number]
 
-// Choose your default here:
-const defaultLocale = locales[0]
+const defaultLocale: Locale = "en"
 
-export default getRequestConfig(async ({ requestLocale }) => {
-  // 1) await the potentially-undefined value
-  const requested = await requestLocale
+export async function getCurrentLocale(): Promise<Locale> {
+  const cookieStore = await cookies()
+  const cookieLocale = cookieStore.get("NEXT_LOCALE")?.value
+  return locales.includes(cookieLocale as Locale) ? (cookieLocale as Locale) : defaultLocale
+}
 
-  // 2) if it’s a known locale, use it — otherwise fall back
-  const locale = locales.includes(requested as any)
-    ? (requested as Locale)
-    : defaultLocale
-
-  // 3) load your JSON
-  const messages = (await import(`../locales/${locale}.json`)).default
-
-  return { locale, messages }
-})
+// Load translation messages for given locale
+export async function getMessages(locale: Locale) {
+  try {
+    const messages = (await import(`../locales/${locale}.json`)).default
+    return messages
+  } catch (err) {
+    console.error(`Missing translation file for locale: ${locale}, falling back to ${defaultLocale}`)
+    return (await import(`../locales/${defaultLocale}.json`)).default
+  }
+}

@@ -2,6 +2,8 @@
 import "./globals.css"
 import { Inter, Roboto } from "next/font/google"
 import localFont from "next/font/local"
+import { getMessages, getCurrentLocale } from "@/lib/i18n"
+import { NextIntlClientProvider } from "next-intl"
 
 const inter = Inter({ subsets: ["latin"] })
 const roboto = Roboto({ subsets: ["latin"] })
@@ -15,12 +17,19 @@ export const metadata = {
   description: "Balanced Growth Management",
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = await getCurrentLocale()
+  const messages = await getMessages(locale)
+
   return (
     <html
-      lang='en'
+      lang={locale}
       className={`${inter.className} ${roboto.className} ${xWide.variable}`}>
-      <body>{children}</body>
+      <body>
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
   )
 }

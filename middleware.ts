@@ -1,12 +1,8 @@
-import createMiddleware from 'next-intl/middleware';
-import { locales } from './src/lib/i18n';
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
-export default createMiddleware({
-  locales,
-  defaultLocale: 'en',
-  localePrefix: 'always'
-});
-
-export const config = {
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)', '/']
-};
+export function middleware(request: NextRequest) {
+  const locale = request.cookies.get('NEXT_LOCALE')?.value || 'en'
+  // continue request
+  return NextResponse.next()
+}

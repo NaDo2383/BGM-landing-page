@@ -63,27 +63,13 @@ const page = () => {
 
   return (
     <>
-      <section className='relative min-h-[248px] flex items-center justify-center overflow-hidden'>
-        <div className='absolute inset-0 bg-[url("/smallHero.png")] bg-cover bg-center ' />
-
-        <div className='relative z-10 text-start max-w-[1440px] w-full px-4 sm:px-6 lg:px-[100px]'>
-          <div className=' flex '>
-            <h2 className='text-[40px] font-xwide text-white text-center mr-1.5 uppercase'>
-              {t("title1")}
-            </h2>
-            <h2 className='text-[40px] font-xwide text-[#F1573F] text-center uppercase'>
-              {t("title2")}
-            </h2>
-          </div>
-        </div>
-      </section>
       <section className='bg-[#050B1A] py-10 px-6 md:px-12 md:p-[100px] '>
         <div className='max-w-[1280px] mx-auto'>
           <div className='flex justify-between mb-[50px]'>
             <div className='flex gap-2.5'>
-              <Button variant='transparent'>{t("subscribe")}</Button>
-              <Button variant='transparent'>{t("subscribe")}</Button>
-              <Button variant='transparent'>{t("subscribe")}</Button>
+              <Button variant='transparent'>{t("category")}</Button>
+              <Button variant='transparent'>{t("category")}</Button>
+              <Button variant='transparent'>{t("category")}</Button>
             </div>
             <div className='relative '>
               <span className='absolute left-4 top-1/2 -translate-y-1/2 text-white'>
@@ -91,7 +77,7 @@ const page = () => {
               </span>
               <input
                 type='text'
-                placeholder={t("name")}
+                placeholder={t("search")}
                 className='w-full pl-12 pr-5 py-2 rounded-[24px] bg-[#1B2B44] text-white outline-none placeholder:text-[#8CA3BA]'
               />
             </div>
