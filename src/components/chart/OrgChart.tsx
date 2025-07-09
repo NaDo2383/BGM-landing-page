@@ -41,7 +41,7 @@ const nodeTypes = {
 }
 
 const edgeTypes = {
-  default: ({ id, sourceX, sourceY, targetX, targetY }) => {
+  default: ({ id, sourceX, sourceY, targetX, targetY }: any) => {
     const midX = (sourceX + targetX) / 2
     const midY = (sourceY + targetY) / 2
     const isHorizontal = Math.abs(sourceX - targetX) > Math.abs(sourceY - targetY)
@@ -77,7 +77,10 @@ export default function OrgChart() {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes)
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges)
 
-  const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), [])
+  const onConnect = useCallback(
+    (params: any) => setEdges((eds) => addEdge(params, eds)),
+    []
+  )
 
   return (
     <div
