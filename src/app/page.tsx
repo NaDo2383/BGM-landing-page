@@ -11,7 +11,7 @@ import TeamSection from "@/components/sections/TeamSection"
 export default function Page() {
   return (
     <>
-      {/* <HeroSection />
+      <HeroSection />
       <ClientLogos />
       <AboutUs />
       <StatsSection />
@@ -19,8 +19,7 @@ export default function Page() {
       <NewsSection />
       <TeamSection />
       <FAQSection />
-      <ContactUsForm /> */}
-      fdsafds
+      <ContactUsForm />
     </>
   )
 }

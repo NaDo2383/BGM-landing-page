@@ -3,6 +3,8 @@ import { Inter, Roboto } from "next/font/google"
 import localFont from "next/font/local"
 import { NextIntlClientProvider } from "next-intl"
 import { getCurrentLocale, getMessages } from "@/lib/i18n"
+import Navbar from "@/components/common/Navbar"
+import Footer from "@/components/common/Footer"
 
 const inter = Inter({ subsets: ["latin"] })
 const roboto = Roboto({ subsets: ["latin"] })
@@ -26,7 +28,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       className={`${inter.className} ${roboto.className} ${xWide.variable}`}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <Navbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
