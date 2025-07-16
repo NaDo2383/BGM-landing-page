@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 interface NewsCardProps {
   title: string
@@ -23,9 +24,11 @@ export default function NewsCard({ title, description, img, id }: NewsCardProps)
           {title}
         </h3>
         <p className='text-[#90A1B9] text-[14px] w-full line-clamp-4 '>{description}</p>
-        <button className=' py-[7px] px-[14px] border border-white rounded-3xl text-[14px] capitalize cursor-pointer'>
-          {t("seeMore")}
-        </button>
+        <Link href={`/newsInsight/${id}`}>
+          <button className=' py-[7px] px-[14px] border border-white rounded-3xl text-[14px] capitalize cursor-pointer'>
+            {t("seeMore")}
+          </button>
+        </Link>
       </div>
     </motion.div>
   )
