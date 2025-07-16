@@ -5,6 +5,14 @@
 :root {
   --font-xwide: "font-xwide";
 }
+
+@font-face {
+  font-family: "BGMFont";
+  src: url("/fonts/fontspring_xwidemedium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
   :root {
     --foreground-rgb: 255, 255, 255;

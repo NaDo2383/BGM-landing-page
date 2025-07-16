@@ -1,15 +1,14 @@
 // middleware.ts
-import createMiddleware from 'next-intl/middleware'
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
-export default createMiddleware({
-  locales: ['en', 'mn'],       // Add your supported locales
-  defaultLocale: 'en',
-})
+export function middleware(request: NextRequest) {
+  const locale = request.cookies.get('NEXT_LOCALE')?.value || 'en'
+  request.nextUrl.pathname = `/${locale}${request.nextUrl.pathname}`
+  return NextResponse.rewrite(request.nextUrl)
+}
 
 export const config = {
-  matcher: [
-    '/',
-    '/(mn|en)/:path*',
-    '/admin/:path*',
-  ]
+  matcher: ['/((?!api|_next|.*\\..*).*)'],
 }
+
