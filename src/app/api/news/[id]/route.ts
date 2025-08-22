@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 //src\app\api\news\[id]\route.ts
 import { adminDB } from "@/lib/firebase-admin"
 import { NextRequest, NextResponse } from "next/server"
