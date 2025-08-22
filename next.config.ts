@@ -1,7 +1,14 @@
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const createNextIntPlugin = require("next-intl/plugin")
+
+const withNextIntl = createNextIntPlugin()
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [new URL('https://res.cloudinary.com/**')],
+  },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

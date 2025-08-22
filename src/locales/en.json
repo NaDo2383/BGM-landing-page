@@ -1,0 +1,106 @@
+{
+  "general": {
+    "seeMore": "Learn More"
+  },
+  "nav": {
+    "about": "About Us",
+    "management": "Asset Management",
+    "careers": "Careers",
+    "news": "News & Insight",
+    "contact": "Contact Us",
+    "faq": "FAQ",
+    "subscribe": "Subscribe"
+  },
+  "aboutCard": {
+    "title": "About us",
+    "companyName": "Balanced Growth Management",
+    "cardText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "seeMore": "See more"
+  },
+  "hero": {
+    "title": "Modern and trusted asset \nmanager in Mongolia",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan.",
+    "cta": "Get Started"
+  },
+  "stats": {
+    "users": "users",
+    "status": "successful",
+    "number": "trilliion"
+  },
+  "capabilities": {
+    "title1": "Our",
+    "title2": "Capabilities",
+    "seeMore": "See more",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "card1": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    },
+    "card2": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    },
+    "card3": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    }
+  },
+  "news": {
+    "title1": "News & ",
+    "title2": "Insight",
+    "seeMore": "See more"
+  },
+  "team": {
+    "title1": "Our Experts ",
+    "title2": "Are Like no Others",
+    "seeMore": "See more",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum."
+  },
+  "faq": {
+    "title1": "frequently \nasked",
+    "title2": "questions"
+  },
+  "footer": {
+    "newsletter": "LET'S KEEP IN TOUCH",
+    "subscribe": "Subscribe"
+  },
+  "contactUs": {
+    "contactUs": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "msg": "Message",
+    "sending": "Sending..."
+  },
+  "newsInsight": {
+    "title1": "news",
+    "title2": "insight",
+    "category": "category",
+    "search": "search",
+    "": "",
+    "": "",
+    "": ""
+  },
+  "about-us": {
+    "title1": "about us",
+    "header1": "our",
+    "header2": "company",
+    "header3": "Balanced Growth Management",
+    "greetings": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis. In lobortis congue augue, a commodo libero tincidunt scelerisque. Donec tempus congue lacinia. Phasellus lacinia felis est, placerat commodo odio tincidunt iaculis. Sed felis magna, iaculis a metus id, ullamcorper suscipit nulla. Fusce facilisis, nunc ultricies posuere porttitor, nisl lacus tincidunt diam, vel feugiat nisi elit id massa. Proin nulla augue, dapibus non justo in, laoreet commodo nunc. Maecenas faucibus neque in nulla mollis interdum. Quisque quis pellentesque enim, vitae pulvinar purus. Quisque vitae suscipit risus. Curabitur scelerisque magna a interdum pretium. Integer sodales metus ut placerat viverra. Curabitur accumsan, odio quis vehicula imperdiet, tellus ex venenatis nisl, a dignissim lectus augue tincidunt arcu.     ",
+    "mission": "mission",
+    "mission-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "vision": "vision",
+    "vision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "value": "value",
+    "value-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "ceo-name": "Lorem ipsum dolor sit amet,",
+    "ceo-creeting": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis. In lobortis congue augue, a commodo libero tincidunt scelerisque.",
+    "ceo-sign": "sign gang",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": ""
+  }
+}

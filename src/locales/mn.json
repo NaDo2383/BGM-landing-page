@@ -1,0 +1,106 @@
+{
+  "general": {
+    "seeMore": "Дэлгэрэнгүй"
+  },
+  "nav": {
+    "about": "Бидний \nтухай",
+    "management": "Хөрөнгийн \nудирдлага",
+    "careers": "Ажлын байр",
+    "news": "Мэдээ & Ойлголт",
+    "contact": "Холбоо \nбарих",
+    "faq": "Түгээмэл \nасуулт",
+    "subscribe": "Бүртгүүлэх"
+  },
+  "aboutCard": {
+    "title": "Бидний тухай",
+    "companyName": "Балансэд Грөүт Менежмент",
+    "cardText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "seeMore": "Дэлгэрэнгүй"
+  },
+  "hero": {
+    "title": "Modern and trusted asset \nmanager in Mongolia",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan.",
+    "cta": "Эхлэх"
+  },
+  "stats": {
+    "users": "хэрэглэгч",
+    "status": "амжилттай",
+    "number": "их наяд"
+  },
+  "capabilities": {
+    "title1": "Бидний",
+    "title2": "Чадварууд",
+    "seeMore": "Дэлгэрэнгүй",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "card1": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    },
+    "card2": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    },
+    "card3": {
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+    }
+  },
+  "news": {
+    "title1": "Мэдээ & ",
+    "title2": "Мэдэгдэл",
+    "seeMore": "Дэлгэрэнгүй"
+  },
+  "team": {
+    "title1": "Манай мэргэжилтнүүд ",
+    "title2": "бусадтай адилгүй",
+    "seeMore": "Дэлгэрэнгүй",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum."
+  },
+  "faq": {
+    "title1": "Түгээмэл",
+    "title2": "Асуултууд"
+  },
+  "footer": {
+    "newsletter": "ХОЛБООТОЙ БАЙЦГААЯ",
+    "subscribe": "Бүртгүүлэх"
+  },
+  "contactUs": {
+    "contactUs": "Холбоо барих",
+    "name": "Нэр",
+    "email": "И-Мэйл",
+    "msg": "Зурвас",
+    "sending": "Илгээж байна ..."
+  },
+  "newsInsight": {
+    "title1": "Мэдээ",
+    "title2": "Мэдээлэл",
+    "search": "Хайх",
+    "category": "Төрөл",
+    "": "",
+    "": "",
+    "": ""
+  },
+  "about-us": {
+    "title1": "Бидний тухай",
+    "header1": "Манай ",
+    "header2": "компани",
+    "header3": "Balanced Growth Management",
+    "greetings": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis. In lobortis congue augue, a commodo libero tincidunt scelerisque. Donec tempus congue lacinia. Phasellus lacinia felis est, placerat commodo odio tincidunt iaculis. Sed felis magna, iaculis a metus id, ullamcorper suscipit nulla. Fusce facilisis, nunc ultricies posuere porttitor, nisl lacus tincidunt diam, vel feugiat nisi elit id massa. Proin nulla augue, dapibus non justo in, laoreet commodo nunc. Maecenas faucibus neque in nulla mollis interdum. Quisque quis pellentesque enim, vitae pulvinar purus. Quisque vitae suscipit risus. Curabitur scelerisque magna a interdum pretium. Integer sodales metus ut placerat viverra. Curabitur accumsan, odio quis vehicula imperdiet, tellus ex venenatis nisl, a dignissim lectus augue tincidunt arcu.     ",
+    "mission": "Эрхэм зорилго",
+    "mission-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "vision": "Алсын хараа",
+    "vision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "value": "Үнэт зүйл",
+    "value-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": ""
+  }
+}
