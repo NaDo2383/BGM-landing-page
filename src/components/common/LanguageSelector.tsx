@@ -20,8 +20,7 @@ export default function LanguageSelector() {
     router.refresh()
   }
 
-  const CurrentFlag = locale === "en" ? US : MN
-  const currentText = locale === "en" ? "EN" : "MN"
+  const currentText = locale === "en" ? "MN" : "EN"
 
   useEffect(() => {
     const cookieLocale = document.cookie
@@ -41,9 +40,14 @@ export default function LanguageSelector() {
   return (
     <button
       onClick={handleToggle}
-      className='text-white border border-[#22369e] bg-blend-overlay! rounded-[21px] px-3 py-2 flex items-center gap-2 hover:bg-blue-500 hover:text-shadow-white transition-colors'>
-      <CurrentFlag className='w-3 h-2' />
-      <span className='text-sm font-medium'>{currentText}</span>
+      className='text-white rounded-full p-[1.5px] flex items-center transition-all'
+      style={{
+        background:
+          "linear-gradient(122deg,rgba(255, 255, 255, 1) 2%, #211d1c 25%, #211d1c 75%, rgba(255, 255, 255, 1) 98%)",
+      }}>
+      <span className='text-sm font-medium rounded-full px-6 py-2.5 flex items-center !bg-[#211d1c] border-none'>
+        {currentText}
+      </span>
     </button>
   )
 }

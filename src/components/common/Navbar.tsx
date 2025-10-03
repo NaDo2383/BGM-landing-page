@@ -56,18 +56,6 @@ export default function Navbar() {
         className='text-white/90 hover:text-white text-[14px] transition whitespace-pre text-center'>
         {t("news")}
       </Link>
-      <Link
-        href='/#contact-us'
-        onClick={onClick}
-        className='text-white/90 hover:text-white text-[14px] transition whitespace-pre text-center'>
-        {t("contact")}
-      </Link>
-      <Link
-        href='/#faq'
-        onClick={onClick}
-        className='text-white/90 hover:text-white text-[14px] transition whitespace-pre text-center'>
-        {t("faq")}
-      </Link>
     </>
   )
 

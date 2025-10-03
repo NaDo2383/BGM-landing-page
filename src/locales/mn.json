@@ -12,13 +12,19 @@
     "subscribe": "Бүртгүүлэх"
   },
   "aboutCard": {
-    "title": "Бидний тухай",
+    "title": "Балансэд Грөүт",
+    "title1": "гэж юу вэ",
     "companyName": "Балансэд Грөүт Менежмент",
-    "cardText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
-    "seeMore": "Дэлгэрэнгүй"
+    "text": "The Concept of Balanced Growth was first introduced in the 1950s by economist Ragnar Nurkse. It emphasizes the importance of developing all key sectors of the economy such as agriculture, industry, and services in parallel to achieve long-term, stable growth. Instead of focusing on a single area, Nurkse believed that coordinated investment across multiple sectors would expand domestic markets and create a positive ripple effect across the economy.",
+    "text1": "Today, this principle goes beyond macroeconomics and is widely applied in business and investment strategies. It represents a smart balance between risk and return prioritizing sustainable progress over short-term gains.",
+    "text2": "At Balanced Growth Management, we are committed to this philosophy. We strive to deliver long-term, stable investment solutions for our clients and partners - guided by trust, strategy, and a vision for sustainable financial growth.",
+    "cardText": "YES, WE ARE BALANCERS"
   },
   "hero": {
-    "title": "Modern and trusted asset \nmanager in Mongolia",
+    "title1": "shaping Mongolia’s financial",
+    "title": "future with trust and innovation",
+    "title2": "Simplifying Investments ✨",
+    "startInvesting": "Start Investing Today",
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan.",
     "cta": "Эхлэх"
   },
@@ -33,16 +39,16 @@
     "seeMore": "Дэлгэрэнгүй",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "card1": {
-      "title": "Lorem Ipsum Dolor Sit Amet",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+      "title": "Porfolio Management",
+      "description": "Tailored Investment Solutions \n\nWe construct and manage customized portfolios aligned with your goals, risk appetite, and long-term vision."
     },
     "card2": {
-      "title": "Lorem Ipsum Dolor Sit Amet",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+      "title": "Market Research",
+      "description": "Data-Driven Insights \n\nOur expert analysts provide in-depth market research and forecasting to support informed investment decisions."
     },
     "card3": {
-      "title": "Lorem Ipsum Dolor Sit Amet",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum."
+      "title": "Wealth Advisory",
+      "description": "End-to-End Client Support \n\nFrom strategy to execution, we guide high-net-worth clients with personalized wealth management solutions."
     }
   },
   "news": {

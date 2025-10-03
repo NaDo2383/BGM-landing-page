@@ -34,7 +34,7 @@ export default function ContactUsForm() {
         {/* Left Side - Image + Title */}
         <div
           className='w-full md:w-1/2 relative bg-cover bg-center py-[50px] px-[30px]'
-          style={{ backgroundImage: `url("/about-us-card-image.png")` }}>
+          style={{ backgroundImage: `url("/contact-us-photo.png")` }}>
           <div className='text-white font-[Roboto] text-[40px] not-italic font-bold leading-none uppercase'>
             {t("contactUs")}
           </div>

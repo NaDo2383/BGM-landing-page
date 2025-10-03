@@ -7,10 +7,35 @@
 }
 
 @font-face {
-  font-family: "BGMFont";
+  font-family: "BGMxwidemedium";
   src: url("/fonts/fontspring_xwidemedium.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BGMfreigeist";
+  src: url("/fonts/Fontspring-demo-freigeist-medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BGMfreigeistLight";
+  src: url("/fonts/Fontspring-demo-freigeist-light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "norms-pro";
+  src: url("/fonts/tt-norms-pro-trail-normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @layer base {

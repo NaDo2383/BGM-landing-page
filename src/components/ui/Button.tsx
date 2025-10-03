@@ -12,13 +12,11 @@ export default function Button({
   type = "button",
   ...props
 }: ButtonProps) {
-  const baseStyles = "px-6 py-2 rounded-full font-medium transition-all duration-300"
+  const baseStyles = "text-white rounded-full p-[1.5px] flex items-center transition-all"
   const variants = {
-    primary: "bg-blue-600 text-white hover:bg-blue-700",
-    secondary:
-      "bg-transparent text-white border border-white hover:bg-white hover:text-gray-900",
-    transparent:
-      "text-white border border-[#22369e] bg-blend-overlay!  rounded-[21px] px-3 py-2 flex items-center gap-2 hover:bg-blue-500 hover:text-shadow-white transition-colors",
+    primary: "",
+    secondary: " ",
+    transparent: " ",
   }
 
   return (
@@ -26,8 +24,14 @@ export default function Button({
       type={type}
       onClick={onClick}
       className={`${baseStyles} ${variants[variant]} ${className}`}
+      style={{
+        background:
+          "linear-gradient(122deg,rgba(255, 255, 255, 1) 2%, #211d1c 15%, #211d1c 85%, rgba(255, 255, 255, 1) 98%)",
+      }}
       {...props}>
-      {children}
+      <span className='text-sm font-medium rounded-full px-6 py-2.5 flex items-center !bg-[#211d1c] border-none'>
+        {children}
+      </span>
     </button>
   )
 }
