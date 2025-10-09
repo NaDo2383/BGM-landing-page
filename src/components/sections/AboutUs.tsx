@@ -2,26 +2,35 @@
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 
-const AboutUs = () => {
+type aboutUsPropsType = {
+  bgcolor?: string
+  imageColoredBg?: boolean
+}
+
+const AboutUs = ({ bgcolor = "#020618", imageColoredBg = false }: aboutUsPropsType) => {
   const t = useTranslations("aboutCard")
 
   return (
-    <section className='bg-[#020618] overflow-hidden py-10 sm:py-14 lg:py-[100px]'>
+    <section className={`bg-[${bgcolor}] overflow-hidden py-10 sm:py-14 lg:py-[100px]`}>
       <div
         className='
           mx-auto max-w-[1240px]
-          flex flex-col md:flex-row gap-[74px]
+          flex flex-col items-center md:flex-row gap-[74px]
           w-full
           rounded-xl overflow-hidden  shadow-xl
         '>
         {/* Image */}
-        <div className='relative w-full md:w-[460px] aspect-[16/10] md:aspect-auto md:min-h-[420px] lg:min-h-[506px]'>
+        <div className='relative w-full md:w-[460px] aspect-[16/10] md:aspect-auto md:min-h-[420px] lg:min-h-[506px] max-h-[540px] flex justify-center items-center'>
           <Image
-            src='/about-us-card-image.png'
+            src={
+              imageColoredBg
+                ? "/about-us-card-image-colored.png"
+                : "/about-us-card-image.png"
+            }
             alt='About us'
             fill
             sizes='(max-width: 768px) 100vw, 50vw'
-            className='object-cover'
+            className='fit'
             priority={false}
           />
         </div>

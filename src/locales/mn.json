@@ -15,9 +15,9 @@
     "title": "Балансэд Грөүт",
     "title1": "гэж юу вэ",
     "companyName": "Балансэд Грөүт Менежмент",
-    "text": "The Concept of Balanced Growth was first introduced in the 1950s by economist Ragnar Nurkse. It emphasizes the importance of developing all key sectors of the economy such as agriculture, industry, and services in parallel to achieve long-term, stable growth. Instead of focusing on a single area, Nurkse believed that coordinated investment across multiple sectors would expand domestic markets and create a positive ripple effect across the economy.",
-    "text1": "Today, this principle goes beyond macroeconomics and is widely applied in business and investment strategies. It represents a smart balance between risk and return prioritizing sustainable progress over short-term gains.",
-    "text2": "At Balanced Growth Management, we are committed to this philosophy. We strive to deliver long-term, stable investment solutions for our clients and partners - guided by trust, strategy, and a vision for sustainable financial growth.",
+    "text": "Тэнцвэртэй өсөлтийн үзэл санааг анх 1950-аад онд эдийн засагч Рагнар Нурксе дэвшүүлсэн юм. Энэ нь хөдөө аж ахуй, үйлдвэр, үйлчилгээ зэрэг эдийн засгийн бүх гол салбарыг зэрэгцээ хөгжүүлэх нь урт хугацааны тогтвортой өсөлтөд чухал болохыг онцолдог. Нурксе нэг салбарт төвлөрөхийн оронд олон салбарт уялдаа холбоотой хөрөнгө оруулалт хийх нь дотоодын зах зээлийг өргөжүүлж, эдийн засаг даяар эерэг нөлөө үзүүлнэ гэж үзсэн байдаг.",
+    "text1": "Өнөө үед энэхүү зарчим нь макро эдийн засгаас цааш хальж, бизнес болон хөрөнгө оруулалтын стратегид өргөнөөр хэрэглэгдэж байна. Энэ нь эрсдэл ба өгөөжийн ухаалаг тэнцвэрийг илэрхийлж, богино хугацааны ашиг бус харин тогтвортой, урт хугацааны хөгжлийг илүүд үзэх хандлагыг илтгэнэ.",
+    "text2": "Balanced Growth Management компанид бид энэхүү философид үнэнч байдаг. Бид итгэлцэл, оновчтой стратеги, тогтвортой санхүүгийн өсөлтийн алсын хараанд тулгуурлан харилцагчид болон түншүүддээ урт хугацааны, тогтвортой хөрөнгө оруулалтын шийдлүүдийг хүргэхийн төлөө чармайн ажилладаг.",
     "cardText": "YES, WE ARE BALANCERS"
   },
   "hero": {
@@ -39,21 +39,22 @@
     "seeMore": "Дэлгэрэнгүй",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "card1": {
-      "title": "Porfolio Management",
-      "description": "Tailored Investment Solutions \n\nWe construct and manage customized portfolios aligned with your goals, risk appetite, and long-term vision."
+      "title": "Портфелийн удирдлага",
+      "description": "Танд зориулсан хөрөнгө оруулалтын шийдлүүд \n\nБид таны зорилго, эрсдэл хүлээх чадвар болон урт хугацааны алсын хараанд нийцсэн тусгайлан боловсруулсан портфелийг бүтээгээд удирддаг."
     },
     "card2": {
-      "title": "Market Research",
-      "description": "Data-Driven Insights \n\nOur expert analysts provide in-depth market research and forecasting to support informed investment decisions."
+      "title": "Зах зээлийн судалгаа",
+      "description": "Өгөгдөлд суурилсан дүн шинжилгээ \n\nМанай шинжээчдийн баг зах зээлийн гүнзгий судалгаа, таамаглалыг боловсруулж, таны хөрөнгө оруулалтын шийдвэрийг мэдээллээр хангадаг."
     },
     "card3": {
-      "title": "Wealth Advisory",
-      "description": "End-to-End Client Support \n\nFrom strategy to execution, we guide high-net-worth clients with personalized wealth management solutions."
+      "title": "Хөрөнгийн зөвлөх үйлчилгээ",
+      "description": "Үйлчлүүлэгчийн иж бүрэн дэмжлэг \n\nСтратеги боловсруулахаас эхлээд хэрэгжилт хүртэл бид өндөр орлоготой үйлчлүүлэгчдэд зориулсан хувь хүний онцлогт тохирсон хөрөнгийн менежментийн шийдлүүдийг санал болгодог."
     }
   },
   "news": {
-    "title1": "Мэдээ & ",
-    "title2": "Мэдэгдэл",
+    "title1": "Мэдээ & Мэдэгдэл",
+    "title2": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "seeMore": "Дэлгэрэнгүй"
   },
   "team": {
@@ -68,7 +69,9 @@
   },
   "footer": {
     "newsletter": "ХОЛБООТОЙ БАЙЦГААЯ",
-    "subscribe": "Бүртгүүлэх"
+    "subscribe": "Бүртгүүлэх",
+    "address": "Улаанбаатар хот, СБД, 8-р хороо,\nЦентрал тауэр 4 давхар, 409 тоот",
+    "reserved": " BGM. Бүх эрх хуулиар хамгаалагдсан"
   },
   "contactUs": {
     "contactUs": "Холбоо барих",
@@ -98,15 +101,17 @@
     "vision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "value": "Үнэт зүйл",
     "value-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": ""
+    "ceo-name": "Д.Одмаа",
+    "ceo-creeting": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis. In lobortis congue augue, a commodo libero tincidunt scelerisque.",
+    "ceo-sign": "sign gang",
+    "bgm-name": "Balanced Growth\nManagement",
+    "text1": "Манай компани нь уламжлалт санхүүгийн зах зээлийг технологи ба инновацитай хослуулж, мэргэжлийн түвшний, дэвшилтэт бүтээгдэхүүн болон үйлчилгээг хүргэх зорилгоор байгуулагдсан. Бид TESO группийн хөрөнгө оруулалт болон дэмжлэгтэйгээр үйл ажиллагаа явуулдаг.",
+    "text2": "Хөрөнгө удирдлагын компани болохын хувьд бид хөрөнгийн өсөлтийг дэмжих зорилготой хөрөнгө оруулалтын сангуудыг байгуулж, удирддаг. 2025 он гэхэд бид нийт ₮50 тэрбум төгрөгийн үнэлгээ бүхий хоёр тусгай зөвшөөрөлтэй хувийн сан болон хадгаламжийн хөтөлбөрийг удирдаж байна.",
+    "title1small": "Эрхэм зорилго",
+    "title2small": "Алсын хараа",
+    "title3small": "Үнэ цэн",
+    "text1small": "Инноваци ба мэргэжлийн ур чадвараар санхүүгийн зах зээлийн өсөлтийг хөдөлгөх",
+    "text2small": "Дэлхийн санхүүгийн зах зээлийг Монголд хүртээмжтэй болгох",
+    "text3small": "Мэргэжлийн ёс зүй\nболон ил тод байдал\n\nИнноваци ба технологи"
   }
 }

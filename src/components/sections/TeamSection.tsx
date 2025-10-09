@@ -56,7 +56,7 @@ export default function TeamSection() {
         <div className='flex justify-center'>
           <div className='w-full sm:w-auto'>
             <ArrowBtn
-              arrowBg='black'
+              arrow_bg='black'
               onClick={() => alert("Go!")}
               className='w-full sm:w-auto'>
               {t("seeMore")}

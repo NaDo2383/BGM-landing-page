@@ -3,14 +3,38 @@
 import { useTranslations } from "next-intl"
 import Card from "../ui/Card"
 import { ArrowBtn } from "../ui/ArrowBtn"
+import Image from "next/image"
 
 export default function CapabilitiesSection() {
   const t = useTranslations("capabilities")
 
   const capabilities = [
-    { title: t("card1.title"), description: t("card1.description"), icon: "📊" },
-    { title: t("card2.title"), description: t("card2.description"), icon: "🎯" },
-    { title: t("card3.title"), description: t("card3.description"), icon: "💡" },
+    {
+      title: t("card1.title"),
+      description: t("card1.description"),
+      icon: (
+        <Image src='/icons/funds-fill.svg' alt='Wealth icon' width={30} height={30} />
+      ),
+    },
+    {
+      title: t("card2.title"),
+      description: t("card2.description"),
+      icon: (
+        <Image src='/icons/stock-fill.svg' alt='Wealth icon' width={30} height={30} />
+      ),
+    },
+    {
+      title: t("card3.title"),
+      description: t("card3.description"),
+      icon: (
+        <Image
+          src='/icons/file-chart-2-fill.svg'
+          alt='Wealth icon'
+          width={30}
+          height={30}
+        />
+      ),
+    },
   ]
 
   return (
@@ -44,7 +68,7 @@ export default function CapabilitiesSection() {
         <div className='flex justify-center'>
           <div className='w-full sm:w-auto'>
             <ArrowBtn
-              arrowBg='black'
+              arrow_bg='black'
               onClick={() => alert("Go!")}
               className='w-full sm:w-auto'>
               {t("seeMore")}

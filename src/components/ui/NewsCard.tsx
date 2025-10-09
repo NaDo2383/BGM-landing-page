@@ -1,6 +1,5 @@
 "use client"
 
-import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
@@ -12,6 +11,7 @@ interface NewsCardProps {
   img?: string
   id: string
   className?: string
+  featured?: boolean // optional: make the first card wider elsewhere
 }
 
 export default function NewsCard({
@@ -20,73 +20,52 @@ export default function NewsCard({
   img,
   id,
   className,
+  featured = false,
 }: NewsCardProps) {
-  const t = useTranslations("general")
-
   return (
-    <Link href={`/newsInsight/${id}`} className='block group focus:outline-none'>
+    <Link href={`/newsInsight/${id}`} className='group block h-full focus:outline-none'>
       <motion.article
-        whileHover={{ scale: 1.03 }}
-        whileTap={{ scale: 0.99 }}
-        transition={{ type: "spring", stiffness: 260, damping: 20 }}
+        whileHover={{ y: -2 }}
+        transition={{ type: "spring", stiffness: 260, damping: 22 }}
         className={clsx(
-          // responsive sizing
-          "relative w-full h-[480px]",
-          // card chrome
-          "rounded-xl overflow-hidden shadow-lg ring-1 ring-white/5",
-          "after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px]",
-          "after:bg-gradient-to-r after:from-[#F1573F] after:to-[#3F61F1]",
-          "md:[transform:translateZ(0)]",
+          "h-full rounded-3xl p-4 sm:p-5",
+          "bg-[#0B1220] border border-white/8",
+          "shadow-[inset_0_1px_0_rgba(255,255,255,.06)]",
+          "[filter:drop-shadow(0_0_0.6px_rgba(255,255,255,.35))]",
+          "flex flex-col",
           className
         )}>
-        {/* Background image */}
-        {img ? (
-          <Image
-            src={img}
-            alt={title}
-            fill
-            sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
-            className='object-cover'
-            priority={false}
-          />
-        ) : (
-          // Fallback if no image
-          <div className='absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-900' />
-        )}
-
-        {/* Dark overlay for readability */}
-        <div className='absolute inset-0 bg-black/40' />
-
-        {/* Content */}
+        {/* Image */}
         <div
           className={clsx(
-            "absolute bottom-0 left-0 right-0",
-            "backdrop-blur-[12px] bg-black/50",
-            "px-4 sm:px-5 py-4 sm:py-5"
+            "relative overflow-hidden rounded-2xl",
+            featured ? "aspect-[21/8]" : "aspect-[4/3]"
           )}>
-          <h3 className='text-white font-medium font-[Roboto] leading-snug line-clamp-2 text-base sm:text-lg md:text-xl'>
-            {title}
-          </h3>
+          {img ? (
+            <Image
+              src={img}
+              alt={title}
+              fill
+              sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+              className='object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]'
+              priority={false}
+            />
+          ) : (
+            <div className='absolute inset-0 bg-gradient-to-br from-slate-600 to-slate-800' />
+          )}
 
-          <p
-            className='mt-2 text-[#90A1B9] text-sm sm:text-[14px] line-clamp-3 sm:line-clamp-4'
-            // keep your HTML support
-            dangerouslySetInnerHTML={{ __html: description }}
-          />
-
-          <span
-            className='
-              mt-3 inline-flex items-center gap-2
-              text-[13px] sm:text-[14px] text-white/90
-              border border-white/70 rounded-3xl px-3 py-1.5
-              transition-colors
-              group-hover:bg-white group-hover:text-black
-              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40
-            '
-            aria-label={t("seeMore")}>
-            {t("seeMore")}
-          </span>
+          {/* subtle inner border/highlight to match mock */}
+          <div className='pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,.08)]' />
         </div>
+
+        {/* Text */}
+        <h3 className='mt-4 text-white leading-tight font-semibold text-[18px] sm:text-[20px]'>
+          {title}
+        </h3>
+        <p
+          className='mt-2 text-white/60 text-sm leading-6 line-clamp-2'
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
       </motion.article>
     </Link>
   )

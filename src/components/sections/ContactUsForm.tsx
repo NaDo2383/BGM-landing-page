@@ -72,7 +72,7 @@ export default function ContactUsForm() {
 
           <ArrowBtn
             onClick={handleSubmit}
-            arrowBg='black'
+            arrow_bg='black'
             className='self-start mt-2 disabled:opacity-50'
             disabled={isSubmitting}>
             {isSubmitting ? t("sending") || "Sending..." : t("contactUs")}

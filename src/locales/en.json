@@ -52,8 +52,9 @@
     }
   },
   "news": {
-    "title1": "News & ",
-    "title2": "Insight",
+    "title1": "News & Insight",
+    "title2": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "seeMore": "See more"
   },
   "team": {
@@ -68,7 +69,9 @@
   },
   "footer": {
     "newsletter": "LET'S KEEP IN TOUCH",
-    "subscribe": "Subscribe"
+    "subscribe": "Subscribe",
+    "address": "Central Tower, 4th Floor, Room 409, \nSBD, 8th Khoroo, Ulaanbaatar",
+    "reserved": " BGM. All rights reserved"
   },
   "contactUs": {
     "contactUs": "Contact Us",
@@ -98,15 +101,17 @@
     "vision-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "value": "value",
     "value-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
-    "ceo-name": "Lorem ipsum dolor sit amet,",
+    "ceo-name": "D.Odmaa",
     "ceo-creeting": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis. In lobortis congue augue, a commodo libero tincidunt scelerisque.",
     "ceo-sign": "sign gang",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": ""
+    "bgm-name": "Balanced Growth\nManagement",
+    "text1": "Our company was established with the vision of combining traditional financial markets with technology and innovation to deliver professional, cutting-edge products and services. We operate with the investment and support of TESO Group",
+    "text2": "As an asset management company, we create and manage investment funds as tools to grow wealth. By 2025, we manage a total portfolio of approximately ₮50 billion through two licensed private funds and a savings fund program.",
+    "title1small": "Mission",
+    "title2small": "Vision",
+    "title3small": "Value",
+    "text1small": "Driving financial market growth with innovation and expertise",
+    "text2small": "Making global finance accessible for Mongolia",
+    "text3small": "Professional ethics\nand transparency\n\nInnovation & technology"
   }
 }
