@@ -7,11 +7,11 @@ type aboutUsPropsType = {
   imageColoredBg?: boolean
 }
 
-const AboutUs = ({ bgcolor = "#020618", imageColoredBg = false }: aboutUsPropsType) => {
+const AboutUs = ({ bgcolor = "#050505" }: aboutUsPropsType) => {
   const t = useTranslations("aboutCard")
 
   return (
-    <section className={`bg-[${bgcolor}] overflow-hidden py-10 sm:py-14 lg:py-[100px]`}>
+    <section className={`bg-[${bgcolor}] overflow-hidden py-10 sm:py-14 lg:py-[64px]`}>
       <div
         className='
           mx-auto max-w-[1240px]
@@ -22,11 +22,7 @@ const AboutUs = ({ bgcolor = "#020618", imageColoredBg = false }: aboutUsPropsTy
         {/* Image */}
         <div className='relative w-full md:w-[460px] aspect-[16/10] md:aspect-auto md:min-h-[420px] lg:min-h-[506px] max-h-[540px] flex justify-center items-center'>
           <Image
-            src={
-              imageColoredBg
-                ? "/about-us-card-image-colored.png"
-                : "/about-us-card-image.png"
-            }
+            src={"/about-us-card-image-colored.png"}
             alt='About us'
             fill
             sizes='(max-width: 768px) 100vw, 50vw'
@@ -44,11 +40,11 @@ const AboutUs = ({ bgcolor = "#020618", imageColoredBg = false }: aboutUsPropsTy
             flex flex-col justify-between gap-6
           '>
           <div className='flex flex-col gap-3'>
-            <div className='flex flex-wrap items-center gap-2 text-center font-[850] font-[BGMfreigeist]'>
+            <div className='flex flex-wrap items-center gap-2 text-center font-[850] font-[norms-pro]'>
               <h2 className=' not-only: text-white text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
                 {t("title")}
               </h2>
-              <span className='  text-[#F1573F] text-2xl sm:text-3xl lg:text-[40px] leading-tight '>
+              <span className='  text-[#ef7a0b] text-2xl sm:text-3xl lg:text-[40px] leading-tight '>
                 {t("title1")}
               </span>
               <h2 className='  text-white text-2xl sm:text-3xl lg:text-[40px] leading-tight'>

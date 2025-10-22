@@ -64,37 +64,53 @@
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum."
   },
   "faq": {
-    "title1": "frequently \nasked",
-    "title2": "questions"
+    "title1": "frequently asked questions",
+    "title2": "FAQs designed to provide the information you need"
   },
   "footer": {
     "newsletter": "LET'S KEEP IN TOUCH",
     "subscribe": "Subscribe",
     "address": "Central Tower, 4th Floor, Room 409, \nSBD, 8th Khoroo, Ulaanbaatar",
-    "reserved": " BGM. All rights reserved"
+    "reserved": " BGM. All rights reserved",
+    "links": "Links",
+    "terms-of-service": "Terms of service",
+    "privacy-policy": "Privacy policy",
+    "pages": "Pages",
+    "about-us": "About us",
+    "asset-management": "Asset Management",
+    "career": "Careers",
+    "news-insights": "News & Insight",
+    "contact": "Contacts"
   },
-  "contactUs": {
-    "contactUs": "Contact Us",
-    "name": "Name",
-    "email": "Email",
-    "msg": "Message",
-    "sending": "Sending..."
+
+  "emailAlerts": {
+    "title": "Email Alerts",
+    "subtitle": "FAQs Designed To Provide The Information You Need.",
+    "placeholder": "Your Email",
+    "cta": "Sign Up",
+    "signing": "Signing Up...",
+    "news": "News & Insights",
+    "market": "Market Outlook",
+    "funds": "Fund Updates",
+    "success": "Thanks! You’re subscribed.",
+    "failed": "Subscription failed. Please try again."
   },
+
   "newsInsight": {
-    "title1": "news",
-    "title2": "insight",
+    "title1": "News & Insights",
+    "title2": "Global economic news & Macro Insights by \nBGM Asset Management",
     "category": "category",
     "search": "search",
-    "": "",
-    "": "",
-    "": ""
+    "news": "News",
+    "news-letter": "Newsletter",
+    "outlook": "Outlook"
   },
   "about-us": {
     "title1": "about us",
     "header1": "our",
     "header2": "company",
     "header3": "Balanced Growth Management",
-    "greetings": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis. In lobortis congue augue, a commodo libero tincidunt scelerisque. Donec tempus congue lacinia. Phasellus lacinia felis est, placerat commodo odio tincidunt iaculis. Sed felis magna, iaculis a metus id, ullamcorper suscipit nulla. Fusce facilisis, nunc ultricies posuere porttitor, nisl lacus tincidunt diam, vel feugiat nisi elit id massa. Proin nulla augue, dapibus non justo in, laoreet commodo nunc. Maecenas faucibus neque in nulla mollis interdum. Quisque quis pellentesque enim, vitae pulvinar purus. Quisque vitae suscipit risus. Curabitur scelerisque magna a interdum pretium. Integer sodales metus ut placerat viverra. Curabitur accumsan, odio quis vehicula imperdiet, tellus ex venenatis nisl, a dignissim lectus augue tincidunt arcu.     ",
+    "ceo-creeting": "Asset management is not merely about numbers, but about nurturing trust, discipline, and strategic foresight. \n\nEvery portfolio we build must reflect both integrity and innovation—anchored in research, driven by conviction.",
     "mission": "mission",
     "mission-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "vision": "vision",
@@ -102,8 +118,7 @@
     "value": "value",
     "value-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "ceo-name": "D.Odmaa",
-    "ceo-creeting": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis. In lobortis congue augue, a commodo libero tincidunt scelerisque.",
-    "ceo-sign": "sign gang",
+    "ceo-pos": "Chief Executive Officer",
     "bgm-name": "Balanced Growth\nManagement",
     "text1": "Our company was established with the vision of combining traditional financial markets with technology and innovation to deliver professional, cutting-edge products and services. We operate with the investment and support of TESO Group",
     "text2": "As an asset management company, we create and manage investment funds as tools to grow wealth. By 2025, we manage a total portfolio of approximately ₮50 billion through two licensed private funds and a savings fund program.",
@@ -112,6 +127,94 @@
     "title3small": "Value",
     "text1small": "Driving financial market growth with innovation and expertise",
     "text2small": "Making global finance accessible for Mongolia",
-    "text3small": "Professional ethics\nand transparency\n\nInnovation & technology"
+    "text3small": "Professional ethics\nand transparency\n\nInnovation & technology",
+    "whatwedo": "What We Do ?",
+    "BGTheory": "Balanced Growth Theory",
+    "BGMAssetmanagement": "BGM Asset Management",
+    "Team introduction": "Team Introduction"
+  },
+  "whatWeDo": {
+    "title": "What We Do",
+    "subtitle": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.",
+    "aria": {
+      "listbox": "What we do options",
+      "item": "Select {title}"
+    },
+    "items": {
+      "fixed": {
+        "title": "BGM Fixed Income fund",
+        "desc": "That’s Why we Leverage AI to create impactful, lasting experiences that engage, and transform every interaction",
+        "alt": "Fixed income fund cover"
+      },
+      "realestate": {
+        "title": "BGM Real estate fund",
+        "desc": "That’s Why we Leverage AI to create impactful, lasting experiences that engage, and transform every interaction",
+        "alt": "Real estate fund cover"
+      },
+      "retirement": {
+        "title": "Retirement & Savings Plan",
+        "desc": "That’s Why we Leverage AI to create impactful, lasting experiences that engage, and transform every interaction",
+        "alt": "Retirement & savings plan cover"
+      }
+    }
+  },
+  "outlook": {
+    "title1": "Global Outlook",
+    "title2": "Monthly Global Investment & Macro Insights by \nBGM Asset Management",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": ""
+  },
+  "careers": {
+    "title1": "Careers at bgm",
+    "title2": "Global economic news & Macro Insights by \nBGM Asset Management",
+    "life-at-bgm": "Life at BGM",
+    "benefits": "Benefits",
+    "students-and-graduates": "Students & Graduates",
+    "students-and-graduates-text": "BGM offers the “Career Journey” and “Early Bird” internship programs, providing students with real industry experience, skill \ndevelopment, and opportunities to become part of the company’s future talent pool.",
+    "career-developments": "Career Development",
+    "career-developments-text": "BGM provides continuous learning and development opportunities through professional certification support, BGM Academy programs in \nclient relations, technology, investment, leadership, and management skills, as well as online learning packages from institutions such as \nHarvard Business Institute and Udemy, while also enabling employees to build strong internal and external professional networks.",
+    "social-campaign": "Social Good Campaign",
+    "social-campaign-text": "BGM supports health, education, and environmental initiatives through blood donation, \nacademic sponsorships, and annual tree planting.",
+    "life-at-bgm-text": "BGM values a culture of shared purpose, structured and reliable operations, and growth driven \nby listening to the voices of its employees.",
+    "purpose-culture": "Purpose Culture",
+    "purpose-culture-text": "The operations of BGM are closely aligned with employees’ day-to-day responsibilities, all working together toward a clear and meaningful purpose.",
+    "order-culture": "Order Culture",
+    "order-culture-text": "We believe that adhering to clear rules and procedures, standardizing our operations, and maintaining a consistent and sustainable system are of utmost importance in everything we do.",
+    "v-of-emp": "Voice of Employee",
+    "v-of-emp-text": "We strive to incorporate employees’ ideas, experience, and initiatives into the organization’s major decision-making, policy development, and day-to-day operations. ",
+    "benefits-text": "BGM implements comprehensive programs that promote the financial, physical, mental, and work-life well-being of its employees.",
+    "financial": "Financial well-being",
+    "life-balance": "Life Balance",
+    "pay-for-perf": "Pay for Performance",
+    "h&p-well-being": "Health & Physical well-being",
+    "mental-well-being": "Mental Health well-being",
+    "career-journey": "Career Journey",
+    "career-journey-text": "A short, guided internship for graduating students interested in finance and investing—offering practical exposure to industry specifics and work practices to inform career choices.\n\nHeld annually at scale to grow the future talent pipeline and support the development of the sector.",
+    "early-bird": "Early Bird",
+    "early-bird-text": "A paid internship program for students majoring in finance, banking, and business.\n\nCombining theoretical and practical training, the program provides real industry experience and offers career opportunities for outstanding talents.",
+    "apply-now": "Apply Now",
+    "pro-network": "Professional Network",
+    "health": "Health",
+    "health-text": "As part of our corporate social responsibility, we organize an annual Blood Donation Campaign with the voluntary participation of our employees.",
+    "edu": "Education",
+    "edu-text": "We participated as a sponsor of the 10th National Finance Management Olympiad as part of our corporate social responsibility.",
+    "env": "Environment",
+    "env-text": "BGM has established its own grove within the “Orshikh Togol” project and plants trees there every year."
+  },
+  "search-job": {
+    "title1": "search job",
+    "title2": "Find career opportunities that match your \nskills and aspirations.",
+    "text": "Fill out the form \nYour next career starts here",
+    "name": "Name",
+    "age": "Age",
+    "edu": "Education",
+    "pos": "Position",
+    "phone": "Phone number",
+    "email": "Email",
+    "fields-are-req": "All fields are required",
+    "apply": "Apply"
   }
 }

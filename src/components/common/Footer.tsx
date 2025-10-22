@@ -10,112 +10,64 @@ export default function Footer() {
   const t = useTranslations("footer")
 
   return (
-    <footer className='relative bg-[#050B1A] text-white pt-16 pb-5 px-6 md:px-12 overflow-hidden'>
-      {/* Main Content */}
-      <div className='relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12'>
-        {/* Left Column */}
-        <div className=' flex flex-col justify-between'>
-          <Image src={"/bgm_logo.png"} alt='Logo' width={188} height={40} />
-          <h2 className='text-[32px] font-[850] font-[BGMfreigeist] tracking-wider'>
-            BALANCED GROWTH
-            <br />
-            MANAGEMENT
-          </h2>
-          <p className='text-gray-400 mt-3 leading-relaxed'>
-            Lorem Ipsum Dolor Sit Amet,
-            <br />
-            Consectetur Adipisicing Elit.
-          </p>
-        </div>
-
-        {/* Center Navigation */}
-        <div className=' text-sm text-gray-400'>
-          <div className='flex w-full gap-[30px]'>
-            <div className='flex flex-col w-full gap-[30px]'>
-              <div>
-                <h4 className='text-white font-medium mb-2'>About Us</h4>
-                <ul className='space-y-1'>
-                  <li className=' capitalize text-[16px] text-[#90A1B9]'>Our Company</li>
-                  <li className=' capitalize text-[16px] text-[#90A1B9]'>
-                    Company Structure
-                  </li>
-                  <li className=' capitalize text-[16px] text-[#90A1B9]'>
-                    XOMK Structure
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className='text-white font-medium mb-2'>News & Insight</h4>
-                <ul className='space-y-1'>
-                  <li className=' capitalize text-[16px] text-[#90A1B9]'>
-                    News & Fund Announcement
-                  </li>
-                  <li className=' capitalize text-[16px] text-[#90A1B9]'>
-                    Monthly Report
-                  </li>
-                </ul>
-              </div>
+    <div className='bg-[url("/footer-gradiant.png")] bg-cover bg-center'>
+      <footer className='relative text-white pt-16 pb-5 px-6 md:px-12 overflow-hidden'>
+        {/* Main Content */}
+        <div className='relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12'>
+          {/* Left Column */}
+          <div className=' flex flex-col justify-between max-w-[190px]'>
+            <Image src={"/bgm_logo.png"} alt='Logo' width={188} height={40} />
+            {/* Social Icons */}
+            <div className='flex gap-3 mt-4'>
+              {[FaFacebookF, FaInstagram, FaXTwitter].map((Icon, i) => (
+                <div
+                  key={i}
+                  className='w-[50px] h-[50px] rounded-full bg-[linear-gradient(180deg,#FFBD80_0%,#E46F03_50.48%,#E46F03_100%)] flex items-center justify-center hover:scale-110 transition'>
+                  <Icon size={20} />
+                </div>
+              ))}
             </div>
-            <div className='flex flex-col w-full gap-[30px]'>
-              <div>
-                <h4 className='text-white font-medium mb-2'>Asset Management</h4>
-                <ul className='space-y-1'>
-                  <li className=' capitalize text-[16px] text-[#90A1B9]'>
-                    Fixed Income Fund
-                  </li>
-                  <li className=' capitalize text-[16px] text-[#90A1B9]'>
-                    Real Estate Fund
-                  </li>
-                </ul>
+          </div>
+
+          <div className='w-full max-w-[650px] flex gap-[60px]'>
+            <div className='flex flex-col gap-4  text-gray-300'>
+              <div className='font-bold text-sm text-white'>{t("links")}</div>
+              <div>{t("terms-of-service")}</div>
+              <div>{t("privacy-policy")}</div>
+            </div>
+            <div className='flex flex-col gap-4  text-gray-300'>
+              <div className='font-bold text-sm text-white'>{t("pages")}</div>
+              <div>{t("about-us")}</div>
+              <div>{t("asset-management")}</div>
+              <div>{t("career")}</div>
+              <div>{t("news-insights")}</div>
+            </div>
+            <div className='  flex flex-col gap-4  text-gray-300'>
+              <div className='font-bold text-sm text-white'>{t("contact")}</div>
+              <div className='flex items-start gap-3'>
+                <div className='pt-1'>
+                  <FaMapMarkerAlt className='text-[#ef7a0b]' size={18} />
+                </div>
+                <p className=' whitespace-pre text-sm'>{t("address")}</p>
               </div>
-              <div>
-                <h4 className='text-white font-medium mb-2'>Career</h4>
-                <ul className='space-y-1'>
-                  <li className=' capitalize text-[16px] text-[#90A1B9]'>Life BGM</li>
-                  <li className=' capitalize text-[16px] text-[#90A1B9]'>Join Us</li>
-                </ul>
+              <div className='flex items-center gap-3'>
+                <Phone className='text-[#ef7a0b]' size={18} />
+                <p className='text-sm'>+976 7775-2050</p>
+              </div>
+              <div className='flex items-center gap-3'>
+                <Mail className='text-[#ef7a0b]' size={18} />
+                <p className='text-sm'>info@balancedgrowth.mn</p>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Right Column */}
-        <div className='md:w-1/4 flex flex-col gap-4 text-sm text-gray-300'>
-          <div className='flex items-start gap-3'>
-            <FaMapMarkerAlt className='text-[#F1573F]' size={18} />
-            <p className=' whitespace-pre'>{t("address")}</p>
-          </div>
-          <div className='flex items-center gap-3'>
-            <Phone className='text-[#F1573F]' size={18} />
-            <p>+976 7775-2050</p>
-          </div>
-          <div className='flex items-center gap-3'>
-            <Mail className='text-[#F1573F]' size={18} />
-            <p>info@balancedgrowth.mn</p>
-          </div>
-
-          {/* Social Icons */}
-          <div className='flex gap-3 mt-4'>
-            {[FaFacebookF, FaInstagram, FaXTwitter].map((Icon, i) => (
-              <div
-                key={i}
-                className='w-9 h-9 rounded-full bg-white text-[#F1573F] flex items-center justify-center hover:scale-110 transition'>
-                <Icon size={14} />
-              </div>
-            ))}
-          </div>
+      </footer>
+      <div className='bg-[#242424] mx-auto text-sm text-gray-500 mt-12 relative z-10 text-left'>
+        <div className='max-w-7xl mx-auto h-9 flex items-center'>
+          © {new Date().getFullYear()}
+          {t("reserved")}
         </div>
-        <div className='absolute bottom-[-21px] left-0 w-full h-[2px] bg-gradient-to-r from-[#F1573F] to-[#3F61F1] z-0' />
-        <div className='absolute bottom-[-20px] right-0 w-40 h-40 border-b-2  border-[#3F61F1] rotate-135 translate-x-1/2 translate-y-1/2 z-10 bg-[#050b1b]' />
       </div>
-
-      {/* Copyright - BELOW content, ABOVE gradient */}
-      <div className='max-w-7xl mx-auto text-sm text-gray-500 mt-12 relative z-10 text-left'>
-        © {new Date().getFullYear()}
-        {t("reserved")}
-      </div>
-
-      {/* Gradient Line and Corner - Rendered at very bottom */}
-    </footer>
+    </div>
   )
 }

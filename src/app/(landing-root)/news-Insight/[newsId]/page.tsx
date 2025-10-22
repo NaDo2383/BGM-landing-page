@@ -6,7 +6,6 @@ interface NewsPageProps {
 
 const page = async ({ params }: NewsPageProps) => {
   const { newsId } = await params
-  console.log("Slug:", newsId)
 
   return <NewsDetailPage />
 }

@@ -64,37 +64,51 @@
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum."
   },
   "faq": {
-    "title1": "Түгээмэл",
-    "title2": "Асуултууд"
+    "title1": "Түгээмэл асуултууд",
+    "title2": "Танд хэрэгтэй мэдээллээр хангахад зориулагдсан түгээмэл асуултууд"
   },
   "footer": {
     "newsletter": "ХОЛБООТОЙ БАЙЦГААЯ",
     "subscribe": "Бүртгүүлэх",
     "address": "Улаанбаатар хот, СБД, 8-р хороо,\nЦентрал тауэр 4 давхар, 409 тоот",
-    "reserved": " BGM. Бүх эрх хуулиар хамгаалагдсан"
+    "reserved": " BGM. Бүх эрх хуулиар хамгаалагдсан",
+    "links": "Линк",
+    "terms-of-service": "Үйлчилгээний нөхцөл",
+    "privacy-policy": "Нууцлалын бодлого",
+    "pages": "Хуудаснууд",
+    "about-us": "Бидний тухай",
+    "asset-management": "Хөрөнгийн удирдлага",
+    "career": "Карьер",
+    "news-insights": "Мэдээ & Мэдээлэл",
+    "contact": "Холбоо барих"
   },
-  "contactUs": {
-    "contactUs": "Холбоо барих",
-    "name": "Нэр",
-    "email": "И-Мэйл",
-    "msg": "Зурвас",
-    "sending": "Илгээж байна ..."
+  "emailAlerts": {
+    "title": "Email Alerts",
+    "subtitle": "FAQs Designed To Provide The Information You Need.",
+    "placeholder": "Your Email",
+    "cta": "Sign Up",
+    "signing": "Signing Up...",
+    "news": "News & Insights",
+    "market": "Market Outlook",
+    "funds": "Fund Updates",
+    "success": "Thanks! You’re subscribed.",
+    "failed": "Subscription failed. Please try again."
   },
   "newsInsight": {
     "title1": "Мэдээ",
     "title2": "Мэдээлэл",
     "search": "Хайх",
     "category": "Төрөл",
-    "": "",
-    "": "",
-    "": ""
+    "news": "Мэдээ",
+    "news-letter": "Мэдээний товхимол",
+    "outlook": "Outlook"
   },
   "about-us": {
     "title1": "Бидний тухай",
     "header1": "Манай ",
     "header2": "компани",
     "header3": "Balanced Growth Management",
-    "greetings": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis. In lobortis congue augue, a commodo libero tincidunt scelerisque. Donec tempus congue lacinia. Phasellus lacinia felis est, placerat commodo odio tincidunt iaculis. Sed felis magna, iaculis a metus id, ullamcorper suscipit nulla. Fusce facilisis, nunc ultricies posuere porttitor, nisl lacus tincidunt diam, vel feugiat nisi elit id massa. Proin nulla augue, dapibus non justo in, laoreet commodo nunc. Maecenas faucibus neque in nulla mollis interdum. Quisque quis pellentesque enim, vitae pulvinar purus. Quisque vitae suscipit risus. Curabitur scelerisque magna a interdum pretium. Integer sodales metus ut placerat viverra. Curabitur accumsan, odio quis vehicula imperdiet, tellus ex venenatis nisl, a dignissim lectus augue tincidunt arcu.     ",
+    "ceo-creeting": "Хөрөнгийн менежмент гэдэг нь зүгээр тоон үзүүлэлтүүдийн тухай биш, харин итгэлцэл, сахилга бат, стратегийн урьдчилсан харааг төлөвшүүлэхийн тухай юм. \n\nБидний байгуулж буй бүхий л хөрөнгийн багц нь судалгаанд тулгуурласан, итгэл үнэмшлээр хөтлөгдсөн, шударга ёс ба шинэлэг сэтгэлгээг тусгасан байх ёстой.",
     "mission": "Эрхэм зорилго",
     "mission-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "vision": "Алсын хараа",
@@ -102,8 +116,7 @@
     "value": "Үнэт зүйл",
     "value-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.",
     "ceo-name": "Д.Одмаа",
-    "ceo-creeting": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien. Vestibulum malesuada orci sit amet pretium facilisis. In lobortis congue augue, a commodo libero tincidunt scelerisque.",
-    "ceo-sign": "sign gang",
+    "ceo-pos": "Гүйцэтгэх захирал",
     "bgm-name": "Balanced Growth\nManagement",
     "text1": "Манай компани нь уламжлалт санхүүгийн зах зээлийг технологи ба инновацитай хослуулж, мэргэжлийн түвшний, дэвшилтэт бүтээгдэхүүн болон үйлчилгээг хүргэх зорилгоор байгуулагдсан. Бид TESO группийн хөрөнгө оруулалт болон дэмжлэгтэйгээр үйл ажиллагаа явуулдаг.",
     "text2": "Хөрөнгө удирдлагын компани болохын хувьд бид хөрөнгийн өсөлтийг дэмжих зорилготой хөрөнгө оруулалтын сангуудыг байгуулж, удирддаг. 2025 он гэхэд бид нийт ₮50 тэрбум төгрөгийн үнэлгээ бүхий хоёр тусгай зөвшөөрөлтэй хувийн сан болон хадгаламжийн хөтөлбөрийг удирдаж байна.",
@@ -112,6 +125,35 @@
     "title3small": "Үнэ цэн",
     "text1small": "Инноваци ба мэргэжлийн ур чадвараар санхүүгийн зах зээлийн өсөлтийг хөдөлгөх",
     "text2small": "Дэлхийн санхүүгийн зах зээлийг Монголд хүртээмжтэй болгох",
-    "text3small": "Мэргэжлийн ёс зүй\nболон ил тод байдал\n\nИнноваци ба технологи"
+    "text3small": "Мэргэжлийн ёс зүй\nболон ил тод байдал\n\nИнноваци ба технологи",
+    "whatwedo": "Бид юу хийдэг вэ ?",
+    "BGTheory": "Балансэд Грөүт гэж юу вэ?",
+    "BGMAssetmanagement": "BGM Хөрөнгө удирдлага",
+    "Team introduction": "Баг хамт олон"
+  },
+  "whatWeDo": {
+    "title": "Бид юу хийдэг вэ",
+    "subtitle": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.",
+    "aria": {
+      "listbox": "Бидний хийдэг ажлын сонголтууд",
+      "item": "\"{title}\"-г сонгох"
+    },
+    "items": {
+      "fixed": {
+        "title": "BGM Тогтмол орлогын сан",
+        "desc": "Тиймээс бид хиймэл оюун ухааныг ашиглан хэрэглэгчийг татахуйц, нөлөөтэй бөгөөд удаан үргэлжлэх туршлагыг бүтээж, бүх харилцааг өөрчилж сайжруулдаг.",
+        "alt": "Тогтмол орлогын сангийн зураг"
+      },
+      "realestate": {
+        "title": "BGM Үл хөдлөх хөрөнгийн сан",
+        "desc": "Тиймээс бид хиймэл оюун ухааныг ашиглан хэрэглэгчийг татахуйц, нөлөөтэй бөгөөд удаан үргэлжлэх туршлагыг бүтээж, бүх харилцааг өөрчилж сайжруулдаг.",
+        "alt": "Үл хөдлөх хөрөнгийн сангийн зураг"
+      },
+      "retirement": {
+        "title": "Тэтгэврийн хуримтлал",
+        "desc": "Тиймээс бид хиймэл оюун ухааныг ашиглан хэрэглэгчийг татахуйц, нөлөөтэй бөгөөд удаан үргэлжлэх туршлагыг бүтээж, бүх харилцааг өөрчилж сайжруулдаг.",
+        "alt": "Тэтгэврийн ба хуримтлалын төлөвлөгөөний зураг"
+      }
+    }
   }
 }

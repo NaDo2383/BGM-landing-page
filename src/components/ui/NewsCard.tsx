@@ -23,22 +23,21 @@ export default function NewsCard({
   featured = false,
 }: NewsCardProps) {
   return (
-    <Link href={`/newsInsight/${id}`} className='group block h-full focus:outline-none'>
+    <Link href={`/news-Insight/${id}`} className='group block h-full focus:outline-none'>
       <motion.article
         whileHover={{ y: -2 }}
         transition={{ type: "spring", stiffness: 260, damping: 22 }}
         className={clsx(
-          "h-full rounded-3xl p-4 sm:p-5",
-          "bg-[#0B1220] border border-white/8",
+          "h-full rounded-[30px] p-3 sm:p-4",
+          "bg-[linear-gradient(#171717,#111111)] border border-[#434343]",
           "shadow-[inset_0_1px_0_rgba(255,255,255,.06)]",
-          "[filter:drop-shadow(0_0_0.6px_rgba(255,255,255,.35))]",
           "flex flex-col",
           className
         )}>
         {/* Image */}
         <div
           className={clsx(
-            "relative overflow-hidden rounded-2xl",
+            "relative overflow-hidden rounded-[15px]",
             featured ? "aspect-[21/8]" : "aspect-[4/3]"
           )}>
           {img ? (
@@ -55,7 +54,7 @@ export default function NewsCard({
           )}
 
           {/* subtle inner border/highlight to match mock */}
-          <div className='pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,.08)]' />
+          <div className='pointer-events-none absolute inset-0 rounded-[15px] ring-1 ring-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,.08)]' />
         </div>
 
         {/* Text */}

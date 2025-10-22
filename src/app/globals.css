@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "swiper/css";
 @import "swiper/css/pagination";
+@import "remixicon/fonts/remixicon.css";
 
 :root {
   --font-xwide: "font-xwide";
@@ -33,6 +34,14 @@
 @font-face {
   font-family: "norms-pro";
   src: url("/fonts/tt-norms-pro-trail-normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "benzin-extraBold";
+  src: url("/fonts/benzin-extraBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

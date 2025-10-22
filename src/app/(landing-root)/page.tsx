@@ -5,6 +5,7 @@ import ContactUsForm from "@/components/sections/ContactUsForm"
 import FAQSection from "@/components/sections/FAQSection"
 import HeroSection from "@/components/sections/HeroSection"
 import NewsSection from "@/components/sections/NewsSection"
+import WhatWeDo from "@/components/sections/WhatWeDo"
 
 export default function Page() {
   return (
@@ -12,10 +13,11 @@ export default function Page() {
       <HeroSection />
       <ClientLogos />
       <AboutUs />
+      <WhatWeDo />
       <CapabilitiesSection />
       <NewsSection />
-      <FAQSection />
       <ContactUsForm />
+      <FAQSection />
     </>
   )
 }

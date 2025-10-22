@@ -1,84 +1,131 @@
 "use client"
 
-import React, { useState } from "react"
-import { ArrowBtn } from "../ui/ArrowBtn"
+import React, { useMemo, useState } from "react"
 import { useTranslations } from "next-intl"
 import axios from "axios"
+import { ChevronDown } from "lucide-react"
 
-export default function ContactUsForm() {
-  const t = useTranslations("contactUs")
-  const [form, setForm] = useState({ name: "", email: "", message: "" })
+type TopicKey = "news" | "market" | "funds"
+
+export default function EmailAlertsSignup() {
+  const t = useTranslations("emailAlerts") // add keys below
+  const [email, setEmail] = useState("")
+  const [topics, setTopics] = useState<Record<TopicKey, boolean>>({
+    news: false,
+    market: false,
+    funds: false,
+  })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
-  }
+  const isValidEmail = useMemo(
+    () => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()),
+    [email]
+  )
+
+  const toggle = (k: TopicKey) => setTopics((p) => ({ ...p, [k]: !p[k] }))
 
   const handleSubmit = async () => {
+    if (!isValidEmail) return
     setIsSubmitting(true)
     try {
-      await axios.post("/api/contact-us", form)
-      alert("Message sent!")
-      setForm({ name: "", email: "", message: "" })
-    } catch (err) {
-      console.error(err)
-      alert("Failed to send")
+      await axios.post("/api/email-alerts", {
+        email: email.trim(),
+        topics: Object.entries(topics)
+          .filter(([, v]) => v)
+          .map(([k]) => k),
+      })
+      setEmail("")
+      setTopics({ news: false, market: false, funds: false })
+      alert(t("success"))
+    } catch (e) {
+      console.error(e)
+      alert(t("failed"))
     } finally {
       setIsSubmitting(false)
     }
   }
 
   return (
-    <section id='contact-us' className='bg-[#050B1A] py-10 px-6 md:px-12'>
-      <div className='max-w-7xl mx-auto flex flex-col md:flex-row items-stretch rounded-md overflow-hidden'>
-        {/* Left Side - Image + Title */}
-        <div
-          className='w-full md:w-1/2 relative bg-cover bg-center py-[50px] px-[30px]'
-          style={{ backgroundImage: `url("/contact-us-photo.png")` }}>
-          <div className='text-white font-[Roboto] text-[40px] not-italic font-bold leading-none uppercase'>
-            {t("contactUs")}
-          </div>
-        </div>
+    <section className='bg-[#050505] py-20 px-6'>
+      <div className='max-w-5xl mx-auto text-center font-[norms-pro]'>
+        <h2 className='text-white text-5xl md:text-5xl font-medium tracking-tight'>
+          {t("title")}
+        </h2>
+        <p className='mt-3 text-[#AFAFAF] text-base md:text-lg'>{t("subtitle")}</p>
 
-        {/* Right Side - Form */}
-        <div className='w-full md:w-1/2 bg-[#121C2E] p-6 flex flex-col justify-center gap-[30px] rounded-md'>
-          <div className='flex flex-col gap-[20px]'>
-            <div className='flex flex-col md:flex-row gap-[20px]'>
-              <input
-                name='name'
-                value={form.name}
-                type='text'
-                onChange={handleChange}
-                placeholder={t("name")}
-                className='w-full md:w-1/2 rounded-[24px] bg-[#1B2B44] text-white px-4 py-2 outline-none placeholder:text-[#8CA3BA]'
-              />
-              <input
-                name='email'
-                value={form.email}
-                type='email'
-                onChange={handleChange}
-                placeholder={t("email")}
-                className='w-full md:w-1/2 rounded-[24px] bg-[#1B2B44] text-white px-4 py-2 outline-none placeholder:text-[#8CA3BA]'
-              />
-            </div>
-            <textarea
-              name='message'
-              value={form.message}
-              placeholder={t("msg")}
-              onChange={handleChange}
-              className='rounded-[24px] bg-[#1B2B44] text-white px-4 py-3 h-32 resize-none outline-none placeholder:text-[#8CA3BA]'
+        {/* Input Row */}
+        <div className='mt-8 flex items-center gap-4 max-w-[813px] mx-auto'>
+          {/* Email pill */}
+          <div className='flex-1 relative'>
+            <input
+              type='email'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder={t("placeholder")}
+              aria-label={t("placeholder")}
+              className='w-full h-[72px] rounded-[30px] bg-[#242424] text-white/90 placeholder:text-[#8C94A3]
+                         px-6 pr-16 outline-none ring-1 ring-black/20 focus:ring-2 focus:ring-white/20
+                         text-lg'
             />
           </div>
 
-          <ArrowBtn
+          {/* Sign Up button */}
+          <button
             onClick={handleSubmit}
-            arrow_bg='black'
-            className='self-start mt-2 disabled:opacity-50'
-            disabled={isSubmitting}>
-            {isSubmitting ? t("sending") || "Sending..." : t("contactUs")}
-          </ArrowBtn>
+            disabled={!isValidEmail || isSubmitting}
+            className='whitespace-nowrap h-[72px] px-8 md:px-10 rounded-[36px] text-white font-semibold text-lg
+                       disabled:opacity-60 disabled:cursor-not-allowed
+                       bg-[linear-gradient(180deg,#FF9C33_0%,#D16B11_100%)]
+                       shadow-[0_8px_24px_rgba(209,107,17,0.45)]'>
+            {isSubmitting ? t("signing") : t("cta")}
+          </button>
+        </div>
+
+        {/* Topic checkboxes */}
+        <div className='mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 justify-items-center text-left max-w-[560px] mx-auto'>
+          <TopicBox
+            label={t("news")}
+            checked={topics.news}
+            onChange={() => toggle("news")}
+          />
+          <TopicBox
+            label={t("market")}
+            checked={topics.market}
+            onChange={() => toggle("market")}
+          />
+          <TopicBox
+            label={t("funds")}
+            checked={topics.funds}
+            onChange={() => toggle("funds")}
+          />
         </div>
       </div>
     </section>
+  )
+}
+
+/** Minimal custom checkbox to match the square outline style */
+function TopicBox({
+  label,
+  checked,
+  onChange,
+}: {
+  label: string
+  checked: boolean
+  onChange: () => void
+}) {
+  return (
+    <label
+      className='inline-flex items-center gap-3 cursor-pointer select-none text-[#C7CFDB]'
+      onClick={onChange}>
+      <span
+        className={`size-4 rounded-[4px] border-2 ${
+          checked ? "border-white bg-white" : "border-[#8C94A3] bg-transparent"
+        }`}
+        role='checkbox'
+        aria-checked={checked}
+      />
+      <span className='text-base'>{label}</span>
+    </label>
   )
 }

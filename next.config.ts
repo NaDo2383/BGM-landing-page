@@ -53,7 +53,22 @@ const nextConfig: NextConfig = {
         hostname: "res.cloudinary.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+        pathname: "/**",
+      },
     ],
+  },
+
+  async rewrites() {
+    return [
+      {
+        source: "/_pdf/test.pdf", // your local path used in the app
+        destination:
+          "https://www.cte.iup.edu/cte/Resources/PDF_TestPage.pdf", // remote PDF
+      },
+    ]
   },
 }
 

@@ -50,7 +50,7 @@ export default function ClientLogos() {
   }, [autoplay])
 
   return (
-    <section className='bg-[#020618] overflow-hidden py-10 sm:py-12 lg:py-16'>
+    <section className='bg-[#050505] overflow-hidden py-10 sm:py-12 lg:py-16'>
       <div className='mx-auto max-w-7xl px-4'>
         {/* Embla viewport */}
         <div

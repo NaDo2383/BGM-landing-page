@@ -39,19 +39,19 @@ export default function Navbar() {
         {t("about")}
       </Link>
       <Link
-        href='#'
+        href='/asset-management'
         onClick={onClick}
         className='text-white/90 hover:text-white text-[14px] transition whitespace-pre text-center'>
         {t("management")}
       </Link>
       <Link
-        href='#'
+        href='/career'
         onClick={onClick}
         className='text-white/90 hover:text-white text-[14px] transition whitespace-pre text-center'>
         {t("careers")}
       </Link>
       <Link
-        href='/newsInsight'
+        href='/news-Insight'
         onClick={onClick}
         className='text-white/90 hover:text-white text-[14px] transition whitespace-pre text-center'>
         {t("news")}
