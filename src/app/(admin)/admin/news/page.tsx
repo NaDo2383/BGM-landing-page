@@ -44,8 +44,8 @@ export default function NewsAdminPage() {
   }, [router])
 
   const fetchNews = async (): Promise<void> => {
-    const res = await axios.get<NewsItem[]>("/api/news")
-    setNews(res.data)
+    const res = await axios.get<{ items: NewsItem[] }>("/api/news")
+    setNews(res.data.items)
   }
 
   const uploadToCloudinary = async (file: File): Promise<string> => {
@@ -164,7 +164,7 @@ export default function NewsAdminPage() {
               key={"newscardinadmin" + index}
               title={item.title}
               description={item.description}
-              img={item.imageUrl}
+              imageUrl={item.imageUrl}
               id={item.id}
             />
             <div className='flex justify-between mt-2'>

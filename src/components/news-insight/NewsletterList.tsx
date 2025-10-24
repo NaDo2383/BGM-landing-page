@@ -1,16 +1,11 @@
 // components/NewsletterList.tsx
 import React from "react"
 import Image from "next/image"
-
-export type NewsItem = {
-  id: string
-  title: string
-  timeAgo: string
-  image: string
-}
+import { newsType } from "./NewsInsightPage"
+import { timeAgoFromMs } from "@/utils/utils"
 
 type Props = {
-  items: NewsItem[]
+  items: newsType[]
   title?: string
   className?: string
   onItemClick?: (id: string) => void
@@ -36,21 +31,26 @@ export default function NewsletterList({
             <button
               className='text-left flex flex-col justify-between h-[152px]'
               onClick={() => onItemClick?.(it.id)}>
-              <h3 className='text-lg text-white line-clamp-3 group-hover:text-white'>
-                {it.title}
-              </h3>
-              <p className='mt-3 text-[14px] text-[#afafaf]'>{it.timeAgo}</p>
+              <h3
+                className='text-white font-bold text-[18px] line-clamp-3 wrap-break-word max-w-[278px]'
+                dangerouslySetInnerHTML={{ __html: it.description }}
+              />
+              <p className='mt-3 text-[14px] text-[#afafaf]'>
+                {timeAgoFromMs(it.createdAt)}
+              </p>
             </button>
 
             <div className='shrink-0'>
-              <Image
-                src={it.image}
-                alt=''
-                width={216}
-                height={152}
-                className='h-[152px] w-[216px] rounded-[20px] object-cover '
-                sizes='(max-width: 1024px) 33vw, 140px'
-              />
+              {it.imageUrl && (
+                <Image
+                  src={it.imageUrl}
+                  alt=''
+                  width={216}
+                  height={152}
+                  className='h-[152px] w-[216px] rounded-[20px] object-cover '
+                  sizes='(max-width: 1024px) 33vw, 140px'
+                />
+              )}
             </div>
           </li>
         ))}

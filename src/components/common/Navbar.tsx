@@ -6,6 +6,7 @@ import LanguageSelector from "./LanguageSelector"
 import Button from "../ui/Button"
 import Image from "next/image"
 import Link from "next/link"
+import { useScrollToId } from "@/utils/utils"
 
 export default function Navbar() {
   const t = useTranslations("nav")
@@ -13,6 +14,8 @@ export default function Navbar() {
 
   const close = useCallback(() => setOpen(false), [])
   const toggle = useCallback(() => setOpen((v) => !v), [])
+
+  const scrollTo = useScrollToId()
 
   // Close on ESC
   useEffect(() => {
@@ -45,7 +48,7 @@ export default function Navbar() {
         {t("management")}
       </Link>
       <Link
-        href='/career'
+        href='/careers'
         onClick={onClick}
         className='text-white/90 hover:text-white text-[14px] transition whitespace-pre text-center'>
         {t("careers")}
@@ -75,7 +78,13 @@ export default function Navbar() {
           {/* Right side: lang + CTA (desktop) */}
           <div className='hidden md:flex items-center space-x-4'>
             <LanguageSelector />
-            <Button variant='transparent'>{t("subscribe")}</Button>
+            <Button
+              variant='transparent'
+              onClick={() => {
+                scrollTo("subscribe")
+              }}>
+              {t("subscribe")}
+            </Button>
           </div>
 
           {/* Mobile: hamburger + lang */}

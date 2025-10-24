@@ -12,7 +12,8 @@ export default function Button({
   type = "button",
   ...props
 }: ButtonProps) {
-  const baseStyles = "text-white rounded-full p-[1.5px] flex items-center transition-all"
+  const baseStyles =
+    "text-white rounded-full p-[1.5px] flex items-center transition-all cursor-pointer"
   const variants = {
     primary: "",
     secondary: " ",

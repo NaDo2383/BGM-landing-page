@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl"
 import Card from "../ui/Card"
 import { ArrowBtn } from "../ui/ArrowBtn"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function CapabilitiesSection() {
   const t = useTranslations("capabilities")
@@ -38,7 +39,7 @@ export default function CapabilitiesSection() {
   ]
 
   return (
-    <section className='bg-[url("/modern-gradiant.png")] bg-cover bg-center p-6 sm:p-10 sm:pt-0 lg:p-[100px] lg:pt-[0px]'>
+    <section className='bg-[url("/modern-gradiant.png")] bg-fill bg-center p-6 sm:p-18 lg:p-[100px] sm:pt-0'>
       <div className='mx-auto max-w-[1240px]  px-2 sm:px-4 flex flex-col gap-8 sm:gap-10 lg:gap-[50px]'>
         {/* Heading */}
         <div className='flex flex-col gap-2 font-[norms-pro]'>
@@ -67,12 +68,11 @@ export default function CapabilitiesSection() {
         {/* CTA */}
         <div className='flex justify-center'>
           <div className='w-full sm:w-auto'>
-            <ArrowBtn
-              arrow_bg='black'
-              onClick={() => alert("Go!")}
-              className='w-full sm:w-auto'>
-              {t("seeMore")}
-            </ArrowBtn>
+            <Link href='/asset-management'>
+              <ArrowBtn arrow_bg='black' className='w-full sm:w-auto'>
+                {t("seeMore")}
+              </ArrowBtn>
+            </Link>
           </div>
         </div>
       </div>

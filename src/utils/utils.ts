@@ -41,3 +41,41 @@ export async function renderPdfFirstPageToDivBg(pdfUrl: string, targetDivId: str
   await pdf.cleanup()
   await pdf.destroy()
 }
+
+
+import { useCallback } from "react";
+
+export function useScrollToId(defaultOffset = 80) {
+  return useCallback((id: string, offset = defaultOffset) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }, [defaultOffset]);
+}
+
+// utils/timeAgo.ts
+export function timeAgoFromMs(createdAtMs: number, nowMs = Date.now()): string {
+  const diffMs = nowMs - createdAtMs;            // negative means future
+  const absMs = Math.abs(diffMs);
+
+  const sec = Math.floor(absMs / 1000);
+  const min = Math.floor(sec / 60);
+  const hrs = Math.floor(min / 60);
+  const days = Math.floor(hrs / 24);
+  const months = Math.floor(days / 30);
+  const years = Math.floor(days / 365);
+
+  const fmt = (n: number, u: string) => `${n} ${u}${n !== 1 ? "s" : ""}`;
+  const suffix = diffMs >= 0 ? "ago" : "from now";
+
+  let val: string;
+  if (sec < 60) val = fmt(sec, "second");
+  else if (min < 60) val = fmt(min, "minute");
+  else if (hrs < 24) val = fmt(hrs, "hour");
+  else if (days < 30) val = fmt(days, "day");
+  else if (months < 12) val = fmt(months, "month");
+  else val = fmt(years, "year");
+
+  return `${val} ${suffix}`;
+}

@@ -6,7 +6,9 @@ export default function CareerDevelopment() {
   const t = useTranslations("careers")
 
   return (
-    <section className='max-w-7xl mx-auto flex flex-col items-center justify-center my-20 gap-16 '>
+    <section
+      id='career-developments'
+      className='max-w-7xl mx-auto flex flex-col items-center justify-center my-20 gap-16 '>
       <div className=' font-[norms-pro] text-center'>
         <div className=' font-medium text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent '>
           {t("career-developments")}

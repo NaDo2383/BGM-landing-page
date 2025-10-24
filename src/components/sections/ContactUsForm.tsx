@@ -3,7 +3,6 @@
 import React, { useMemo, useState } from "react"
 import { useTranslations } from "next-intl"
 import axios from "axios"
-import { ChevronDown } from "lucide-react"
 
 type TopicKey = "news" | "market" | "funds"
 
@@ -28,7 +27,7 @@ export default function EmailAlertsSignup() {
     if (!isValidEmail) return
     setIsSubmitting(true)
     try {
-      await axios.post("/api/email-alerts", {
+      await axios.post("/api/contact-us", {
         email: email.trim(),
         topics: Object.entries(topics)
           .filter(([, v]) => v)
@@ -46,7 +45,7 @@ export default function EmailAlertsSignup() {
   }
 
   return (
-    <section className='bg-[#050505] py-20 px-6'>
+    <section className='bg-[#050505] py-20 px-6' id='subscribe'>
       <div className='max-w-5xl mx-auto text-center font-[norms-pro]'>
         <h2 className='text-white text-5xl md:text-5xl font-medium tracking-tight'>
           {t("title")}
@@ -64,8 +63,8 @@ export default function EmailAlertsSignup() {
               placeholder={t("placeholder")}
               aria-label={t("placeholder")}
               className='w-full h-[72px] rounded-[30px] bg-[#242424] text-white/90 placeholder:text-[#8C94A3]
-                         px-6 pr-16 outline-none ring-1 ring-black/20 focus:ring-2 focus:ring-white/20
-                         text-lg'
+                        px-6 pr-16 outline-none ring-1 ring-black/20 focus:ring-2 focus:ring-white/20
+                        text-lg'
             />
           </div>
 
@@ -74,9 +73,9 @@ export default function EmailAlertsSignup() {
             onClick={handleSubmit}
             disabled={!isValidEmail || isSubmitting}
             className='whitespace-nowrap h-[72px] px-8 md:px-10 rounded-[36px] text-white font-semibold text-lg
-                       disabled:opacity-60 disabled:cursor-not-allowed
-                       bg-[linear-gradient(180deg,#FF9C33_0%,#D16B11_100%)]
-                       shadow-[0_8px_24px_rgba(209,107,17,0.45)]'>
+                      disabled:opacity-60 disabled:cursor-not-allowed
+                      bg-[linear-gradient(180deg,#FF9C33_0%,#D16B11_100%)]
+                      shadow-[0_8px_24px_rgba(209,107,17,0.45)]'>
             {isSubmitting ? t("signing") : t("cta")}
           </button>
         </div>

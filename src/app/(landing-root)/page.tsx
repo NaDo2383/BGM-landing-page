@@ -12,7 +12,7 @@ export default function Page() {
     <>
       <HeroSection />
       <ClientLogos />
-      <AboutUs />
+      <AboutUs imageColoredBg />
       <WhatWeDo />
       <CapabilitiesSection />
       <NewsSection />

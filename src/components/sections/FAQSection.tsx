@@ -81,8 +81,10 @@ export default function FAQSection() {
                     aria-expanded={isOpen}
                     className={`
                       w-full text-left flex items-center justify-between
-                      px-4 sm:px-6 py-4 sm:py-5 mb-2 rounded-[30px] bg-[#111111]
-                      transition-colors text-[26px] font-[norms-pro] text-[#919191]
+                      px-4 sm:px-6 py-4 sm:py-5  ${
+                        isOpen ? "rounded-t-[30px]" : "rounded-[30px] mb-2"
+                      } bg-[#111111]
+                      transition-all text-[26px] font-[norms-pro] text-[#919191]
                       ${isOpen ? "bg-[#0F172B]" : "hover:bg-white/5"}
                     `}>
                     <span className=' font-medium text-sm sm:text-base'>
@@ -117,12 +119,10 @@ export default function FAQSection() {
                         transition={{ duration: 0.28 }}
                         className='overflow-hidden'>
                         <div
-                          className="
-                            px-4 sm:px-6 py-4 sm:py-5
+                          className='
+                            px-4 sm:px-6 py-4 sm:py-5 mb-2 rounded-b-[30px]
                             bg-[#0F172B] text-white text-sm sm:text-[16px] relative
-                            after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px]
-                            after:bg-gradient-to-r after:from-[#ef7a0b] after:to-[#3F61F1]
-                          ">
+                          '>
                           {faq.answer}
                         </div>
                       </motion.div>

@@ -3,9 +3,11 @@ import { useTranslations } from "next-intl"
 import React from "react"
 import AboutUs from "../sections/AboutUs"
 import Image from "next/image"
+import { useScrollToId } from "@/utils/utils"
 
 const AboutUsPage = () => {
   const t = useTranslations("about-us")
+  const scrollTo = useScrollToId()
 
   const data = [
     {
@@ -38,20 +40,26 @@ const AboutUsPage = () => {
               </span>
             </div>
             <div className='z-20 mt-14 w-full justify-center flex gap-5'>
-              <span className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+              <span
+                onClick={() => scrollTo("bg-theory")}
+                className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
                 {t("BGTheory")}
               </span>
-              <span className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+              <span
+                onClick={() => scrollTo("asset-mamangement")}
+                className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
                 {t("BGMAssetmanagement")}
               </span>
-              <span className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+              <span
+                onClick={() => scrollTo("team")}
+                className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
                 {t("Team introduction")}
               </span>
             </div>
           </div>
         </section>
-        <AboutUs imageColoredBg={true} bgcolor={"#050505"} />
-        <section className='w-full bg-[#050505]'>
+        <AboutUs id='bg-theory' imageColoredBg={true} bgcolor={"#050505"} />
+        <section id='asset-mamangement' className='w-full bg-[#050505]'>
           <div className='flex flex-col justify-center items-center max-w-7xl mx-auto gap-12 '>
             <div className='text-[64px] font-[850] font-[BGMxwidemedium] bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent whitespace-pre text-center'>
               {t("bgm-name").toUpperCase()}
@@ -81,7 +89,7 @@ const AboutUsPage = () => {
           </div>
         </section>
 
-        <section className='bg-[#050505] py-10 px-6 md:p-[100px]'>
+        <section id='team' className='bg-[#050505] py-10 px-6 md:p-[100px]'>
           <div className=' flex  max-w-[1112px] gap-[113px] mx-auto'>
             <div className='w-[60%] min-w-[513px] flex flex-col justify-center gap-6'>
               <div className=' text-[#fff] font-[norms-pro] font-[450] text-3xl whitespace-pre-wrap'>

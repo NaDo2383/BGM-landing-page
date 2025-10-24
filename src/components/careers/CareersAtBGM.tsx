@@ -23,7 +23,9 @@ export default function CareersAtBGM() {
   ]
 
   return (
-    <section className='max-w-7xl mx-auto flex flex-col items-center justify-center my-20 gap-16'>
+    <section
+      id='life-at-bgm'
+      className='max-w-7xl mx-auto flex flex-col items-center justify-center my-20 gap-16'>
       <div className=' font-[norms-pro] text-center'>
         <div className=' font-medium text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent '>
           {t("life-at-bgm")}

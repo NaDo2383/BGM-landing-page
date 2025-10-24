@@ -19,7 +19,9 @@ export default function StudentsGraduates() {
   ]
 
   return (
-    <section className='max-w-7xl mx-auto flex flex-col items-center justify-center my-20 pb-24 gap-16 bg-[url("/student-section-bg.png")] bg-fill bg-center'>
+    <section
+      id='students-and-graduates'
+      className='max-w-7xl mx-auto flex flex-col items-center justify-center my-20 pb-24 gap-16 bg-[url("/student-section-bg.png")] bg-fill bg-center'>
       <div className=' font-[norms-pro] text-center'>
         <div className=' font-medium text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent '>
           {t("students-and-graduates")}

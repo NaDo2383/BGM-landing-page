@@ -8,7 +8,7 @@ import clsx from "clsx"
 interface NewsCardProps {
   title: string
   description: string
-  img?: string
+  imageUrl?: string
   id: string
   className?: string
   featured?: boolean // optional: make the first card wider elsewhere
@@ -17,7 +17,7 @@ interface NewsCardProps {
 export default function NewsCard({
   title,
   description,
-  img,
+  imageUrl,
   id,
   className,
   featured = false,
@@ -40,9 +40,9 @@ export default function NewsCard({
             "relative overflow-hidden rounded-[15px]",
             featured ? "aspect-[21/8]" : "aspect-[4/3]"
           )}>
-          {img ? (
+          {imageUrl ? (
             <Image
-              src={img}
+              src={imageUrl}
               alt={title}
               fill
               sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'

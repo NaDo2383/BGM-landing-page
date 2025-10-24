@@ -1,9 +1,11 @@
 "use client"
 import React from "react"
 import { useTranslations } from "next-intl"
+import { useScrollToId } from "@/utils/utils"
 
 const SmallHero = () => {
   const t = useTranslations("newsInsight")
+  const scrollToId = useScrollToId()
 
   return (
     <section className='relative min-h-[400px] flex items-center justify-center flex-col overflow-hidden '>
@@ -19,13 +21,19 @@ const SmallHero = () => {
           </span>
         </div>
         <div className='z-20 mt-14 w-full justify-center flex gap-5'>
-          <span className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+          <span
+            onClick={() => scrollToId("news")}
+            className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
             {t("news")}
           </span>
-          <span className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+          <span
+            onClick={() => scrollToId("news-letter")}
+            className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
             {t("news-letter")}
           </span>
-          <span className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+          <span
+            onClick={() => scrollToId("outlook")}
+            className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
             {t("outlook")}
           </span>
         </div>

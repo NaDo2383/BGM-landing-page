@@ -1,3 +1,4 @@
+"use client"
 import { useTranslations } from "next-intl"
 import React from "react"
 import CareersAtBGM from "./CareersAtBGM"
@@ -5,9 +6,11 @@ import Benefits from "./Benefits"
 import StudentsGraduates from "./StudentsGraduates"
 import CareerDevelopment from "./CareerDevelopment"
 import SocialCampaign from "./SocialCampaign"
+import { useScrollToId } from "@/utils/utils"
 
 export default function CareersPage() {
   const t = useTranslations("careers")
+  const scrollTo = useScrollToId()
 
   return (
     <>
@@ -24,19 +27,29 @@ export default function CareersPage() {
             </span>
           </div>
           <div className='z-20 mt-14 w-full justify-center flex gap-5'>
-            <span className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+            <span
+              onClick={() => scrollTo("life-at-bgm")}
+              className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
               {t("life-at-bgm")}
             </span>
-            <span className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+            <span
+              onClick={() => scrollTo("benefits")}
+              className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
               {t("benefits")}
             </span>
-            <span className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+            <span
+              onClick={() => scrollTo("students-and-graduates")}
+              className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
               {t("students-and-graduates")}
             </span>
-            <span className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+            <span
+              onClick={() => scrollTo("career-developments")}
+              className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
               {t("career-developments")}
             </span>
-            <span className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+            <span
+              onClick={() => scrollTo("social-campaign")}
+              className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
               {t("social-campaign")}
             </span>
           </div>

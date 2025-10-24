@@ -11,9 +11,9 @@ type Item = {
 }
 
 const ITEMS: Item[] = [
-  { id: "fixed", img: "/what-we-do/1.jpg" },
-  { id: "realestate", img: "/what-we-do/2.jpg" },
-  { id: "retirement", img: "/what-we-do/3.jpg" },
+  { id: "fixed", img: "/what-we-do/income-fund.png" },
+  { id: "realestate", img: "/what-we-do/real-state-fund.png" },
+  { id: "retirement", img: "/what-we-do/saving-fund.png" },
 ]
 
 export default function WhatWeDo() {
@@ -21,7 +21,6 @@ export default function WhatWeDo() {
   const [active, setActive] = useState<Item["id"]>(ITEMS[0].id)
 
   const activeItem = ITEMS.find((i) => i.id === active) ?? ITEMS[0]
-  const activeTitle = t(`items.${activeItem.id}.title`)
   const activeAlt = t(`items.${activeItem.id}.alt`)
 
   const onKey = useCallback(

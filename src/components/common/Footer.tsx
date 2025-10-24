@@ -5,6 +5,7 @@ import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6"
 import { FaMapMarkerAlt } from "react-icons/fa"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import Link from "next/link"
 
 export default function Footer() {
   const t = useTranslations("footer")
@@ -37,10 +38,18 @@ export default function Footer() {
             </div>
             <div className='flex flex-col gap-4  text-gray-300'>
               <div className='font-bold text-sm text-white'>{t("pages")}</div>
-              <div>{t("about-us")}</div>
-              <div>{t("asset-management")}</div>
-              <div>{t("career")}</div>
-              <div>{t("news-insights")}</div>
+              <Link href={"/about-us"}>
+                <div>{t("about-us")}</div>
+              </Link>
+              <Link href={"/asset-management"}>
+                <div>{t("asset-management")}</div>
+              </Link>
+              <Link href={"/careers"}>
+                <div>{t("career")}</div>
+              </Link>
+              <Link href='/news-Insight'>
+                <div>{t("news-insights")}</div>
+              </Link>
             </div>
             <div className='  flex flex-col gap-4  text-gray-300'>
               <div className='font-bold text-sm text-white'>{t("contact")}</div>

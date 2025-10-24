@@ -82,7 +82,6 @@
     "news-insights": "News & Insight",
     "contact": "Contacts"
   },
-
   "emailAlerts": {
     "title": "Email Alerts",
     "subtitle": "FAQs Designed To Provide The Information You Need.",
@@ -160,12 +159,7 @@
   },
   "outlook": {
     "title1": "Global Outlook",
-    "title2": "Monthly Global Investment & Macro Insights by \nBGM Asset Management",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": ""
+    "title2": "Monthly Global Investment & Macro Insights by \nBGM Asset Management"
   },
   "careers": {
     "title1": "Careers at bgm",
@@ -216,5 +210,15 @@
     "email": "Email",
     "fields-are-req": "All fields are required",
     "apply": "Apply"
+  },
+  "asset-management": {
+    "title1": "Asset management",
+    "simplify-invest": "Simplifying Investment",
+    "fixed-income": "Fixed Income fund",
+    "real-state": "Real estate fund",
+    "saving": "BGM Savings Plan",
+    "fixed-income-text": "The “BGM Fixed Income Portfolio Private Investment Fund” is the first investment fund established by our company with the purpose of creating sustainable growth and shared value. \n\nIt provides professional and ethical investment services by managing risks prudently and building a portfolio of fixed-income instruments based on comprehensive research and analysis.",
+    "real-state-text": "The “BGM Real Estate Portfolio Private Investment Fund” is an investment fund dedicated to creating future value for investors by combining asset and real estate management. \n\nIt focuses on value-driven real estate investments, guided by comprehensive research and international standards of risk management.",
+    "saving-text": "Balanced Growth Management LLC, operating under a special license from the Financial Regulatory Commission, implements the “Savings Program” to responsibly manage monthly contributions from employers and employees. \n\nThe program aims to promote long-term financial security, create sustainable value, and support the shared goal of building financial freedom for the future."
   }
 }

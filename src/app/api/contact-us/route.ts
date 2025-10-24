@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server"
 
 interface ContactFormData {
-  name: string
   email: string
-  message: string
+  topics: string[]
 }
 
 export async function POST(request: Request) {
@@ -23,6 +22,7 @@ export async function POST(request: Request) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     })
+
 
     const text = await response.text()
 

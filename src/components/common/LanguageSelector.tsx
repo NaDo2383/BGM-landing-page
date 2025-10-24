@@ -40,7 +40,7 @@ export default function LanguageSelector() {
   return (
     <button
       onClick={handleToggle}
-      className='text-white rounded-full p-[1.5px] flex items-center transition-all'
+      className='text-white rounded-full p-[1.5px] flex items-center transition-all cursor-pointer'
       style={{
         background:
           "linear-gradient(122deg,rgba(255, 255, 255, 1) 2%, #211d1c 25%, #211d1c 75%, rgba(255, 255, 255, 1) 98%)",

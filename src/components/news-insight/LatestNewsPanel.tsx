@@ -1,10 +1,10 @@
 // components/LatestNewsPanel.tsx
 import React from "react"
-import Image from "next/image"
-import type { NewsItem } from "./NewsletterList"
+import { newsType } from "./NewsInsightPage"
+import { timeAgoFromMs } from "@/utils/utils"
 
 type Props = {
-  items: NewsItem[]
+  items: newsType[]
   title?: string
   className?: string
   onItemClick?: (id: string) => void
@@ -40,17 +40,20 @@ export default function LatestNewsPanel({
           <ul className='space-y-3'>
             {items.map((it) => (
               <div key={it.id} className='  p-4 flex gap-1.5 border-b border-[#434343]'>
-                <span className='size-2.5 inline-flex rounded-full bg-orange-400/90 mt-1' />
+                <span className='size-2.5 min-w-2.5 inline-flex rounded-full bg-orange-400/90 mt-1' />
                 <button
                   className='text-left w-full font-[norms-pro]'
                   onClick={() => onItemClick?.(it.id)}>
                   <div className=' font-bold text-[14px]  text-[#AFAFAF]'>
-                    <span className='uppercase tracking-wider'>{it.timeAgo}</span>
+                    <span className='uppercase tracking-wider'>
+                      {timeAgoFromMs(it.createdAt)}
+                    </span>
                   </div>
 
-                  <h3 className='text-white font-bold text-[18px] line-clamp-3'>
-                    {it.title}
-                  </h3>
+                  <h3
+                    className='text-white font-bold text-[18px] line-clamp-3'
+                    dangerouslySetInnerHTML={{ __html: it.description }}
+                  />
                 </button>
               </div>
             ))}

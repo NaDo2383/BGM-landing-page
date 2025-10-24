@@ -5,13 +5,16 @@ import Image from "next/image"
 type aboutUsPropsType = {
   bgcolor?: string
   imageColoredBg?: boolean
+  id?: string
 }
 
-const AboutUs = ({ bgcolor = "#050505" }: aboutUsPropsType) => {
+const AboutUs = ({ bgcolor = "#050505", id, imageColoredBg }: aboutUsPropsType) => {
   const t = useTranslations("aboutCard")
 
   return (
-    <section className={`bg-[${bgcolor}] overflow-hidden py-10 sm:py-14 lg:py-[64px]`}>
+    <section
+      id={id}
+      className={`bg-[${bgcolor}] overflow-hidden py-10 sm:py-14 lg:py-[64px]`}>
       <div
         className='
           mx-auto max-w-[1240px]
@@ -22,7 +25,11 @@ const AboutUs = ({ bgcolor = "#050505" }: aboutUsPropsType) => {
         {/* Image */}
         <div className='relative w-full md:w-[460px] aspect-[16/10] md:aspect-auto md:min-h-[420px] lg:min-h-[506px] max-h-[540px] flex justify-center items-center'>
           <Image
-            src={"/about-us-card-image-colored.png"}
+            src={
+              imageColoredBg
+                ? "/about-us-card-image-colored.png"
+                : "/about-us-card-image.png"
+            }
             alt='About us'
             fill
             sizes='(max-width: 768px) 100vw, 50vw'
@@ -52,7 +59,7 @@ const AboutUs = ({ bgcolor = "#050505" }: aboutUsPropsType) => {
               </h2>
             </div>
 
-            <div className=' text-lg font-[norms-pro] text-[#90A1B9]'>
+            <div className=' text-lg font-[norms-pro] text-[#AFAFAF]'>
               <div>{t("text")}</div>
               <br />
               <div>{t("text1")}</div>
