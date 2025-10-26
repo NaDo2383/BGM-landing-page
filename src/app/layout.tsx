@@ -3,8 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { NextIntlClientProvider } from "next-intl"
 import { getLocale, getMessages } from "next-intl/server"
-import Navbar from "@/components/common/Navbar"
-import Footer from "@/components/common/Footer"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +15,43 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "BGM",
-  description: "Balanced Growth Management",
+  metadataBase: new URL("https://balancedgrowth.mn"),
+  title: {
+    default: "Balanced Growth Management",
+    template: "%s · BGM",
+  },
+  description: "Balanced growth funds, insights, and tools.",
+  applicationName: "BGM",
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/en",
+      mn: "/mn",
+    },
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "BGM",
+    title: "Balanced Growth Management",
+    description: "Balanced growth funds, insights, and tools.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@bgm",
+    creator: "@bgm",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png" }, // optional, for older browsers
+    ],
+  },
 }
 
 export default async function RootLayout({

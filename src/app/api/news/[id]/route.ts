@@ -1,100 +1,69 @@
-export const dynamic = "force-dynamic"
+// app/api/news/[id]/route.ts
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
-import { adminDB } from "@/lib/firebase-admin"
-import type { NextRequest } from "next/server"
-import { NextResponse } from "next/server"
+import { adminDB } from "@/lib/firebase-admin";
+import { NextResponse } from "next/server";
 
-// Helper: normalize Firestore Timestamp → ISO + millis (keeps original if already string/number)
-function normalizeTimestamp(ts: any) {
-  try {
-    if (ts && typeof ts.toDate === "function") {
-      const d = ts.toDate() as Date
-      return { iso: d.toISOString(), ms: d.getTime() }
-    }
-    if (ts && typeof ts._seconds === "number") {
-      const ms = ts._seconds * 1000 + Math.floor((ts._nanoseconds ?? 0) / 1e6)
-      return { iso: new Date(ms).toISOString(), ms }
-    }
-    if (typeof ts === "number") return { iso: new Date(ts).toISOString(), ms: ts }
-    if (typeof ts === "string") return { iso: new Date(ts).toISOString(), ms: Date.parse(ts) }
-  } catch { }
-  return ts
-}
-
-/**
- * GET /api/news/:id
- */
+/** GET /api/news/:id */
 export async function GET(
-  _req: NextRequest,
-  { params }: { params: { id: string } }
+  _req: Request,
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = params
-    if (!id) {
-      return NextResponse.json({ error: "Missing id" }, { status: 400 })
-    }
+    const { id } = await params;
+    if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
 
-    const snap = await adminDB.collection("news").doc(id).get()
-    if (!snap.exists) {
-      return NextResponse.json({ error: "Not found" }, { status: 404 })
-    }
+    const snap = await adminDB.collection("news").doc(id).get();
+    if (!snap.exists) return NextResponse.json({ error: "Not found" }, { status: 404 });
 
-    const data = snap.data() || {}
-
-    return NextResponse.json({
-      id: snap.id,
-      ...data,
-    })
+    return NextResponse.json({ id: snap.id, ...(snap.data() ?? {}) });
   } catch (err) {
-    console.error("[GET /api/news/:id] Error:", err)
-    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 })
+    console.error("[GET /api/news/:id] Error:", err);
+    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }
 }
 
-/**
- * PUT /api/news/:id
- */
+/** PUT /api/news/:id */
 export async function PUT(
-  req: NextRequest,
-  { params }: { params: { id: string } }
+  req: Request,
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = params
-    if (!id) {
-      return NextResponse.json({ error: "Missing id" }, { status: 400 })
+    const { id } = await params;
+    if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
+
+    const body = await req.json().catch(() => null);
+    if (!body || typeof body !== "object") {
+      return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
     }
 
-    const body = await req.json()
-    await adminDB.collection("news").doc(id).update(body)
-
-    return NextResponse.json({ message: "Updated" })
+    await adminDB.collection("news").doc(id).update(body as Record<string, unknown>);
+    return NextResponse.json({ message: "Updated" });
   } catch (err: any) {
-    // If doc doesn't exist, Firestore throws
-    if (err?.code === 5 /* not-found */) {
-      return NextResponse.json({ error: "Not found" }, { status: 404 })
+    const code = err?.code;
+    if (code === "not-found" || code === 5) {
+      return NextResponse.json({ error: "Not found" }, { status: 404 });
     }
-    console.error("[PUT /api/news/:id] Error:", err)
-    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 })
+    console.error("[PUT /api/news/:id] Error:", err);
+    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }
 }
 
-/**
- * DELETE /api/news/:id
- */
+/** DELETE /api/news/:id */
 export async function DELETE(
-  _req: NextRequest,
-  { params }: { params: { id: string } }
+  _req: Request,
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = params
-    if (!id) {
-      return NextResponse.json({ error: "Missing id" }, { status: 400 })
-    }
+    const { id } = await params;
+    if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
 
-    await adminDB.collection("news").doc(id).delete()
-    return NextResponse.json({ message: "Deleted" })
+    await adminDB.collection("news").doc(id).delete();
+    return NextResponse.json({ message: "Deleted" });
   } catch (err) {
-    console.error("[DELETE /api/news/:id] Error:", err)
-    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 })
+    console.error("[DELETE /api/news/:id] Error:", err);
+    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }
 }

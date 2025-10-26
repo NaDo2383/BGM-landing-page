@@ -3,7 +3,6 @@ import axios from "axios"
 import React, { useEffect, useState } from "react"
 import { newsType } from "./NewsInsightPage"
 import Image from "next/image"
-import FAQSection from "../sections/FAQSection"
 import EmailAlertsSignup from "../sections/ContactUsForm"
 
 const NewsDetailPage = ({ newsId }: { newsId: string }) => {
