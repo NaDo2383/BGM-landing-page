@@ -62,8 +62,8 @@ export default function WhatWeDo() {
   return (
     <section className='bg-[#050505] text-white pb-16 md:pb-20'>
       <div className='max-w-6xl mx-auto px-6'>
-        <header className='text-center'>
-          <h2 className='text-4xl md:text-5xl font-semibold tracking-tight'>
+        <header className='text-center font-[norms-pro]'>
+          <h2 className='text-4xl md:text-5xl font-medium  tracking-tight'>
             {t("title")}
           </h2>
           <p className='mt-3 text-[#A6AFBF]'>{t("subtitle")}</p>

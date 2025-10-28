@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl"
 import Image from "next/image"
+import Link from "next/link"
 import React from "react"
 
 export default function StudentsGraduates() {
@@ -42,9 +43,11 @@ export default function StudentsGraduates() {
             <div className='font-[450] text-lg text-[#afafaf] whitespace-pre-wrap text-center'>
               {e.text}
             </div>
-            <div className=' py-2.5 px-7.5 text-white rounded-full w-fit mx-auto bg-[radial-gradient(52.44%_127.23%_at_0%_0%,_#FFBD80_0%,#E46F03_77.25%)]'>
-              {t("apply-now")}
-            </div>
+            <Link href={"/careers/search-job"}>
+              <div className=' py-2.5 px-7.5 cursor-pointer text-white rounded-full w-fit mx-auto bg-[radial-gradient(52.44%_127.23%_at_0%_0%,_#FFBD80_0%,#E46F03_77.25%)]'>
+                {t("apply-now")}
+              </div>
+            </Link>
           </div>
         ))}
       </div>

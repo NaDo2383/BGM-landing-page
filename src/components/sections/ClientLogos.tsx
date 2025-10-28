@@ -3,8 +3,9 @@
 import { useEffect, useMemo } from "react"
 import useEmblaCarousel from "embla-carousel-react"
 import Autoplay from "embla-carousel-autoplay"
+import clsx from "clsx"
 
-export default function ClientLogos() {
+export default function ClientLogos({ className }: { className: string }) {
   const logos = useMemo(
     () =>
       Array.from({ length: 12 }).map((_, i) => ({ src: `/partners/${(i % 6) + 1}.png` })),
@@ -50,7 +51,7 @@ export default function ClientLogos() {
   }, [autoplay])
 
   return (
-    <section className='bg-[#050505] overflow-hidden py-10 sm:py-12 lg:py-16'>
+    <section className={clsx("bg-[#050505] overflow-hidden ", className)}>
       <div className='mx-auto max-w-7xl px-4'>
         {/* Embla viewport */}
         <div

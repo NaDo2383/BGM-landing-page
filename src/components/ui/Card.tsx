@@ -36,7 +36,7 @@ export default function Card({ title, description, icon }: CardProps) {
         </h3>
 
         {/* Description */}
-        <p className='mt-1 text-[14px] leading-6 text-[#90A1B9] line-clamp-6 whitespace-pre-wrap'>
+        <p className='mt-1 text-lg font-[norms-pro] leading-6 text-[#afafaf] line-clamp-6 whitespace-pre-wrap capitalize'>
           {description}
         </p>
 

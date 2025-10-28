@@ -48,7 +48,9 @@ export default function CareersAtBGM() {
                 />
               </div>
             </div>
-            <div className=' font-[450] text-[#afafaf] text-lg'>{e.text}</div>
+            <div className=' font-[450] text-[#afafaf] text-[18px] whitespace-pre-wrap text-base/snug'>
+              {e.text}
+            </div>
           </div>
         ))}
       </div>

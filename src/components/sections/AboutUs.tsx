@@ -23,7 +23,7 @@ const AboutUs = ({ bgcolor = "#050505", id, imageColoredBg }: aboutUsPropsType) 
           rounded-xl overflow-hidden  shadow-xl
         '>
         {/* Image */}
-        <div className='relative w-full md:w-[460px] aspect-[16/10] md:aspect-auto md:min-h-[420px] lg:min-h-[506px] max-h-[540px] flex justify-center items-center'>
+        <div className='relative w-full md:w-[460px] md:h-[544px] md:aspect-auto md:min-h-[420px] lg:min-h-[506px] max-h-[544px] flex justify-center items-center'>
           <Image
             src={
               imageColoredBg
@@ -41,8 +41,7 @@ const AboutUs = ({ bgcolor = "#050505", id, imageColoredBg }: aboutUsPropsType) 
         {/* Content */}
         <div
           className='
-            w-full md:w-1/2
-            px-5 sm:px-7 lg:px-[30px]
+            w-full md:w-2/3 max-w-[645px]            
             py-6 sm:py-8 lg:py-[50px]
             flex flex-col justify-between gap-6
           '>
@@ -59,7 +58,7 @@ const AboutUs = ({ bgcolor = "#050505", id, imageColoredBg }: aboutUsPropsType) 
               </h2>
             </div>
 
-            <div className=' text-lg font-[norms-pro] text-[#AFAFAF]'>
+            <div className=' text-lg font-[450] font-[norms-pro] text-[#AFAFAF]'>
               <div>{t("text")}</div>
               <br />
               <div>{t("text1")}</div>

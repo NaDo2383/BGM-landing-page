@@ -8,7 +8,7 @@ export default function CareerDevelopment() {
   return (
     <section
       id='career-developments'
-      className='max-w-7xl mx-auto flex flex-col items-center justify-center my-20 gap-16 '>
+      className='max-w-7xl mx-auto flex flex-col items-center justify-center my-20 gap-4 '>
       <div className=' font-[norms-pro] text-center'>
         <div className=' font-medium text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent '>
           {t("career-developments")}
@@ -17,10 +17,10 @@ export default function CareerDevelopment() {
           {t("career-developments-text")}
         </div>
       </div>
-      <div className=' font-[norms-pro] font-medium text-lg px-[25px] py-[15px] bg-[linear-gradient(180deg,#4E4E4E_0%,#111111_100%)] rounded-full'>
+      <div className=' font-[norms-pro] font-medium text-lg px-[25px] py-[15px] mt-8 bg-[linear-gradient(180deg,#4E4E4E_0%,#111111_100%)] rounded-full'>
         {t("pro-network")}
       </div>
-      <ClientLogos />
+      <ClientLogos className='py-3 sm:py-4 lg:py-5' />
     </section>
   )
 }

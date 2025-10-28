@@ -25,7 +25,6 @@ export default function NewsCard({
   return (
     <Link href={`/news-Insight/${id}`} className='group block h-full focus:outline-none'>
       <motion.article
-        whileHover={{ y: -2 }}
         transition={{ type: "spring", stiffness: 260, damping: 22 }}
         className={clsx(
           "h-full rounded-[30px] p-3 sm:p-4",
@@ -38,7 +37,7 @@ export default function NewsCard({
         <div
           className={clsx(
             "relative overflow-hidden rounded-[15px]",
-            featured ? "aspect-[21/8]" : "aspect-[4/3]"
+            featured ? "aspect-[21/8]" : "aspect-[36/23]"
           )}>
           {imageUrl ? (
             <Image
@@ -58,11 +57,11 @@ export default function NewsCard({
         </div>
 
         {/* Text */}
-        <h3 className='mt-4 text-white leading-tight font-semibold text-[18px] sm:text-[20px]'>
+        <h3 className='mt-4 text-white leading-tight font-semibold text-[18px] sm:text-[20px] line-clamp-2'>
           {title}
         </h3>
         <p
-          className='mt-2 text-white/60 text-sm leading-6 line-clamp-2'
+          className='mt-2 text-white leading-4.5 text-sm line-clamp-3'
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </motion.article>

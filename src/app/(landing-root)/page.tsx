@@ -11,10 +11,10 @@ export default function Page() {
   return (
     <>
       <HeroSection />
-      <ClientLogos />
+      <ClientLogos className='py-10 sm:py-12 lg:py-16' />
       <AboutUs imageColoredBg={false} />
-      <WhatWeDo />
       <CapabilitiesSection />
+      <WhatWeDo />
       <NewsSection />
       <ContactUsForm />
       <FAQSection />

@@ -11,7 +11,7 @@ export default function Footer() {
   const t = useTranslations("footer")
 
   return (
-    <div className='bg-[url("/footer-gradiant.png")] bg-cover bg-center'>
+    <div className='bg-[url("/footer-gradiant.png")] bg-cover bg-center font-[norms-pro] text-white'>
       <footer className='relative text-white pt-16 pb-5 px-6 md:px-12 overflow-hidden'>
         {/* Main Content */}
         <div className='relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12'>
@@ -31,13 +31,13 @@ export default function Footer() {
           </div>
 
           <div className='w-full max-w-[650px] flex gap-[60px]'>
-            <div className='flex flex-col gap-4  text-gray-300'>
-              <div className='font-bold text-sm text-white'>{t("links")}</div>
+            <div className='flex flex-col gap-4'>
+              <div className='font-bold text-sm font-inter'>{t("links")}</div>
               <div>{t("terms-of-service")}</div>
               <div>{t("privacy-policy")}</div>
             </div>
-            <div className='flex flex-col gap-4  text-gray-300'>
-              <div className='font-bold text-sm text-white'>{t("pages")}</div>
+            <div className='flex flex-col gap-4'>
+              <div className='font-bold text-sm font-inter'>{t("pages")}</div>
               <Link href={"/about-us"}>
                 <div>{t("about-us")}</div>
               </Link>
@@ -51,8 +51,8 @@ export default function Footer() {
                 <div>{t("news-insights")}</div>
               </Link>
             </div>
-            <div className='  flex flex-col gap-4  text-gray-300'>
-              <div className='font-bold text-sm text-white'>{t("contact")}</div>
+            <div className='  flex flex-col gap-4'>
+              <div className='font-bold text-sm font-inter'>{t("contact")}</div>
               <div className='flex items-start gap-3'>
                 <div className='pt-1'>
                   <FaMapMarkerAlt className='text-[#ef7a0b]' size={18} />

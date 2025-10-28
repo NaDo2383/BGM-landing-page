@@ -27,10 +27,8 @@ const AboutUsPage = () => {
   return (
     <>
       <section className='w-full bg-[#050505]'>
-        <section className='relative min-h-[400px] flex items-center justify-center flex-col overflow-hidden '>
-          <div className='absolute inset-0 bg-[url("/about-us-hero.png")]  bg-cover bg-center ' />
-
-          <div className='relative z-10 text-start max-w-[1440px] w-full px-4 sm:px-6 lg:px-[100px] '>
+        <section className='relative min-h-[400px]   flex items-center justify-center flex-col overflow-hidden '>
+          <div className='relative z-10 text-start max-w-[1440px] w-full px-4 sm:px-6 lg:px-[100px] bg-[url("/about-us-hero.png")] bg-no-repeat bg-center bg-contain'>
             <div className=' flex flex-col items-center justify-center mt-24'>
               <h2 className='text-[40px] md:text-[62px] font-[BGMxwidemedium] font-xwide bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent text-center mr-1.5 uppercase'>
                 {t("title1")}
@@ -42,17 +40,26 @@ const AboutUsPage = () => {
             <div className='z-20 mt-14 w-full justify-center flex gap-5'>
               <span
                 onClick={() => scrollTo("bg-theory")}
-                className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+                className='inline-flex items-center justify-center
+             rounded-full px-5 py-2.5 text-[#afafaf]
+             border-2 border-transparent
+             [background:linear-gradient(#0B0B0B,#0B0B0B)_padding-box,linear-gradient(180deg,#4E4E4E_0%,#232323_100%)_border-box]'>
                 {t("BGTheory")}
               </span>
               <span
                 onClick={() => scrollTo("asset-mamangement")}
-                className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+                className='inline-flex items-center justify-center
+             rounded-full px-5 py-2.5 text-[#afafaf]
+             border-2 border-transparent
+             [background:linear-gradient(#0B0B0B,#0B0B0B)_padding-box,linear-gradient(180deg,#4E4E4E_0%,#232323_100%)_border-box]'>
                 {t("BGMAssetmanagement")}
               </span>
               <span
                 onClick={() => scrollTo("team")}
-                className='font-[norms-pro] cursor-pointer font-bold text-white border border-[#90A1B9] px-5 py-2.5 rounded-full'>
+                className='inline-flex items-center justify-center
+             rounded-full px-5 py-2.5 text-[#afafaf]
+             border-2 border-transparent
+             [background:linear-gradient(#0B0B0B,#0B0B0B)_padding-box,linear-gradient(180deg,#4E4E4E_0%,#232323_100%)_border-box]'>
                 {t("Team introduction")}
               </span>
             </div>
@@ -60,9 +67,9 @@ const AboutUsPage = () => {
         </section>
         <AboutUs id='bg-theory' imageColoredBg={true} bgcolor={"#050505"} />
         <section id='asset-mamangement' className='w-full bg-[#050505]'>
-          <div className='flex flex-col justify-center items-center max-w-7xl mx-auto gap-12 '>
-            <div className='text-[64px] font-[850] font-[BGMxwidemedium] bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent whitespace-pre text-center'>
-              {t("bgm-name").toUpperCase()}
+          <div className='flex flex-col justify-center items-center max-w-7xl mx-auto gap-2.5 '>
+            <div className='text-[45px] font-[500] font-[norms-pro] bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent whitespace-pre text-center'>
+              {t("bgm-name")}
             </div>
             <div className=' flex flex-col gap-6 max-w-[942px] text-center font-[norms-pro] text-[#90A1B9] capitalize'>
               <div>{t("text1")}</div>
@@ -79,11 +86,13 @@ const AboutUsPage = () => {
             {data.map((e, i) => (
               <div
                 key={i + "fdnjsaikl"}
-                className='bg-[url("/about-us-card-bg.png")] bg-cover w-[360px] h-[270px] p-6 gap-3.5 flex flex-col text-center items-center justify-center'>
-                <div className='text-[40px] font-[850] uppercase font-[BGMfreigeist]'>
+                className='bg-[url("/about-us-card-bg.png")] bg-cover w-[360px] h-[270px] p-6 gap-3.5 flex flex-col text-center items-center justify-start'>
+                <div className='text-[40px] font-[850] mt-8 uppercase font-[BGMfreigeist]'>
                   {e.title}
                 </div>
-                <div className='font-normal uppercase font-[norms-pro]'>{e.text}</div>
+                <div className='font-medium whitespace-pre-wrap font-[norms-pro] text-lg text-[#AFAFAF]'>
+                  {e.text}
+                </div>
               </div>
             ))}
           </div>

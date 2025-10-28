@@ -88,11 +88,11 @@ const NewsInsightPage = () => {
                           <div className='pointer-events-none absolute inset-0 rounded-[15px] ring-1 ring-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,.08)]' />
                         </div>
                         <div className='w-1/2 font-[norms-pro] sm:flex sm:flex-col sm:justify-evenly'>
-                          <h3 className='mt-4 text-white leading-tight font-bold text-[18px] sm:text-[36px]'>
+                          <h3 className='mt-4 text-white leading-tight font-bold text-[18px] sm:text-[36px] line-clamp-3'>
                             {news.title}
                           </h3>
                           <p
-                            className='mt-2 text-white/60 text-sm leading-6 line-clamp-2 sm:line-clamp-6 font-[450] font-[norms-pro]'
+                            className='mt-2 text-white/60 text-sm leading-6 line-clamp-3 sm:line-clamp-7 font-[450] font-[norms-pro] '
                             dangerouslySetInnerHTML={{ __html: news.description }}
                           />
                         </div>

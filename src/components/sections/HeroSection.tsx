@@ -25,7 +25,7 @@ export default function HeroSection() {
           </span>
         </h1>
         <div className='font-[BGMfreigeist]'>{t("title2")}</div>
-        <div className='mx-auto'>
+        <div className='mx-auto mt-[20vh]'>
           <Button variant={"transparent"}>{t("startInvesting")}</Button>
         </div>
       </div>

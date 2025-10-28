@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { NextIntlClientProvider } from "next-intl"
 import { getLocale, getMessages } from "next-intl/server"
+import { Inter } from "next/font/google"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -54,6 +55,13 @@ export const metadata: Metadata = {
   },
 }
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+})
+
 export default async function RootLayout({
   children,
 }: Readonly<{
@@ -63,7 +71,7 @@ export default async function RootLayout({
   const locale = await getLocale()
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={inter.variable}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           {children}
