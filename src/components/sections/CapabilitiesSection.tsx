@@ -39,7 +39,7 @@ export default function CapabilitiesSection() {
   ]
 
   return (
-    <section className='bg-[url("/modern-gradiant.png")] bg-fill bg-center p-6 sm:p-18 lg:p-[100px] sm:pt-0'>
+    <section className='bg-[url("/modern-gradiant.png")] bg-no-repeat bg-fill bg-center p-6 sm:p-18 lg:p-[100px] sm:pt-0'>
       <div className='mx-auto max-w-[1240px]  px-2 sm:px-4 flex flex-col gap-8 sm:gap-10 lg:gap-[50px]'>
         {/* Heading */}
         <div className='flex flex-col gap-2 font-[norms-pro]'>
