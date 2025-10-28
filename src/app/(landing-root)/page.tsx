@@ -12,7 +12,7 @@ export default function Page() {
     <>
       <HeroSection />
       <ClientLogos />
-      <AboutUs imageColoredBg />
+      <AboutUs imageColoredBg={false} />
       <WhatWeDo />
       <CapabilitiesSection />
       <NewsSection />

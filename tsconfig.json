@@ -23,6 +23,6 @@
     }
   },
   "typeRoots": ["./src/types", "./node_modules/@types"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/utils/utils.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/utils/utils.js", "src/app/(landing-root)/asset-management"],
   "exclude": ["node_modules"]
 }
