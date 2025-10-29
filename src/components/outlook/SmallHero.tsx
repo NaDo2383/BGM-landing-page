@@ -9,7 +9,7 @@ const SmallHero = ({ year }: { year: string }) => {
 
   return (
     <section className='relative min-h-[400px] flex items-center justify-center flex-col overflow-hidden '>
-      <div className='absolute inset-0 bg-[url("/about-us-hero.png")]  bg-contain bg-center ' />
+      <div className='absolute inset-0 bg-[url("/about-us-hero.png")] bg-no-repeat  bg-contain bg-center ' />
 
       <div className='relative z-10 text-start max-w-[1440px] w-full px-4 sm:px-6 lg:px-[100px] '>
         <div className=' flex flex-col items-center justify-center mt-24'>

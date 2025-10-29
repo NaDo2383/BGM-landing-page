@@ -11,6 +11,7 @@ import {
   HeroNewsCardSkeleton,
   NewsCardSkeleton,
 } from "../news-insight/HeroNewsCardSkeleton"
+import PopInSection from "../PopInSection"
 
 export default function NewsSection() {
   const t = useTranslations("news")

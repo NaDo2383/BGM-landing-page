@@ -4,6 +4,7 @@ import React, { useState, useCallback, useEffect } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { useTranslations } from "next-intl"
+import PopInSection from "../PopInSection"
 
 type Item = {
   id: "fixed" | "realestate" | "retirement"
@@ -60,97 +61,101 @@ export default function WhatWeDo() {
   }, [])
 
   return (
-    <section className='bg-[#050505] text-white pb-16 md:pb-20'>
-      <div className='max-w-6xl mx-auto px-6'>
-        <header className='text-center font-[norms-pro]'>
-          <h2 className='text-4xl md:text-5xl font-medium  tracking-tight'>
-            {t("title")}
-          </h2>
-          <p className='mt-3 text-[#A6AFBF]'>{t("subtitle")}</p>
-        </header>
+    <PopInSection>
+      <section className='bg-[#050505] text-white pb-16 md:pb-20'>
+        <div className='max-w-6xl mx-auto px-6'>
+          <header className='text-center font-[norms-pro]'>
+            <h2 className='text-4xl md:text-5xl font-medium  tracking-tight'>
+              {t("title")}
+            </h2>
+            <p className='mt-3 text-[#A6AFBF]'>{t("subtitle")}</p>
+          </header>
 
-        <div
-          className='mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'
-          onKeyDown={onKey}
-          role='listbox'
-          aria-label={t("aria.listbox")}
-          tabIndex={0}>
-          {/* Left picture / visual */}
-          <div className='relative aspect-[16/11] w-full rounded-[28px] overflow-hidden bg-[#141414] ring-1 ring-white/10 flex items-center justify-center'>
-            <AnimatePresence mode='wait'>
-              <motion.div
-                key={activeItem.img}
-                initial={{ opacity: 0.0, scale: 1.01 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.995 }}
-                transition={{ duration: 0.35, ease: "easeOut" }}
-                className='absolute inset-0'>
-                <Image
-                  src={activeItem.img}
-                  alt={activeAlt}
-                  fill
-                  className='object-cover'
-                  priority
-                />
-              </motion.div>
-            </AnimatePresence>
+          <div
+            className='mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'
+            onKeyDown={onKey}
+            role='listbox'
+            aria-label={t("aria.listbox")}
+            tabIndex={0}>
+            {/* Left picture / visual */}
+            <div className='relative aspect-[16/11] w-full rounded-[28px] overflow-hidden bg-[#141414] ring-1 ring-white/10 flex items-center justify-center'>
+              <AnimatePresence mode='wait'>
+                <motion.div
+                  key={activeItem.img}
+                  initial={{ opacity: 0.0, scale: 1.01 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.995 }}
+                  transition={{ duration: 0.35, ease: "easeOut" }}
+                  className='absolute inset-0'>
+                  <Image
+                    src={activeItem.img}
+                    alt={activeAlt}
+                    fill
+                    className='object-cover'
+                    priority
+                  />
+                </motion.div>
+              </AnimatePresence>
 
-            <div className='pointer-events-none absolute inset-0 rounded-[28px] bg-[radial-gradient(80%_60%_at_0%_0%,rgba(255,255,255,0.06),transparent_60%),radial-gradient(120%_100%_at_100%_100%,rgba(0,0,0,0.5),transparent_60%)]' />
-            <div className='pointer-events-none absolute inset-0 rounded-[28px] ring-1 ring-white/10' />
-          </div>
+              <div className='pointer-events-none absolute inset-0 rounded-[28px] bg-[radial-gradient(80%_60%_at_0%_0%,rgba(255,255,255,0.06),transparent_60%),radial-gradient(120%_100%_at_100%_100%,rgba(0,0,0,0.5),transparent_60%)]' />
+              <div className='pointer-events-none absolute inset-0 rounded-[28px] ring-1 ring-white/10' />
+            </div>
 
-          {/* Right list */}
-          <div className='relative'>
-            <div className='pl-6'>
-              {ITEMS.map((it) => {
-                const isActive = it.id === active
-                const title = t(`items.${it.id}.title`)
-                const desc = t(`items.${it.id}.desc`)
+            {/* Right list */}
+            <div className='relative'>
+              <div className='pl-6'>
+                {ITEMS.map((it) => {
+                  const isActive = it.id === active
+                  const title = t(`items.${it.id}.title`)
+                  const desc = t(`items.${it.id}.desc`)
 
-                return (
-                  <button
-                    key={it.id}
-                    onClick={() => setActive(it.id)}
-                    role='option'
-                    aria-selected={isActive}
-                    aria-label={t("aria.item", { title })}
-                    className={[
-                      "relative w-full text-left py-3 md:py-4 pl-6",
-                      "focus:outline-none outline-offset-2",
-                      isActive ? "opacity-100" : "opacity-90 hover:opacity-100",
-                    ].join(" ")}>
-                    {/* rail + active indicator */}
-                    <span
-                      aria-hidden
+                  return (
+                    <button
+                      key={it.id}
+                      onClick={() => setActive(it.id)}
+                      role='option'
+                      aria-selected={isActive}
+                      aria-label={t("aria.item", { title })}
                       className={[
-                        "absolute left-0 -translate-x-1/2 top-0 bottom-0 z-10",
-                        isActive
-                          ? "w-[3px] bg-[#E87811] rounded-sm"
-                          : "w-[1px] bg-[#AFAFAF]",
-                      ].join(" ")}
-                    />
+                        "relative w-full text-left py-3 md:py-4 pl-6",
+                        "focus:outline-none outline-offset-2",
+                        isActive ? "opacity-100" : "opacity-90 hover:opacity-100",
+                      ].join(" ")}>
+                      {/* rail + active indicator */}
+                      <span
+                        aria-hidden
+                        className={[
+                          "absolute left-0 -translate-x-1/2 top-0 bottom-0 z-10",
+                          isActive
+                            ? "w-[3px] bg-[#E87811] rounded-sm"
+                            : "w-[1px] bg-[#AFAFAF]",
+                        ].join(" ")}
+                      />
 
-                    <div className='flex items-start gap-2 pl-6'>
-                      <div>
-                        <h3 className='text-2xl md:text-[30px] font-semibold'>{title}</h3>
-                        <p className='mt-1 text-[#AFAFAF] max-w-[52ch] leading-relaxed'>
-                          {desc}
-                        </p>
+                      <div className='flex items-start gap-2 pl-6'>
+                        <div>
+                          <h3 className='text-2xl md:text-[30px] font-semibold'>
+                            {title}
+                          </h3>
+                          <p className='mt-1 text-[#AFAFAF] max-w-[52ch] leading-relaxed'>
+                            {desc}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </button>
-                )
-              })}
+                    </button>
+                  )
+                })}
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <style jsx global>{`
-        .using-mouse :focus {
-          outline: none !important;
-        }
-      `}</style>
-    </section>
+        <style jsx global>{`
+          .using-mouse :focus {
+            outline: none !important;
+          }
+        `}</style>
+      </section>
+    </PopInSection>
   )
 }

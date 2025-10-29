@@ -24,7 +24,7 @@ export default function NewsCard({
 }: NewsCardProps) {
   return (
     <Link href={`/news-Insight/${id}`} className='group block h-full focus:outline-none'>
-      <motion.article
+      <motion.div
         transition={{ type: "spring", stiffness: 260, damping: 22 }}
         className={clsx(
           "h-full rounded-[30px] p-3 sm:p-4",
@@ -64,7 +64,7 @@ export default function NewsCard({
           className='mt-2 text-white leading-4.5 text-sm line-clamp-3'
           dangerouslySetInnerHTML={{ __html: description }}
         />
-      </motion.article>
+      </motion.div>
     </Link>
   )
 }

@@ -44,7 +44,7 @@ export default function Benefits() {
           <div
             key={i}
             className='flex items-center gap-3.5 h-[84px] w-auto rounded-[30px] bg-[radial-gradient(100%_272.26%_at_0%_0%,#4E4E4E_0%,#111111_28.6%,#111111_100%)] border border-[#4E4E4E] py-3.5 px-5'>
-            <div className='size-[56px] flex justify-center items-center bg-[linear-gradient(to right, #080303 0%, #080303 100%)] rounded-full border border-[#535353]'>
+            <div className='size-[56px] flex justify-center items-center bg-[linear-gradient(135deg,#4E4E4E_0%,#050505_51.52%,#050505_100%)] rounded-full border border-[#535353]'>
               <i
                 className={`${e.icon}  text-3xl leading-none text-transparent bg-clip-text bg-[linear-gradient(180deg,#FFBD80_0%,#E46F03_100%)]`}
                 aria-hidden='true'

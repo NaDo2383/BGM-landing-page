@@ -5,6 +5,7 @@ import Card from "../ui/Card"
 import { ArrowBtn } from "../ui/ArrowBtn"
 import Image from "next/image"
 import Link from "next/link"
+import PopInSection from "../PopInSection"
 
 export default function CapabilitiesSection() {
   const t = useTranslations("capabilities")
@@ -39,43 +40,45 @@ export default function CapabilitiesSection() {
   ]
 
   return (
-    <section className='bg-[url("/modern-gradiant.png")] bg-no-repeat bg-fill bg-center p-6 sm:p-18 lg:p-[100px] sm:pt-0'>
-      <div className='mx-auto max-w-[1240px]  px-2 sm:px-4 flex flex-col gap-8 sm:gap-10 lg:gap-[50px]'>
-        {/* Heading */}
-        <div className='flex flex-col gap-2 font-[norms-pro]'>
-          <div className='flex flex-wrap items-center justify-center gap-2 text-center  font-bold'>
-            <h2 className=' text-white text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
-              {t("title1")}
-            </h2>
-            <h2 className=' text-[#ef7a0b] text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
-              {t("title2")}
-            </h2>
-          </div>
-          <p className='text-center text-[#90A1B9] font-normal tracking-normal capitalize text-sm sm:text-base leading-relaxed max-w-4xl mx-auto'>
-            {t("text")}
-          </p>
-        </div>
-
-        {/* Cards */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-[50px]'>
-          {capabilities.map((cap, i) => (
-            <div key={i} className='h-full'>
-              <Card {...cap} />
+    <PopInSection>
+      <section className='bg-[url("/modern-gradiant.png")] bg-no-repeat bg-fill bg-center p-6 sm:p-18 lg:p-[100px] sm:pt-0'>
+        <div className='mx-auto max-w-[1240px]  px-2 sm:px-4 flex flex-col gap-8 sm:gap-10 lg:gap-[50px]'>
+          {/* Heading */}
+          <div className='flex flex-col gap-2 font-[norms-pro]'>
+            <div className='flex flex-wrap items-center justify-center gap-2 text-center  font-bold'>
+              <h2 className=' text-white text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
+                {t("title1")}
+              </h2>
+              <h2 className=' text-[#ef7a0b] text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
+                {t("title2")}
+              </h2>
             </div>
-          ))}
-        </div>
+            <p className='text-center text-[#90A1B9] font-normal tracking-normal capitalize text-sm sm:text-base leading-relaxed max-w-4xl mx-auto'>
+              {t("text")}
+            </p>
+          </div>
 
-        {/* CTA */}
-        <div className='flex justify-center'>
-          <div className='w-full sm:w-auto'>
-            <Link href='/asset-management'>
-              <ArrowBtn arrow_bg='black' className='w-full sm:w-auto'>
-                {t("seeMore")}
-              </ArrowBtn>
-            </Link>
+          {/* Cards */}
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-[50px]'>
+            {capabilities.map((cap, i) => (
+              <div key={i} className='h-full'>
+                <Card {...cap} />
+              </div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className='flex justify-center'>
+            <div className='w-full sm:w-auto'>
+              <Link href='/asset-management'>
+                <ArrowBtn arrow_bg='black' className='w-full sm:w-auto'>
+                  {t("seeMore")}
+                </ArrowBtn>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </PopInSection>
   )
 }
