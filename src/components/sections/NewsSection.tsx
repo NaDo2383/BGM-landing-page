@@ -35,7 +35,7 @@ export default function NewsSection() {
   }, [])
 
   return (
-    <section className='bg-[#050505] p-6 sm:p-18 lg:p-[100px]'>
+    <section className='bg-[#000] p-6 sm:p-18 lg:p-[100px]'>
       <div className='mx-auto max-w-[1240px] px-2 sm:px-4 flex flex-col gap-8 sm:gap-10 lg:gap-[50px]'>
         {/* Heading */}
         <div className='flex flex-col gap-2'>

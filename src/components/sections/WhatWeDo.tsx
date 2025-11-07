@@ -62,7 +62,7 @@ export default function WhatWeDo() {
 
   return (
     <PopInSection>
-      <section className='bg-[#050505] text-white pb-16 md:pb-20'>
+      <section className='bg-[#000] text-white pb-16 md:pb-20'>
         <div className='max-w-6xl mx-auto px-6'>
           <header className='text-center font-[norms-pro]'>
             <h2 className='text-4xl md:text-5xl font-medium  tracking-tight'>

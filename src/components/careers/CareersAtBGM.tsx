@@ -40,7 +40,7 @@ export default function CareersAtBGM() {
             key={i}
             className='flex flex-col items-center text-center gap-2.5 bg-[url("/career-card-bg.png")] bg-cover bg-center w-[390px] h-[400px] rounded-[30px] border border-[#4E4E4E] pt-7 px-6'>
             <div className=' font-semibold text-[30px] '>{e.title}</div>
-            <div className='bg-[url("/career-card-bg.gif")]  bg-center z-10 rounded-[25px] w-[331px] h-[153px] flex justify-center items-center'>
+            <div className='bg-[url("/career-card-bg.gif")] bg-center bg-auto z-10 rounded-[25px] w-[331px] h-[153px] flex justify-center items-center'>
               <div className='size-[90px] flex justify-center items-center bg-[linear-gradient(#FFBD80,#E46F03,#E46F03)] rounded-full'>
                 <i
                   className={`${e.icon} text-white text-5xl leading-none`}

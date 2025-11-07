@@ -4,13 +4,15 @@ import ClientLogos from "@/components/sections/ClientLogos"
 import ContactUsForm from "@/components/sections/ContactUsForm"
 import FAQSection from "@/components/sections/FAQSection"
 import HeroSection from "@/components/sections/HeroSection"
+import HeroSectionTest from "@/components/sections/HeroSectionTest"
 import NewsSection from "@/components/sections/NewsSection"
 import WhatWeDo from "@/components/sections/WhatWeDo"
 
 export default function Page() {
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <HeroSectionTest />
       <ClientLogos className='py-10 sm:py-12 lg:py-16' />
       <AboutUs imageColoredBg={false} />
       <CapabilitiesSection />

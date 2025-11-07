@@ -9,6 +9,7 @@ export default function HeroSection() {
   return (
     <section className='relative min-h-screen flex items-center justify-center overflow-hidden'>
       <div className='absolute inset-0 bg-[url("/hero_desktop.png")] bg-cover bg-center ' />
+      <div className='absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_56%,rgba(0,0,0,1)_100%) ] ' />
 
       <div className='relative z-10 text-center px-4 max-w-4xl mx-auto flex justify-between flex-col  mt-28'>
         <h1 className='text-xl md:text-[40px] font-[700] text-white mb-6 animate-fade-in-up tracking-wider text-center relative whitespace-pre'>

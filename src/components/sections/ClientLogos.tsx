@@ -55,7 +55,7 @@ export default function ClientLogos({ className }: { className: string }) {
 
   return (
     <PopInSection from='bottom' amount={0}>
-      <section className={clsx("bg-[#050505] overflow-hidden ", className)}>
+      <section className={clsx("bg-[#000] overflow-hidden ", className)}>
         <div className='mx-auto max-w-7xl px-4'>
           {/* Embla viewport */}
           <div

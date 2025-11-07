@@ -44,7 +44,7 @@ const NewsInsightPage = () => {
   return (
     <>
       <SmallHero />
-      <section id='news' className='bg-[#050505] py-10 px-6 md:px-12 md:p-[100px]'>
+      <section id='news' className='bg-[#000] py-10 px-6 md:px-12 md:p-[100px]'>
         <div className='max-w-[1280px] mx-auto'>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-[50px]'>
             {loading ? (

@@ -9,7 +9,7 @@ type aboutUsPropsType = {
   id?: string
 }
 
-const AboutUs = ({ bgcolor = "#050505", id, imageColoredBg }: aboutUsPropsType) => {
+const AboutUs = ({ bgcolor = "#000", id, imageColoredBg }: aboutUsPropsType) => {
   const t = useTranslations("aboutCard")
 
   return (

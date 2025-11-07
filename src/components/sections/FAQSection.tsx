@@ -46,7 +46,7 @@ export default function FAQSection() {
     <section
       id='faq'
       className='
-        bg-[#050505]
+        bg-[#000]
         p-6 sm:p-10 lg:p-[100px]
       '>
       <div
@@ -72,7 +72,7 @@ export default function FAQSection() {
               const btnId = `${baseId}-btn-${index}`
 
               return (
-                <div key={index} role='listitem' className='bg-[#050505]'>
+                <div key={index} role='listitem' className='bg-[#000]'>
                   <button
                     id={btnId}
                     onClick={() => onToggle(index)}

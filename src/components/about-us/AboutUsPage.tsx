@@ -26,7 +26,7 @@ const AboutUsPage = () => {
 
   return (
     <>
-      <section className='w-full bg-[#050505]'>
+      <section className='w-full bg-[#000]'>
         <section className='relative min-h-[400px]   flex items-center justify-center flex-col overflow-hidden '>
           <div className='relative z-10 text-start max-w-[1440px] w-full px-4 sm:px-6 lg:px-[100px] bg-[url("/about-us-hero.png")] bg-no-repeat bg-center bg-contain'>
             <div className=' flex flex-col items-center justify-center mt-24'>
@@ -66,7 +66,7 @@ const AboutUsPage = () => {
           </div>
         </section>
         <AboutUs id='bg-theory' imageColoredBg={true} bgcolor={"#050505"} />
-        <section id='asset-mamangement' className='w-full bg-[#050505]'>
+        <section id='asset-mamangement' className='w-full bg-[#000]'>
           <div className='flex flex-col justify-center items-center max-w-7xl mx-auto gap-2.5 '>
             <div className='text-[45px] font-[500] font-[norms-pro] bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent whitespace-pre text-center'>
               {t("bgm-name")}
@@ -98,7 +98,7 @@ const AboutUsPage = () => {
           </div>
         </section>
 
-        <section id='team' className='bg-[#050505] py-10 px-6 md:p-[100px]'>
+        <section id='team' className='bg-[#000] py-10 px-6 md:p-[100px]'>
           <div className=' flex  max-w-[1112px] gap-[113px] mx-auto'>
             <div className='w-[60%] min-w-[513px] flex flex-col justify-center gap-6'>
               <div className=' text-[#fff] font-[norms-pro] font-[450] text-3xl whitespace-pre-wrap'>

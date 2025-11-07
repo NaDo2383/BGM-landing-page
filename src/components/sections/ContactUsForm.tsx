@@ -45,7 +45,7 @@ export default function EmailAlertsSignup() {
   }
 
   return (
-    <section className='bg-[#050505] py-20 px-6' id='subscribe'>
+    <section className='bg-[#000] py-20 px-6' id='subscribe'>
       <div className='max-w-5xl mx-auto text-center font-[norms-pro]'>
         <h2 className='text-white text-5xl md:text-5xl font-medium tracking-tight'>
           {t("title")}
