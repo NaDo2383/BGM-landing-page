@@ -8,7 +8,7 @@ interface LandingPageRootlayoutProps {
 
 const landingPageRootlayout = ({ children }: LandingPageRootlayoutProps) => {
   return (
-    <div>
+    <div className=' overflow-hidden'>
       <Navbar />
       {children}
       <Footer />

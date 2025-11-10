@@ -27,7 +27,7 @@ export default function NewsCard({
       <motion.div
         transition={{ type: "spring", stiffness: 260, damping: 22 }}
         className={clsx(
-          "h-full rounded-[30px] p-3 sm:p-4",
+          "h-full rounded-[30px] p-3 sm:p-4 md:p-5", // ← padding responsive
           "bg-[linear-gradient(#171717,#111111)] border border-[#434343]",
           "shadow-[inset_0_1px_0_rgba(255,255,255,.06)]",
           "flex flex-col",
@@ -37,7 +37,9 @@ export default function NewsCard({
         <div
           className={clsx(
             "relative overflow-hidden rounded-[15px]",
-            featured ? "aspect-[21/8]" : "aspect-[36/23]"
+            featured
+              ? "aspect-[16/9] sm:aspect-[21/8]" // ← mobile арай өндөр, ≥sm анхны харьцаа
+              : "aspect-[4/3] sm:aspect-[36/23]" // ← mobile 4:3, ≥sm анхны харьцаа
           )}>
           {imageUrl ? (
             <Image
@@ -57,11 +59,12 @@ export default function NewsCard({
         </div>
 
         {/* Text */}
-        <h3 className='mt-4 text-white leading-tight font-semibold text-[18px] sm:text-[20px] line-clamp-2'>
+        <h3 className='mt-3 sm:mt-4 text-white leading-tight font-semibold text-[16px] sm:text-[18px] md:text-[20px] line-clamp-2'>
           {title}
         </h3>
+
         <p
-          className='mt-2 text-white leading-4.5 text-sm line-clamp-3'
+          className='mt-1.5 sm:mt-2 text-white/90 leading-5 sm:leading-6 text-[13px] sm:text-sm md:text-[15px] line-clamp-3'
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </motion.div>

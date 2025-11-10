@@ -8,32 +8,33 @@ export default function HeroSection() {
 
   return (
     <section className='relative min-h-screen flex items-center justify-center overflow-hidden'>
-      <div className='absolute inset-0 bg-[url("/hero_desktop.png")] bg-cover bg-center ' />
-      <div className='absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_56%,rgba(0,0,0,1)_100%) ] ' />
+      <div className='absolute inset-0 -z-20'>
+        <video
+          muted
+          loop
+          autoPlay
+          playsInline
+          className='absolute inset-0 w-full h-full object-cover'>
+          <source src='/hero-video-2k.mp4' type='video/mp4' />
+        </video>
+      </div>
+      <div className='absolute inset-0 w-full h-full bg-[linear-gradient(180deg,rgba(255,255,255,0)_56%,rgba(0,0,0,1)_100%)] z-10' />
 
-      <div className='relative z-10 text-center px-4 max-w-4xl mx-auto flex justify-between flex-col  mt-28'>
-        <h1 className='text-xl md:text-[40px] font-[700] text-white mb-6 animate-fade-in-up tracking-wider text-center relative whitespace-pre'>
-          <div
-            style={{
-              textShadow:
-                "0 0 50px rgba(255,255,255), 0px 0px 1px rgba(255,255,255), 0 0 5px rgba(255,255,255)",
-            }}
-            className=' font-[BGMfreigeistLight] uppercase font-normal text-[40px]'>
+      <div className='relative z-10 text-center px-4 max-w-4xl mx-auto flex justify-between flex-col mt-16 sm:mt-24 md:mt-32'>
+        <h1 className='text-lg sm:text-2xl md:text-[40px] font-[700] text-white mb-4 sm:mb-5 md:mb-6 animate-fade-in-up tracking-wider text-center relative whitespace-pre'>
+          <div className='font-[BGMfreigeistLight] uppercase font-[250] text-[18px] sm:text-[24px] md:text-[32px] lg:text-[36px]'>
             {t("title1")}
           </div>
-          <span
-            className='relative font-[BGMfreigeistLight] uppercase font-bold text-[40px]'
-            style={{
-              textShadow:
-                "0 0 50px rgba(255,255,255), 0px 0px 1px rgba(255,255,255), 0 0 5px rgba(255,255,255)",
-            }}>
+          <span className='relative font-[BGMfreigeistBlack] uppercase font-[850] text-[18px] sm:text-[24px] md:text-[32px] lg:text-[36px]'>
             {t("title")}
           </span>
         </h1>
-        <div className='font-[BGMfreigeistLight] text-2xl tracking-wider mt-24'>
+
+        <div className='font-[BGMfreigeistLight] text-base sm:text-lg md:text-2xl tracking-wider mt-8 sm:mt-12 md:mt-[16vh]'>
           {t("title2")}
         </div>
-        <div className='mx-auto mt-[20vh]'>
+
+        <div className='mx-auto mt-8 sm:mt-12 md:mt-[16vh]'>
           <Button variant={"transparent"}>{t("startInvesting")}</Button>
         </div>
       </div>

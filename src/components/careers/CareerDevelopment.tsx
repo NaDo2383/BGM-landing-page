@@ -8,19 +8,21 @@ export default function CareerDevelopment() {
   return (
     <section
       id='career-developments'
-      className='max-w-7xl mx-auto flex flex-col items-center justify-center my-20 gap-4 '>
-      <div className=' font-[norms-pro] text-center'>
-        <div className=' font-medium text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent '>
+      className='max-w-7xl mx-auto flex flex-col items-center justify-center my-12 sm:my-16 md:my-20 gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6'>
+      <div className='font-[norms-pro] text-center'>
+        <div className='font-medium text-3xl sm:text-4xl md:text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent'>
           {t("career-developments")}
         </div>
-        <div className='font-[450] text-lg text-[#afafaf] whitespace-pre-wrap mt-3.5'>
+        <div className='font-[450] text-sm sm:text-base md:text-lg text-[#afafaf] whitespace-pre-wrap mt-2.5 sm:mt-3 md:mt-3.5'>
           {t("career-developments-text")}
         </div>
       </div>
-      <div className=' font-[norms-pro] font-medium text-lg px-[25px] py-[15px] mt-8 bg-[linear-gradient(180deg,#4E4E4E_0%,#111111_100%)] rounded-full'>
+
+      <div className='font-[norms-pro] font-medium text-sm sm:text-base lg:text-lg px-5 sm:px-6 md:px-[25px] py-2.5 sm:py-3 md:py-[15px] mt-6 sm:mt-7 md:mt-8 bg-[linear-gradient(180deg,#4E4E4E_0%,#111111_100%)] rounded-full text-white/90'>
         {t("pro-network")}
       </div>
-      <ClientLogos className='py-3 sm:py-4 lg:py-5' />
+
+      <ClientLogos className='py-2.5 sm:py-4 lg:py-5' />
     </section>
   )
 }

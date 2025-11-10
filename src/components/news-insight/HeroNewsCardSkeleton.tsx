@@ -3,7 +3,7 @@ import React from "react"
 
 export function HeroNewsCardSkeleton() {
   return (
-    <div className='group block h-full max-h-[380px] focus:outline-none md:col-span-3'>
+    <div className='group  h-full max-h-[380px] focus:outline-none md:col-span-3 hidden lg:block'>
       <div
         className={clsx(
           "h-full rounded-[30px] p-3 md:p-4 animate-pulse",

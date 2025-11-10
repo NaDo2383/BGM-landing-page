@@ -61,18 +61,23 @@ const NewsInsightPage = () => {
                     <Link
                       href={`/news-Insight/${news.id}`}
                       key={news.id}
-                      className='group block h-full max-h-[380px] focus:outline-none md:col-span-3'>
+                      className='group block h-full md:max-h-[380px] focus:outline-none md:col-span-3'>
                       <motion.article
                         whileHover={{ y: -2 }}
                         transition={{ type: "spring", stiffness: 260, damping: 22 }}
                         className={clsx(
-                          "h-full rounded-[30px] p-3 md:p-4",
+                          "h-full rounded-[30px] p-3 sm:p-4 md:p-5",
                           "bg-[linear-gradient(#171717,#111111)] border border-[#434343]",
                           "shadow-[inset_0_1px_0_rgba(255,255,255,.06)]",
-                          "flex flex-col md:flex-row md:gap-4"
+                          "flex flex-col md:flex-row gap-3 md:gap-4"
                         )}>
                         {/* Image */}
-                        <div className='relative overflow-hidden w-1/2 rounded-[15px] aspect-[4/3]'>
+                        <div
+                          className={clsx(
+                            "relative overflow-hidden rounded-[15px]",
+                            "w-full md:w-1/2",
+                            "aspect-[16/9] sm:aspect-[4/3]" // мобайлд арай өндөр, ≥sm 4:3
+                          )}>
                           {news.imageUrl ? (
                             <Image
                               src={news.imageUrl}
@@ -87,12 +92,14 @@ const NewsInsightPage = () => {
                           )}
                           <div className='pointer-events-none absolute inset-0 rounded-[15px] ring-1 ring-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,.08)]' />
                         </div>
-                        <div className='w-1/2 font-[norms-pro] sm:flex sm:flex-col sm:justify-evenly'>
-                          <h3 className='mt-4 text-white leading-tight font-bold text-[18px] sm:text-[36px] line-clamp-3'>
+
+                        {/* Text */}
+                        <div className='w-full md:w-1/2 font-[norms-pro] flex flex-col justify-between'>
+                          <h3 className='mt-3 md:mt-0 text-white leading-tight font-bold text-[18px] sm:text-[24px] md:text-[36px] line-clamp-3'>
                             {news.title}
                           </h3>
                           <p
-                            className='mt-2 text-white/60 text-sm leading-6 line-clamp-3 sm:line-clamp-7 font-[450] font-[norms-pro] '
+                            className='mt-2 text-white/70 text-[13px] sm:text-sm md:text-[15px] leading-5 sm:leading-6 line-clamp-4 sm:line-clamp-5 md:line-clamp-7 font-[450]'
                             dangerouslySetInnerHTML={{ __html: news.description }}
                           />
                         </div>
@@ -107,10 +114,13 @@ const NewsInsightPage = () => {
         </div>
       </section>
 
-      <section id='outlook' className='bg-[#121212] min-h-[756px] py-24'>
-        <div className='max-w-[1280px] mx-auto w-full flex gap-8'>
-          <div className='w-3/5 aspect-[4/3] bg-[linear-gradient(#262626,#111111,#262626)] rounded-[25px] p-7'>
-            <div className='rounded-[15px] overflow-hidden relative w-full aspect-[4/3]'>
+      <section
+        id='outlook'
+        className='bg-[#121212] min-h-[520px] md:min-h-[756px] py-12 sm:py-16 md:py-24'>
+        <div className='max-w-[1280px] mx-auto w-full flex flex-col md:flex-row gap-6 sm:gap-7 md:gap-8 px-4 sm:px-6 md:px-0'>
+          {/* Зурагтай блок */}
+          <div className='w-full md:w-3/5 aspect-[16/9] sm:aspect-[3/2] md:aspect-[4/3] bg-[linear-gradient(#262626,#111111,#262626)] rounded-[18px] sm:rounded-[22px] md:rounded-[25px] p-4 sm:p-6 md:p-7'>
+            <div className='rounded-[12px] sm:rounded-[14px] md:rounded-[15px] overflow-hidden relative w-full aspect-[16/9] sm:aspect-[3/2] md:aspect-[4/3]'>
               <Image
                 src={"/outlook-sample.png"}
                 alt={"outlook image"}
@@ -121,23 +131,26 @@ const NewsInsightPage = () => {
               />
             </div>
           </div>
-          <div className='flex flex-col justify-between'>
-            <div className='mt-16 flex flex-col gap-6'>
-              <div className='text-4xl uppercase text-white whitespace-pre font-[benzin-extraBold]'>
+
+          {/* Текст тал */}
+          <div className='flex-1 flex flex-col justify-between px-1 sm:px-0'>
+            <div className='mt-6 sm:mt-10 md:mt-16 flex flex-col gap-4 sm:gap-5 md:gap-6'>
+              <div className='text-2xl sm:text-3xl md:text-4xl uppercase text-white whitespace-pre font-[benzin-extraBold] leading-tight'>
                 {"2025 September \n& FUTURE"}
               </div>
-              <div className='font-[norms-pro] underline text-2xl font-[450]'>
+              <div className='font-[norms-pro] underline text-base sm:text-xl md:text-2xl font-[450] text-white/90'>
                 Global Outlook 09/2025
               </div>
             </div>
-            <div className='flex gap-3.5 font-[norms-pro] font-semibold mb-20'>
+
+            <div className='flex flex-wrap gap-2.5 sm:gap-3.5 md:gap-3.5 font-[norms-pro] font-semibold mt-6 sm:mt-10 md:mt-0 mb-10 sm:mb-14 md:mb-20'>
               <Link href={"/outlook/2024"}>
-                <div className='px-5 py-2.5 rounded-[15px] border border-[#E89548] cursor-pointer'>
+                <div className='px-4 sm:px-5 py-2 sm:py-2.5 rounded-[12px] sm:rounded-[15px] border border-[#E89548] cursor-pointer text-sm sm:text-base'>
                   2024 Global Outlook
                 </div>
               </Link>
               <Link href={"/outlook/2025"}>
-                <div className='px-5 py-2.5 rounded-[15px] border border-[#E89548] cursor-pointer bg-[linear-gradient(#E89548,#E87811)]'>
+                <div className='px-4 sm:px-5 py-2 sm:py-2.5 rounded-[12px] sm:rounded-[15px] border border-[#E89548] cursor-pointer bg-[linear-gradient(#E89548,#E87811)] text-sm sm:text-base'>
                   2025 Global Outlook
                 </div>
               </Link>
@@ -146,21 +159,30 @@ const NewsInsightPage = () => {
         </div>
       </section>
 
-      <section id='news-letter' className='mx-auto max-w-[1112px] px-6 md:px-0 py-10'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
+      <section
+        id='news-letter'
+        className='mx-auto max-w-[1112px] px-4 sm:px-6 md:px-0 py-8 sm:py-10'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6'>
           {loading ? (
             <>
-              <div className='space-y-4'>
+              <div className='space-y-3 sm:space-y-4'>
                 {[...Array(4)].map((_, i) => (
-                  <div key={i} className='h-24 bg-slate-700 rounded-lg animate-pulse' />
+                  <div
+                    key={i}
+                    className='h-20 sm:h-24 bg-slate-700/70 rounded-lg animate-pulse'
+                  />
                 ))}
               </div>
-              <div className='h-[760px] bg-slate-700 rounded-lg animate-pulse' />
+              <div className='h-[520px] sm:h-[640px] md:h-[760px] bg-slate-700/70 rounded-lg animate-pulse' />
             </>
           ) : (
             <>
               <NewsletterList items={news.slice(0, 4)} />
-              <LatestNewsPanel items={news} className='lg:ml-2' maxHeight={760} />
+              <LatestNewsPanel
+                items={news}
+                className='lg:ml-0 xl:ml-2'
+                maxHeight={760} // desktop хэвээр
+              />
             </>
           )}
         </div>
