@@ -43,16 +43,64 @@ export async function renderPdfFirstPageToDivBg(pdfUrl: string, targetDivId: str
 }
 
 
-import { useCallback } from "react";
+import { useCallback } from "react"
+import { usePathname, useRouter } from "next/navigation"
+
+type ScrollToIdFn = {
+  // link байхгүй хувилбар: зөвхөн одоогийн хуудсан дээр scroll
+  (sectionId: string, offset?: number): void
+
+  // link байгаа хувилбар: route солиж, section рүү очно
+  (link: string | undefined, sectionId: string, offset?: number): void
+}
 
 export function useScrollToId(defaultOffset = 80) {
-  return useCallback((id: string, offset = defaultOffset) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
-    window.scrollTo({ top: y, behavior: "smooth" });
-  }, [defaultOffset]);
+  const router = useRouter()
+  const pathname = usePathname()
+
+  const scrollToId = useCallback(
+    ((arg1: string | undefined, arg2?: string | number, arg3?: number) => {
+      let link: string | undefined
+      let sectionId: string
+      let offset = defaultOffset
+
+      // --- overload шийдэх хэсэг ---
+      if (typeof arg2 === "string") {
+        // scrollToId(link, sectionId, offset?)
+        link = arg1
+        sectionId = arg2
+        if (typeof arg3 === "number") offset = arg3
+      } else {
+        // scrollToId(sectionId, offset?)
+        link = undefined
+        sectionId = arg1 as string
+        if (typeof arg2 === "number") offset = arg2
+      }
+
+      if (!sectionId) return
+
+      // 🟣 link байхгүй бол → зөвхөн одоогийн хуудсан дээр scroll
+      if (!link || link === "" || link === pathname) {
+        if (typeof window === "undefined") return
+        const el = document.getElementById(sectionId)
+        if (!el) return
+
+        const y = el.getBoundingClientRect().top + window.pageYOffset - offset
+        window.scrollTo({ top: y, behavior: "smooth" })
+        return
+      }
+
+      // 🟣 link байгаа, өөр route бол → /page#sectionId руу push
+      const href = `${link}#${sectionId}`
+      router.push(href, { scroll: true }) // Next өөрөө hash руу scroll хийнэ
+    }) as ScrollToIdFn,
+    [defaultOffset, pathname, router]
+  )
+
+  return scrollToId
 }
+
+
 
 // utils/timeAgo.ts
 export function timeAgoFromMs(createdAtMs: number, nowMs = Date.now()): string {

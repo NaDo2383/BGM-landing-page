@@ -81,7 +81,7 @@ export default function Navbar() {
             <Button
               variant='transparent'
               onClick={() => {
-                scrollTo("subscribe")
+                scrollTo("/", "subscribe")
               }}>
               {t("subscribe")}
             </Button>

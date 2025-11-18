@@ -9,7 +9,7 @@ type aboutUsPropsType = {
   id?: string
 }
 
-const AboutUs = ({ bgcolor = "#000", id, imageColoredBg }: aboutUsPropsType) => {
+const AboutUs = ({ bgcolor = "#000000", id, imageColoredBg }: aboutUsPropsType) => {
   const t = useTranslations("aboutCard")
 
   return (
@@ -17,7 +17,7 @@ const AboutUs = ({ bgcolor = "#000", id, imageColoredBg }: aboutUsPropsType) => 
       <section
         id={id}
         className={`bg-[${bgcolor}] overflow-hidden py-10 sm:py-14 lg:py-[64px] px-4 sm:px-6`}
-        style={{ backgroundColor: bgcolor }} // динамик өнгө найдвартай
+        style={{ backgroundColor: bgcolor }} //
       >
         <div
           className='

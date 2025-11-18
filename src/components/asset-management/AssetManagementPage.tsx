@@ -3,6 +3,7 @@ import { useScrollToId } from "@/utils/utils"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 import React from "react"
+import FundManagerCard from "../ui/FundManagerCard"
 
 export default function AssetManagementPage() {
   const t = useTranslations("asset-management")
@@ -26,6 +27,30 @@ export default function AssetManagementPage() {
       title: t("saving"),
       text: t("saving-text"),
       img: "/what-we-do/saving-fund.png",
+    },
+  ]
+
+  const fundManagers = [
+    {
+      title: t("fundeManagerTitle1"),
+      name: t("fundeManagerName1"),
+      imgUrl: "/membercardimage.png",
+      number: "+976 88291809",
+      mail: "bilegt.g@balancedgrowth.mn",
+    },
+    {
+      title: t("fundeManagerTitle2"),
+      name: t("fundeManagerName2"),
+      imgUrl: "/membercardimage.png",
+      number: "+976 94247272",
+      mail: "oyunjunai@balancedgrowth.mn",
+    },
+    {
+      title: t("fundeManagerTitle3"),
+      name: t("fundeManagerName3"),
+      imgUrl: "/membercardimage.png",
+      number: "+976 99208523",
+      mail: "aminaa@capitalgrowth.mn",
     },
   ]
 
@@ -101,6 +126,21 @@ export default function AssetManagementPage() {
             </div>
           </div>
         ))}
+      </section>
+      <section className=' max-w-[1240px] mx-auto flex flex-col gap-20 my-52'>
+        <div className='flex flex-col gap-2.5 items-center justify-center font-[norms-pro]'>
+          <div className='text-5xl font-medium capitalize bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent'>
+            {t("teamIntroducition")}
+          </div>
+          <div className='text-[#afafaf] text-lg whitespace-pre-wrap text-center'>
+            {t("teamIntroducitionText")}
+          </div>
+        </div>
+        <div className='flex justify-center gap-[90px] '>
+          {fundManagers.map((e, i) => (
+            <FundManagerCard data={e} key={i} />
+          ))}
+        </div>
       </section>
     </>
   )

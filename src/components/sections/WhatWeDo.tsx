@@ -68,7 +68,7 @@ export default function WhatWeDo() {
             <h2 className='text-4xl md:text-5xl font-medium  tracking-tight'>
               {t("title")}
             </h2>
-            <p className='mt-3 text-[#A6AFBF]'>{t("subtitle")}</p>
+            <p className='mt-3 text-[#A6AFBF] whitespace-pre-wrap'>{t("subtitle")}</p>
           </header>
 
           <div

@@ -2,8 +2,9 @@
 import { useTranslations } from "next-intl"
 import React from "react"
 import AboutUs from "../sections/AboutUs"
-import Image from "next/image"
 import { useScrollToId } from "@/utils/utils"
+import TeamSectionCarousel from "./TeamSectionCarousel"
+import MemberCard from "../ui/MemberCard"
 
 const AboutUsPage = () => {
   const t = useTranslations("about-us")
@@ -21,6 +22,24 @@ const AboutUsPage = () => {
     {
       title: t("title3small"),
       text: t("text3small"),
+    },
+  ]
+
+  const boardMembers = [
+    {
+      title: t("boardMemberTitle1"),
+      name: t("boardMemberName1"),
+      imgUrl: "/membercardimage.png",
+    },
+    {
+      title: t("boardMemberTitle2"),
+      name: t("boardMemberName2"),
+      imgUrl: "/membercardimage.png",
+    },
+    {
+      title: t("boardMemberTitle3"),
+      name: t("boardMemberName3"),
+      imgUrl: "/membercardimage.png",
     },
   ]
 
@@ -60,7 +79,7 @@ const AboutUsPage = () => {
           </div>
         </section>
 
-        <AboutUs id='bg-theory' imageColoredBg={true} bgcolor={"#050505"} />
+        <AboutUs id='bg-theory' imageColoredBg={true} />
 
         <section id='asset-mamangement' className='w-full bg-[#000]'>
           <div className='flex flex-col justify-center items-center max-w-7xl mx-auto gap-2 sm:gap-2.5'>
@@ -92,33 +111,19 @@ const AboutUsPage = () => {
             ))}
           </div>
         </section>
+        <TeamSectionCarousel />
 
-        <section id='team' className='bg-[#000] py-8 sm:py-10 px-4 sm:px-6 md:p-[100px]'>
-          <div className='flex flex-col md:flex-row max-w-[1112px] mx-auto gap-6 sm:gap-8 md:gap-[113px]'>
-            <div className='w-full md:w-[60%] md:min-w-[513px] flex flex-col justify-center gap-4 sm:gap-5 md:gap-6'>
-              <div className='text-[#fff] font-[norms-pro] font-[450] text-base sm:text-xl md:text-3xl whitespace-pre-wrap'>
-                {t("ceo-creeting")}
-              </div>
-              <div className='flex flex-wrap items-end gap-4 sm:gap-6 md:gap-[44px]'>
-                <div className='text-white text-xl sm:text-[28px] md:text-[32px] font-[500] font-[norms-pro] leading-none'>
-                  {t("ceo-name")}
-                </div>
-                <div className='text-[#F1883F] text-sm sm:text-[18px] md:text-[20px] font-[norms-pro] leading-none'>
-                  {t("ceo-pos")}
-                </div>
-              </div>
+        <section className=' max-w-[1240px] mx-auto flex flex-col gap-20 my-52'>
+          <div className='flex flex-col gap-2.5 items-center justify-center font-[norms-pro]'>
+            <div className='text-5xl font-medium capitalize'>{t("boardMembers")}</div>
+            <div className='text-[#afafaf] text-lg whitespace-pre-wrap text-center'>
+              {t("boardMembersText")}
             </div>
-
-            <div className='w-full md:w-[40%] md:min-w-[460px]'>
-              <Image
-                src='/ceo.png'
-                alt='CEO portrait'
-                width={460}
-                height={540}
-                className='w-full h-auto md:w-[460px] md:h-[540px] object-fill rounded-lg mx-auto md:mx-0'
-                priority
-              />
-            </div>
+          </div>
+          <div className='flex justify-center gap-[70px] '>
+            {boardMembers.map((e, i) => (
+              <MemberCard data={e} key={i} />
+            ))}
           </div>
         </section>
       </section>

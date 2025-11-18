@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import clsx from "clsx"
+import axios from "axios"
 
 export default function SearchJobPage() {
   const t = useTranslations("search-job")
@@ -33,9 +34,15 @@ export default function SearchJobPage() {
   } = useForm<FormValues>({ resolver: zodResolver(FormSchema) })
 
   async function onSubmit(data: FormValues) {
-    // TODO: send to your API
-    console.log("Submit:", data)
-    reset()
+    try {
+      await axios.post("/api/search-job", data)
+      alert(t("success"))
+    } catch (e) {
+      console.error(e)
+      alert(t("failed"))
+    } finally {
+      reset()
+    }
   }
 
   const field =
