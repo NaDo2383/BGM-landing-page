@@ -86,7 +86,7 @@ const AboutUsPage = () => {
             <div className='text-[28px] sm:text-[36px] md:text-[45px] font-[500] font-[norms-pro] bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent whitespace-pre text-center'>
               {t("bgm-name")}
             </div>
-            <div className='flex flex-col gap-4 sm:gap-5 md:gap-6 max-w-[942px] text-center font-[norms-pro] text-[#afafaf] text-sm sm:text-base md:text-lg'>
+            <div className='flex flex-col gap-4 sm:gap-5 md:gap-6 max-w-[1096px] text-center font-[norms-pro] text-[#afafaf] text-sm sm:text-base md:text-lg'>
               <div>{t("text1")}</div>
               <div>{t("text2")}</div>
             </div>
