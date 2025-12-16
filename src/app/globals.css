@@ -44,6 +44,22 @@
 }
 
 @font-face {
+  font-family: "freigeist-xwideblack";
+  src: url("/fonts/Fontspring-DEMO-freigeist-xwideblack.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "freigeist-xwidelight";
+  src: url("/fonts/Fontspring-DEMO-freigeist-xwidelight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "norms-pro";
   src: url("/fonts/tt-norms-pro-trail-normal.ttf") format("truetype");
   font-weight: normal;

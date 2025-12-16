@@ -9,7 +9,7 @@ export default function StatsSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
 
   const stats = [
-    { number: 110, label: t("users"), class: "text-[#ef7a0b]" },
+    { number: 110, label: t("users"), class: "text-[#E85211]" },
     { number: 98, label: t("status"), class: "text-[#3F61F1]" },
     { number: 560, label: t("number"), class: "text-white" },
   ]

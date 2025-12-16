@@ -20,21 +20,21 @@ export default function HeroSection() {
       </div>
       <div className='absolute inset-0 w-full h-full bg-[linear-gradient(180deg,rgba(255,255,255,0)_56%,rgba(0,0,0,1)_100%)] z-10' />
 
-      <div className='relative z-10 text-center px-4 max-w-4xl mx-auto flex justify-between flex-col mt-16 sm:mt-24 md:mt-32'>
-        <h1 className='text-lg sm:text-2xl md:text-[40px] font-[700] text-white mb-4 sm:mb-5 md:mb-6 animate-fade-in-up tracking-wider text-center relative whitespace-pre'>
-          <div className='font-[BGMfreigeistLight] uppercase font-[250] text-[18px] sm:text-[24px] md:text-[32px] lg:text-[36px]'>
+      <div className='relative z-10 text-center px-4  mx-auto flex justify-between flex-col mt-10 sm:mt-18 md:mt-24'>
+        <h1 className='text-lg sm:text-2xl md:text-[40px] font-[700] text-white mb-4 sm:mb-5 md:mb-6 animate-fade-in-up tracking-wider flex flex-col justify-center relative whitespace-pre'>
+          <div className='font-[freigeist-xwidelight] uppercase font-[250] text-[18px] sm:text-[24px] md:text-[32px] lg:text-[36px]'>
             {t("title1")}
           </div>
-          <span className='relative font-[BGMfreigeistBlack] uppercase font-[850] text-[18px] sm:text-[24px] md:text-[32px] lg:text-[36px]'>
+          <div className='relative font-[freigeist-xwideblack] uppercase font-[850] text-[18px] sm:text-[24px] md:text-[32px] lg:text-[36px]'>
             {t("title")}
-          </span>
+          </div>
         </h1>
 
-        <div className='font-[BGMfreigeistLight] text-base sm:text-lg md:text-2xl tracking-wider mt-8 sm:mt-12 md:mt-[16vh]'>
+        {/* <div className='font-[BGMfreigeistLight] text-base sm:text-lg md:text-2xl tracking-wider mt-8 sm:mt-12 md:mt-[16vh]'>
           {t("title2")}
-        </div>
+        </div> */}
 
-        <div className='mx-auto mt-8 sm:mt-12 md:mt-[16vh]'>
+        <div className='mx-auto mt-8 sm:mt-12 md:mt-[18vh]'>
           <Button variant={"transparent"}>{t("startInvesting")}</Button>
         </div>
       </div>

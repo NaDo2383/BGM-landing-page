@@ -43,7 +43,7 @@ export default function NewsSection() {
               {t("title1")}
             </h2>
           </div>
-          <p className='text-center text-[#90A1B9] font-normal tracking-normal capitalize text-sm sm:text-base leading-relaxed max-w-4xl mx-auto'>
+          <p className='text-center text-[#90A1B9] font-normal tracking-normal text-sm sm:text-base leading-relaxed max-w-4xl mx-auto'>
             {t("text")}
           </p>
         </div>

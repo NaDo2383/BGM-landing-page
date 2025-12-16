@@ -34,14 +34,14 @@ export default function AssetManagementPage() {
     {
       title: t("fundeManagerTitle1"),
       name: t("fundeManagerName1"),
-      imgUrl: "/membercardimage.png",
+      imgUrl: "/billy.png",
       number: "+976 88291809",
       mail: "bilegt.g@balancedgrowth.mn",
     },
     {
       title: t("fundeManagerTitle2"),
       name: t("fundeManagerName2"),
-      imgUrl: "/membercardimage.png",
+      imgUrl: "/junai.png",
       number: "+976 94247272",
       mail: "oyunjunai@balancedgrowth.mn",
     },

@@ -7,6 +7,7 @@ import CareerDevelopment from "./CareerDevelopment"
 import SocialCampaign from "./SocialCampaign"
 import LifeAtBGM from "./LifeAtBGM"
 import { useScrollToId } from "@/utils/utils"
+import SearchJob from "./SearchJob"
 
 export default function CareersPage() {
   const t = useTranslations("careers")
@@ -75,6 +76,7 @@ export default function CareersPage() {
       <StudentsGraduates />
       <CareerDevelopment />
       <SocialCampaign />
+      <SearchJob />
     </>
   )
 }

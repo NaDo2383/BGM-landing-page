@@ -113,7 +113,7 @@ const AboutUsPage = () => {
         </section>
         <TeamSectionCarousel />
 
-        <section className=' max-w-[1240px] mx-auto flex flex-col gap-20 my-52'>
+        {/* <section className=' max-w-[1240px] mx-auto flex flex-col gap-20 my-52'>
           <div className='flex flex-col gap-2.5 items-center justify-center font-[norms-pro]'>
             <div className='text-5xl font-medium capitalize'>{t("boardMembers")}</div>
             <div className='text-[#afafaf] text-lg whitespace-pre-wrap text-center'>
@@ -125,7 +125,7 @@ const AboutUsPage = () => {
               <MemberCard data={e} key={i} />
             ))}
           </div>
-        </section>
+        </section> */}
       </section>
     </>
   )

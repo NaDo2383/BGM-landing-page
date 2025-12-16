@@ -68,7 +68,7 @@ const AboutUs = ({ bgcolor = "#000000", id, imageColoredBg }: aboutUsPropsType) 
                 <h2 className='text-white text-xl sm:text-2xl lg:text-[40px] leading-tight'>
                   {t("title")}
                 </h2>
-                <span className='text-[#ef7a0b] text-xl sm:text-2xl lg:text-[40px] leading-tight'>
+                <span className='text-[#E85211] text-xl sm:text-2xl lg:text-[40px] leading-tight'>
                   {t("title1")}
                 </span>
                 <h2 className='text-white text-xl sm:text-2xl lg:text-[40px] leading-tight'>
@@ -76,7 +76,7 @@ const AboutUs = ({ bgcolor = "#000000", id, imageColoredBg }: aboutUsPropsType) 
                 </h2>
               </div>
 
-              <div className='text-[15px] sm:text-base lg:text-[18px] leading-relaxed font-[450] font-[norms-pro] text-[#AFAFAF]'>
+              <div className='text-[15px] sm:text-base lg:text-[18px]  font-[450] font-[norms-pro] text-[#AFAFAF] leading-5'>
                 <div>{t("text")}</div>
                 <br />
                 <div>{t("text1")}</div>

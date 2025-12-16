@@ -49,7 +49,7 @@ export default function CapabilitiesSection() {
               <h2 className=' text-white text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
                 {t("title1")}
               </h2>
-              <h2 className=' text-[#ef7a0b] text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
+              <h2 className=' text-[#E85211] text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
                 {t("title2")}
               </h2>
             </div>

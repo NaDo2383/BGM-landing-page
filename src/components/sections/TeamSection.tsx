@@ -23,7 +23,7 @@ export default function TeamSection() {
       <div className='mx-auto max-w-7xl flex flex-col gap-6 sm:gap-8 lg:gap-[50px]'>
         {/* Heading */}
         <div className='flex flex-wrap items-center justify-center gap-2 text-center'>
-          <h2 className='font-[Roboto] text-[#ef7a0b] text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
+          <h2 className='font-[Roboto] text-[#E85211] text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
             {t("title1")}
           </h2>
           <h2 className='font-[Roboto] text-white text-2xl sm:text-3xl lg:text-[40px] leading-tight'>

@@ -21,17 +21,19 @@ export default function FundManagerCard({ data }: FundManagerCardPropType) {
         alt={data.name + " image"}
         width={276}
         height={346}
-        className=' rounded-[30px]'
+        className='rounded-[30px]'
       />
-      <div className='flex flex-col gap-2.5 items-center justify-center'>
+      <div className='flex flex-col gap-5 items-center justify-center'>
         <div className='text-2xl font-semibold capitalize'>{data.name}</div>
-        <div className='text-[17px] font-medium capitalize text-[#919191]'>
-          {data.title}
+        <div className='flex flex-col gap-[5px] items-center'>
+          <div className='text-[17px] font-medium capitalize text-[#919191]'>
+            {data.title}
+          </div>
+          <div className='text-[17px] font-medium capitalize text-[#919191]'>
+            {data.number}
+          </div>
+          <div className='text-[17px] font-medium text-[#919191]'>{data.mail}</div>
         </div>
-        <div className='text-[17px] font-medium capitalize text-[#919191]'>
-          {data.number}
-        </div>
-        <div className='text-[17px] font-medium text-[#919191]'>{data.mail}</div>
       </div>
     </div>
   )

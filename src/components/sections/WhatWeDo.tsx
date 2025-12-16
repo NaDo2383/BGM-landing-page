@@ -127,7 +127,7 @@ export default function WhatWeDo() {
                         className={[
                           "absolute left-0 -translate-x-1/2 top-0 bottom-0 z-10",
                           isActive
-                            ? "w-[3px] bg-[#E87811] rounded-sm"
+                            ? "w-[3px] bg-[#E85211] rounded-sm"
                             : "w-[1px] bg-[#AFAFAF]",
                         ].join(" ")}
                       />
