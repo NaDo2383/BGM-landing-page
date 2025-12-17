@@ -17,7 +17,7 @@ export default function Page() {
       <WhatWeDo />
       <NewsSection />
       <ContactUsForm />
-      <FAQSection />
+      {/* <FAQSection /> */}
     </>
   )
 }

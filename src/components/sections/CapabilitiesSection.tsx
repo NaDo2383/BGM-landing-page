@@ -53,7 +53,7 @@ export default function CapabilitiesSection() {
                 {t("title2")}
               </h2>
             </div>
-            <p className='text-center text-[#90A1B9] font-normal tracking-normal capitalize text-sm sm:text-base leading-relaxed max-w-4xl mx-auto whitespace-pre-wrap'>
+            <p className='text-center text-[#AFAFAF] font-normal tracking-normal  text-sm sm:text-base leading-relaxed max-w-4xl mx-auto whitespace-pre-wrap'>
               {t("text")}
             </p>
           </div>

@@ -48,7 +48,7 @@ export default function AssetManagementPage() {
     {
       title: t("fundeManagerTitle3"),
       name: t("fundeManagerName3"),
-      imgUrl: "/membercardimage.png",
+      imgUrl: "/amina.png",
       number: "+976 99208523",
       mail: "aminaa@capitalgrowth.mn",
     },

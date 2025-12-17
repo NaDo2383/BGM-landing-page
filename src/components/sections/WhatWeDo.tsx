@@ -64,12 +64,12 @@ export default function WhatWeDo() {
     <PopInSection>
       <section className='bg-[#000] text-white pb-16 md:pb-20'>
         <div className='max-w-6xl mx-auto px-6'>
-          <header className='text-center font-[norms-pro]'>
+          <div className='text-center font-[norms-pro]'>
             <h2 className='text-4xl md:text-5xl font-medium  tracking-tight'>
               {t("title")}
             </h2>
-            <p className='mt-3 text-[#A6AFBF] whitespace-pre-wrap'>{t("subtitle")}</p>
-          </header>
+            <p className='mt-3 text-[#afafaf] whitespace-pre-wrap'>{t("subtitle")}</p>
+          </div>
 
           <div
             className='mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'
@@ -132,7 +132,7 @@ export default function WhatWeDo() {
                         ].join(" ")}
                       />
 
-                      <div className='flex items-start gap-2 pl-6'>
+                      <div className='flex items-start gap-2 pl-6 font-[norms-pro]'>
                         <div>
                           <h3 className='text-2xl md:text-[30px] font-semibold'>
                             {title}
