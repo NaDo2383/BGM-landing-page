@@ -38,13 +38,13 @@ export default function NewsSection() {
       <div className='mx-auto max-w-[1240px] px-2 sm:px-4 flex flex-col gap-8 sm:gap-10 lg:gap-[50px]'>
         {/* Heading */}
         <div className='flex flex-col gap-2 font-[norms-pro]'>
-          <div className='flex flex-wrap items-center justify-center gap-2 text-center font-bold'>
-            <h2 className=' text-white text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
+          <div className='flex flex-wrap items-center justify-center gap-2 text-center font-medium'>
+            <div className=' text-white text-2xl sm:text-3xl lg:text-[48px] leading-tight'>
               {t("title1")}
-            </h2>
-            <h2 className=' text-[#E85211] text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
+            </div>
+            <div className=' text-[#E85211] text-2xl sm:text-3xl lg:text-[48px] leading-tight'>
               {t("title2")}
-            </h2>
+            </div>
           </div>
           <p className='text-center text-[#afafaf] font-normal tracking-normal text-sm sm:text-base leading-relaxed max-w-4xl mx-auto'>
             {t("text")}
