@@ -26,7 +26,7 @@ export default function LifeAtBGM() {
     <section
       id='life-at-bgm'
       className='max-w-7xl mx-auto flex flex-col items-center justify-center my-12 sm:my-16 md:my-20 gap-10 sm:gap-14 md:gap-16 px-4 sm:px-6'>
-      <div className='font-[norms-pro] text-center'>
+      <div className='font-norms-pro text-center'>
         <div className='font-medium text-3xl sm:text-4xl md:text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent'>
           {t("life-at-bgm")}
         </div>
@@ -36,7 +36,7 @@ export default function LifeAtBGM() {
       </div>
 
       {/* Cards row (DOM бүтэц өөрчлөхгүй, зөвхөн responsive классууд) */}
-      <div className='flex w-full flex-col sm:flex-row flex-wrap lg:flex-nowrap justify-center sm:justify-between gap-6 sm:gap-7 md:gap-8 font-[norms-pro]'>
+      <div className='flex w-full flex-col sm:flex-row flex-wrap lg:flex-nowrap justify-center sm:justify-between gap-6 sm:gap-7 md:gap-8 font-norms-pro'>
         {sample.map((e, i) => (
           <div
             key={i}

@@ -43,10 +43,10 @@ export default function StatsSection() {
               }`}
               style={{ transitionDelay: `${index * 200}ms` }}>
               <h3
-                className={`text-[64px] font-[Roboto] font-extralight ${stat.class} mb-2`}>
+                className={`text-[64px] font-roboto font-extralight ${stat.class} mb-2`}>
                 {isVisible ? <CountUp end={stat.number} duration={2000} /> : "0"}
               </h3>
-              <p className='text-[#90A1B9] font-[Roboto] text-[20px] font-normal leading-normal uppercase'>
+              <p className='text-[#90A1B9] font text-[20px] font-normal leading-normal uppercase'>
                 {stat.label}
               </p>
             </div>

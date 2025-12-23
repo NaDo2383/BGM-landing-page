@@ -11,7 +11,7 @@ export default function Footer() {
   const t = useTranslations("footer")
 
   return (
-    <div className=' font-[norms-pro] text-white border-t border-[#434343]  '>
+    <div className=' font-norms-pro text-white border-t border-[#434343]  '>
       <div
         className={`mx-auto bg-[url("/footer-gradiant.png")] bg-cover bg-center max-w-[1440px]`}>
         <footer className='relative text-white pt-10 sm:pt-12 lg:pt-16 pb-8 sm:pb-10 lg:pb-12 px-4 sm:px-6 md:px-12 overflow-hidden  '>

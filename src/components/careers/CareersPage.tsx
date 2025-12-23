@@ -18,10 +18,10 @@ export default function CareersPage() {
       <section className='relative min-h-[400px] flex items-center justify-center flex-col overflow-hidden '>
         <div className='relative z-10 text-start max-w-[1440px] w-full px-4 sm:px-6 lg:px-[100px] bg-[url("/about-us-hero.png")] bg-no-repeat  bg-contain bg-center'>
           <div className='flex flex-col items-center justify-center mt-16 sm:mt-20 md:mt-24'>
-            <h2 className='text-[28px] sm:text-[36px] md:text-[62px] font-[BGMxwidemedium] bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent text-center mr-1.5 uppercase font-bold leading-tight'>
+            <h2 className='text-[28px] sm:text-[36px] md:text-[62px] font-xwide bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent text-center mr-1.5 uppercase font-bold leading-tight'>
               {t("title1")}
             </h2>
-            <span className='font-[norms-pro] text-sm sm:text-base md:text-lg text-[#AFAFAF] whitespace-pre-wrap text-center mt-2'>
+            <span className='font-norms-pro text-sm sm:text-base md:text-lg text-[#AFAFAF] whitespace-pre-wrap text-center mt-2'>
               {t("title2")}
             </span>
           </div>

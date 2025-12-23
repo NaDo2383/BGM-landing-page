@@ -44,7 +44,7 @@ export default function CapabilitiesSection() {
       <section className='bg-[url("/modern-gradiant.png")] bg-no-repeat bg-fill bg-center p-6 sm:p-18 lg:p-[100px] sm:pt-0'>
         <div className='mx-auto max-w-[1240px]  px-2 sm:px-4 flex flex-col gap-8 sm:gap-10 lg:gap-[50px]'>
           {/* Heading */}
-          <div className='flex flex-col gap-2 font-[norms-pro]'>
+          <div className='flex flex-col gap-2 font-norms-pro'>
             <div className='flex flex-wrap items-center justify-center gap-2 text-center  font-bold'>
               <h2 className=' text-white text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
                 {t("title1")}

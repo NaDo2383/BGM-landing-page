@@ -49,10 +49,10 @@ const AboutUsPage = () => {
         <section className='relative min-h-[400px] flex items-center justify-center flex-col overflow-hidden'>
           <div className='relative z-10 text-start max-w-[1440px] w-full px-4 sm:px-6 lg:px-[100px] bg-[url("/about-us-hero.png")] bg-no-repeat bg-center bg-contain'>
             <div className='flex flex-col items-center justify-center mt-14 sm:mt-20 md:mt-24'>
-              <h2 className='text-[26px] sm:text-[36px] md:text-[62px] leading-tight font-[BGMxwidemedium] font-xwide bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent text-center mr-1.5 uppercase'>
+              <h2 className='text-[26px] sm:text-[36px] md:text-[62px] leading-tight font-xwide bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent text-center mr-1.5 uppercase'>
                 {t("title1")}
               </h2>
-              <span className='font-[norms-pro] text-xs sm:text-base md:text-lg text-[#AFAFAF] mt-2 sm:mt-2.5'>
+              <span className='font-norms-pro text-xs sm:text-base md:text-lg text-[#AFAFAF] mt-2 sm:mt-2.5'>
                 {t("whatwedo")}
               </span>
             </div>
@@ -83,10 +83,10 @@ const AboutUsPage = () => {
 
         <section id='asset-mamangement' className='w-full bg-[#000]'>
           <div className='flex flex-col justify-center items-center max-w-7xl mx-auto gap-2 sm:gap-2.5'>
-            <div className='text-[28px] sm:text-[36px] md:text-[45px] font-[500] font-[norms-pro] bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent whitespace-pre text-center'>
+            <div className='text-[28px] sm:text-[36px] md:text-[45px] font-[500] font-norms-pro bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent whitespace-pre text-center'>
               {t("bgm-name")}
             </div>
-            <div className='flex flex-col gap-4 sm:gap-5 md:gap-6 max-w-[1096px] text-center font-[norms-pro] text-[#afafaf] text-sm sm:text-base md:text-lg'>
+            <div className='flex flex-col gap-4 sm:gap-5 md:gap-6 max-w-[1096px] text-center font-norms-pro text-[#afafaf] text-sm sm:text-base md:text-lg'>
               <div>{t("text1")}</div>
               <div>{t("text2")}</div>
             </div>
@@ -101,10 +101,10 @@ const AboutUsPage = () => {
               <div
                 key={i + "fdnjsaikl"}
                 className='bg-[url("/about-us-card-bg.png")] bg-cover lg:w-[360px] lg:h-[270px] p-5 sm:p-6 gap-2.5 sm:gap-3.5 flex flex-col text-center items-center justify-start'>
-                <div className='text-[24px] sm:text-[32px] md:text-[40px] font-[850] mt-4 sm:mt-6 md:mt-8 uppercase font-[freigeist-xwideblack]'>
+                <div className='text-[24px] sm:text-[32px] md:text-[40px] font-[850] mt-4 sm:mt-6 md:mt-8 uppercase font-freigeist-black'>
                   {e.title}
                 </div>
-                <div className='font-medium whitespace-pre-wrap font-[norms-pro] text-sm sm:text-base md:text-lg text-[#AFAFAF]'>
+                <div className='font-medium whitespace-pre-wrap font-norms-pro text-sm sm:text-base md:text-lg text-[#AFAFAF]'>
                   {e.text}
                 </div>
               </div>
@@ -114,7 +114,7 @@ const AboutUsPage = () => {
         <TeamSectionCarousel />
 
         {/* <section className=' max-w-[1240px] mx-auto flex flex-col gap-20 my-52'>
-          <div className='flex flex-col gap-2.5 items-center justify-center font-[norms-pro]'>
+          <div className='flex flex-col gap-2.5 items-center justify-center font-norms-pro'>
             <div className='text-5xl font-medium capitalize'>{t("boardMembers")}</div>
             <div className='text-[#afafaf] text-lg whitespace-pre-wrap text-center'>
               {t("boardMembersText")}

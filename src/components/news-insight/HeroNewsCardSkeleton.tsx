@@ -15,7 +15,7 @@ export function HeroNewsCardSkeleton() {
         <div className='relative overflow-hidden w-1/2 rounded-[15px] aspect-[4/3] bg-slate-700' />
 
         {/* Text Skeleton */}
-        <div className='w-1/2 font-[norms-pro] sm:flex sm:flex-col sm:justify-evenly space-y-4'>
+        <div className='w-1/2 font-norms-pro sm:flex sm:flex-col sm:justify-evenly space-y-4'>
           <div className='mt-4 space-y-3'>
             <div className='h-8 bg-slate-700 rounded w-3/4'></div>
             <div className='h-8 bg-slate-700 rounded w-full'></div>

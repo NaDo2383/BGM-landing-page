@@ -57,7 +57,7 @@ export default function FAQSection() {
           gap-[16px]
         '>
         {/* Left title column */}
-        <div className='text-center font-[norms-pro]'>
+        <div className='text-center font-norms-pro'>
           <h2 className='text-white leading-tight capitalize  text-2xl sm:text-3xl lg:text-[40px] '>
             {t("title1")}
           </h2>
@@ -84,7 +84,7 @@ export default function FAQSection() {
                       px-4 sm:px-6 py-4 sm:py-5  ${
                         isOpen ? "rounded-t-[30px]" : "rounded-[30px] mb-2"
                       } bg-[#111111]
-                      transition-all text-[26px] font-[norms-pro] text-[#919191]
+                      transition-all text-[26px] font-norms-pro text-[#919191]
                       ${isOpen ? "bg-[#0F172B]" : "hover:bg-white/5"}
                     `}>
                     <span className=' font-medium text-sm sm:text-base'>

@@ -19,7 +19,7 @@ export default function NewsletterList({
 }: Props) {
   return (
     <section className={`w-full ${className ?? ""}`}>
-      <h2 className='font-[BGMxwidemedium] bg-[linear-gradient(90deg,#FFFFFF,#111111)] bg-clip-text text-transparent font-bold text-[32px] mb-6 ml-6'>
+      <h2 className='font-xwide bg-[linear-gradient(90deg,#FFFFFF,#111111)] bg-clip-text text-transparent font-bold text-[32px] mb-6 ml-6'>
         {title}
       </h2>
 
@@ -27,7 +27,7 @@ export default function NewsletterList({
         {items.map((it) => (
           <li
             key={it.id}
-            className='group rounded-[30px] p-4 flex items-center gap-4 transition font-[norms-pro] font-bold border border-[#434343]'>
+            className='group rounded-[30px] p-4 flex items-center gap-4 transition font-norms-pro font-bold border border-[#434343]'>
             <button
               className='text-left flex flex-col justify-between h-[152px]'
               onClick={() => onItemClick?.(it.id)}>

@@ -93,14 +93,14 @@ export default function TeamSectionCarousel() {
               <div className='flex flex-col md:flex-row items-stretch md:items-center md:justify-between max-w-[1112px] mx-auto'>
                 {/* Текст тал */}
                 <div className='w-full md:w-[60%] md:min-w-[513px] flex flex-col justify-center gap-4 sm:gap-5 md:gap-6'>
-                  <div className='text-white font-[norms-pro] font-[450] text-[15px] sm:text-lg md:text-2xl lg:text-3xl  whitespace-pre-wrap'>
+                  <div className='text-white font-norms-pro font-[450] text-[15px] sm:text-lg md:text-2xl lg:text-3xl  whitespace-pre-wrap'>
                     {m.text}
                   </div>
                   <div className='flex flex-wrap items-end gap-3 sm:gap-5 md:gap-[44px]'>
-                    <div className='text-white text-xl sm:text-[28px] md:text-[32px] font-[500] font-[norms-pro] leading-none'>
+                    <div className='text-white text-xl sm:text-[28px] md:text-[32px] font-[500] font-norms-pro leading-none'>
                       {m.name}
                     </div>
-                    <div className='text-[#F1883F] text-sm sm:text-base md:text-[20px] font-[norms-pro] leading-none'>
+                    <div className='text-[#F1883F] text-sm sm:text-base md:text-[20px] font-norms-pro leading-none'>
                       {m.pos}
                     </div>
                   </div>

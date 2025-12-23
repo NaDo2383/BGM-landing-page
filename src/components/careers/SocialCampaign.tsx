@@ -15,7 +15,7 @@ export default function SocialCampaign() {
     <section
       id='social-campaign'
       className='max-w-7xl mx-auto flex flex-col items-center justify-center my-12 sm:my-16 md:my-20 pb-12 sm:pb-16 md:pb-24 gap-10 sm:gap-14 md:gap-16 px-4 sm:px-6'>
-      <div className='font-[norms-pro] text-center'>
+      <div className='font-norms-pro text-center'>
         <div className='font-medium text-3xl sm:text-4xl md:text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent'>
           {t("social-campaign")}
         </div>
@@ -24,7 +24,7 @@ export default function SocialCampaign() {
         </div>
       </div>
 
-      <div className='flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5 lg:gap-7 font-[norms-pro]'>
+      <div className='flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5 lg:gap-7 font-norms-pro'>
         {sample.map((e, i) => (
           <div
             key={i}

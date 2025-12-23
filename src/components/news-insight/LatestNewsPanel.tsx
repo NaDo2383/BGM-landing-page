@@ -20,7 +20,7 @@ export default function LatestNewsPanel({
 }: Props) {
   return (
     <div>
-      <h2 className='font-[BGMxwidemedium] bg-[linear-gradient(90deg,#FFFFFF,#111111)] bg-clip-text text-transparent font-bold text-[32px] mb-6 ml-6'>
+      <h2 className='font-xwide bg-[linear-gradient(90deg,#FFFFFF,#111111)] bg-clip-text text-transparent font-bold text-[32px] mb-6 ml-6'>
         {title}
       </h2>
       <aside
@@ -42,7 +42,7 @@ export default function LatestNewsPanel({
               <div key={it.id} className='  p-4 flex gap-1.5 border-b border-[#434343]'>
                 <span className='size-2.5 min-w-2.5 inline-flex rounded-full bg-orange-400/90 mt-1' />
                 <button
-                  className='text-left w-full font-[norms-pro]'
+                  className='text-left w-full font-norms-pro'
                   onClick={() => onItemClick?.(it.id)}>
                   <div className=' font-bold text-[14px]  text-[#AFAFAF]'>
                     <span className='uppercase tracking-wider'>

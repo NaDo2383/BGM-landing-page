@@ -19,7 +19,7 @@ export default function StudentsGraduates() {
     <section
       id='students-and-graduates'
       className="max-w-7xl mx-auto flex flex-col items-center justify-center my-12 sm:my-16 md:my-20 pb-12 sm:pb-16 md:pb-24 gap-10 sm:gap-14 md:gap-16 bg-[url('/student-section-bg.png')] bg-cover bg-center px-4 sm:px-6">
-      <div className='font-[norms-pro] text-center'>
+      <div className='font-norms-pro text-center'>
         <div className='font-medium text-3xl sm:text-4xl md:text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent'>
           {t("students-and-graduates")}
         </div>
@@ -28,7 +28,7 @@ export default function StudentsGraduates() {
         </div>
       </div>
 
-      <div className='flex flex-col lg:flex-row justify-center gap-5 lg:gap-7 font-[norms-pro]'>
+      <div className='flex flex-col lg:flex-row justify-center gap-5 lg:gap-7 font-norms-pro'>
         {sample.map((e, i) => (
           <div
             key={i}
@@ -41,7 +41,7 @@ export default function StudentsGraduates() {
               py-5 sm:py-6 md:py-[33px]
               px-5 sm:px-7 md:px-[44px]
               rounded-[22px] sm:rounded-[26px] md:rounded-[30px]
-              font-[norms-pro]
+              font-norms-pro
               mx-auto
             '>
             <div className='text-center font-semibold text-2xl sm:text-[26px] md:text-[30px]'>

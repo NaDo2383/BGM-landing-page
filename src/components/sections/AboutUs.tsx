@@ -63,7 +63,7 @@ const AboutUs = ({ bgcolor = "#000000", id, imageColoredBg }: aboutUsPropsType) 
                   flex flex-wrap items-center justify-center md:justify-start
                   gap-1.5 sm:gap-2
                   text-center md:text-left
-                  font-[850] font-[norms-pro]
+                  font-[850] font-norms-pro
                 '>
                 <h2 className='text-white text-xl sm:text-2xl lg:text-[40px] leading-tight'>
                   {t("title")}
@@ -76,14 +76,14 @@ const AboutUs = ({ bgcolor = "#000000", id, imageColoredBg }: aboutUsPropsType) 
                 </h2>
               </div>
 
-              <div className='text-[15px] sm:text-base lg:text-[18px]  font-[450] font-[norms-pro] text-[#AFAFAF] leading-5'>
+              <div className='text-[15px] sm:text-base lg:text-[18px]  font-[450] font-norms-pro text-[#AFAFAF] leading-5'>
                 <div>{t("text")}</div>
                 <br />
                 <div>{t("text1")}</div>
                 <br />
                 <div>{t("text2")}</div>
                 <br />
-                <p className='text-white font-[norms-pro] capitalize text-sm sm:text-base lg:text-[18px]'>
+                <p className='text-white font-norms-pro capitalize text-sm sm:text-base lg:text-[18px]'>
                   {t("cardText")}
                 </p>
               </div>

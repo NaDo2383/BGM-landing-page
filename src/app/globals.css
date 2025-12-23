@@ -3,84 +3,40 @@
 @import "swiper/css/pagination";
 @import "remixicon/fonts/remixicon.css";
 
-:root {
-  --font-xwide: "font-xwide";
-}
-
 .font-inter {
   font-family: var(--font-inter);
 }
 
-@font-face {
-  font-family: "BGMxwidemedium";
-  src: url("/fonts/fontspring_xwidemedium.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+/* Tailwind v4 CSS-first theme variables */
+@theme {
+  /* default body font: use Norms Pro */
+  --font-norms-pro: var(--font-norms-pro), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* now these create Tailwind classes: font-heading, font-freigeist, etc */
+  --font-freigeist-black: var(--font-bgm-freigeist-black), ui-sans-serif, system-ui,
+    sans-serif;
+
+  --font-freigeist: var(--font-bgm-freigeist), ui-sans-serif, system-ui, sans-serif;
+
+  --font-freigeist-light: var(--font-bgm-freigeist-light), ui-sans-serif, system-ui,
+    sans-serif;
+
+  --font-xwide: var(--font-bgm-xwide-medium), ui-sans-serif, system-ui, sans-serif;
+
+  --font-freigeist-xwidelight: var(--font-bgm-freigeist-xwidelight), ui-sans-serif,
+    system-ui, sans-serif;
+
+  --font-benzin: var(--font-benzin-medium), ui-sans-serif, system-ui, sans-serif;
+
+  --font-benzin-bold: var(--font-benzin-extrabold), ui-sans-serif, system-ui, sans-serif;
+
+  --font-roboto: var(--font-roboto);
 }
 
-@font-face {
-  font-family: "BGMfreigeist";
-  src: url("/fonts/Fontspring-demo-freigeist-medium.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "BGMfreigeistLight";
-  src: url("/fonts/Fontspring-demo-freigeist-light.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "BGMfreigeistBlack";
-  src: url("/fonts/Fontspring-demo-freigeist-xwideblack.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "freigeist-xwideblack";
-  src: url("/fonts/Fontspring-DEMO-freigeist-xwideblack.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "freigeist-xwidelight";
-  src: url("/fonts/Fontspring-DEMO-freigeist-xwidelight.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "norms-pro";
-  src: url("/fonts/tt-norms-pro-trail-normal.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "benzin-extraBold";
-  src: url("/fonts/benzin-extraBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "benzin-medium";
-  src: url("/fonts/benzin-medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+html,
+body {
+  font-family: var(--font-norms-pro);
 }
 
 @layer base {

@@ -9,7 +9,7 @@ export default function CareerDevelopment() {
     <section
       id='career-developments'
       className='max-w-7xl mx-auto flex flex-col items-center justify-center my-12 sm:my-16 md:my-20 gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6'>
-      <div className='font-[norms-pro] text-center'>
+      <div className='font-norms-pro text-center'>
         <div className='font-medium text-3xl sm:text-4xl md:text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent'>
           {t("career-developments")}
         </div>
@@ -18,7 +18,7 @@ export default function CareerDevelopment() {
         </div>
       </div>
 
-      <div className='font-[norms-pro] font-medium text-sm sm:text-base lg:text-lg px-5 sm:px-6 md:px-[25px] py-2.5 sm:py-3 md:py-[15px] mt-6 sm:mt-7 md:mt-8 bg-[linear-gradient(180deg,#4E4E4E_0%,#111111_100%)] rounded-full text-white/90'>
+      <div className='font-norms-pro font-medium text-sm sm:text-base lg:text-lg px-5 sm:px-6 md:px-[25px] py-2.5 sm:py-3 md:py-[15px] mt-6 sm:mt-7 md:mt-8 bg-[linear-gradient(180deg,#4E4E4E_0%,#111111_100%)] rounded-full text-white/90'>
         {t("pro-network")}
       </div>
 

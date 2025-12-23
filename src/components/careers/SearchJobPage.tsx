@@ -57,10 +57,10 @@ export default function SearchJobPage() {
       <section className='relative min-h-[400px] flex items-center justify-center flex-col overflow-hidden '>
         <div className='relative z-10 text-start max-w-[1440px] w-full px-4 sm:px-6 lg:px-[100px] bg-[url("/about-us-hero.png")] bg-contain bg-no-repeat bg-center'>
           <div className=' flex flex-col items-center justify-center mt-24'>
-            <h2 className='text-[40px] md:text-[62px] font-[BGMxwidemedium] bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent text-center mr-1.5 uppercase font-bold'>
+            <h2 className='text-[40px] md:text-[62px] font-xwide bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent text-center mr-1.5 uppercase font-bold'>
               {t("title1")}
             </h2>
-            <span className='font-[norms-pro] text-lg text-[#AFAFAF] whitespace-pre-wrap text-center'>
+            <span className='font-norms-pro text-lg text-[#AFAFAF] whitespace-pre-wrap text-center'>
               {t("title2")}
             </span>
           </div>
@@ -74,7 +74,7 @@ export default function SearchJobPage() {
             "bg-[radial-gradient(100%_272.26%_at_0%_0%,#232323_0%,#111111_28.6%,#111111_100%)]",
             "shadow-[0_8px_40px_rgba(0,0,0,0.45)]"
           )}>
-          <div className='mb-8 sm:mb-10 whitespace-pre-wrap font-medium text-4xl font-[norms-pro]'>
+          <div className='mb-8 sm:mb-10 whitespace-pre-wrap font-medium text-4xl font-norms-pro'>
             {t("text")}
           </div>
 

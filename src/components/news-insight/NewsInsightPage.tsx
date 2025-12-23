@@ -94,7 +94,7 @@ const NewsInsightPage = () => {
                         </div>
 
                         {/* Text */}
-                        <div className='w-full md:w-1/2 font-[norms-pro] flex flex-col justify-between'>
+                        <div className='w-full md:w-1/2 font-norms-pro flex flex-col justify-between'>
                           <h3 className='mt-3 md:mt-0 text-white leading-tight font-bold text-[18px] sm:text-[24px] md:text-[36px] line-clamp-3'>
                             {news.title}
                           </h3>
@@ -135,15 +135,15 @@ const NewsInsightPage = () => {
           {/* Текст тал */}
           <div className='flex-1 flex flex-col justify-between px-1 sm:px-0'>
             <div className='mt-6 sm:mt-10 md:mt-16 flex flex-col gap-4 sm:gap-5 md:gap-6'>
-              <div className='text-2xl sm:text-3xl md:text-4xl uppercase text-white whitespace-pre font-[benzin-extraBold] leading-tight'>
+              <div className='text-2xl sm:text-3xl md:text-4xl uppercase text-white whitespace-pre font-benzin-bold leading-tight'>
                 {"2025 September \n& FUTURE"}
               </div>
-              <div className='font-[norms-pro] underline text-base sm:text-xl md:text-2xl font-[450] text-white/90'>
+              <div className='font-norms-pro underline text-base sm:text-xl md:text-2xl font-[450] text-white/90'>
                 Global Outlook 09/2025
               </div>
             </div>
 
-            <div className='flex flex-wrap gap-2.5 sm:gap-3.5 md:gap-3.5 font-[norms-pro] font-semibold mt-6 sm:mt-10 md:mt-0 mb-10 sm:mb-14 md:mb-20'>
+            <div className='flex flex-wrap gap-2.5 sm:gap-3.5 md:gap-3.5 font-norms-pro font-semibold mt-6 sm:mt-10 md:mt-0 mb-10 sm:mb-14 md:mb-20'>
               <Link href={"/outlook/2024"}>
                 <div className='px-4 sm:px-5 py-2 sm:py-2.5 rounded-[12px] sm:rounded-[15px] border border-[#E89548] cursor-pointer text-sm sm:text-base'>
                   2024 Global Outlook

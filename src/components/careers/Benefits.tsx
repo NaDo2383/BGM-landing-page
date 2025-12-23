@@ -16,7 +16,7 @@ export default function Benefits() {
     <section
       id='benefits'
       className='max-w-7xl mx-auto flex flex-col items-center justify-center my-12 sm:my-16 md:my-20 gap-10 sm:gap-14 md:gap-16 px-4 sm:px-6'>
-      <div className='font-[norms-pro] text-center'>
+      <div className='font-norms-pro text-center'>
         <div className='font-medium text-3xl sm:text-4xl md:text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent'>
           {t("benefits")}
         </div>
@@ -25,7 +25,7 @@ export default function Benefits() {
         </div>
       </div>
 
-      <div className='flex flex-wrap justify-center gap-4 sm:gap-5 lg:gap-7 font-[norms-pro]'>
+      <div className='flex flex-wrap justify-center gap-4 sm:gap-5 lg:gap-7 font-norms-pro'>
         {sample.map((e, i) => (
           <div
             key={i}
@@ -49,7 +49,7 @@ export default function Benefits() {
                 aria-hidden='true'
               />
             </div>
-            <div className='font-[norms-pro] font-semibold text-white text-base sm:text-lg md:text-2xl'>
+            <div className='font-norms-pro font-semibold text-white text-base sm:text-lg md:text-2xl'>
               {e.text}
             </div>
           </div>

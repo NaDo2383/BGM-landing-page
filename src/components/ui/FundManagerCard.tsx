@@ -15,7 +15,7 @@ interface FundManagerCardPropType {
 
 export default function FundManagerCard({ data }: FundManagerCardPropType) {
   return (
-    <div className='flex flex-col gap-[22px] font-[norms-pro] '>
+    <div className='flex flex-col gap-[22px] font-norms-pro '>
       <Image
         src={data.imgUrl ? data.imgUrl : "/FundManagerCardimage.png"}
         alt={data.name + " image"}

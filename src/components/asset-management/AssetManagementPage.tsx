@@ -60,10 +60,10 @@ export default function AssetManagementPage() {
       <section className='relative min-h-[400px] flex items-center justify-center flex-col overflow-hidden'>
         <div className='relative z-10 text-start max-w-[1440px] w-full px-4 sm:px-6 lg:px-[100px] bg-[url("/about-us-hero.png")] bg-no-repeat bg-contain bg-center'>
           <div className='flex flex-col items-center justify-center mt-16 sm:mt-20 md:mt-24'>
-            <h2 className='text-[28px] sm:text-[36px] md:text-[62px] font-[BGMxwidemedium] bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent text-center mr-1.5 uppercase leading-tight'>
+            <h2 className='text-[28px] sm:text-[36px] md:text-[62px] font-xwide bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent text-center mr-1.5 uppercase leading-tight'>
               {t("title1")}
             </h2>
-            <span className='font-[norms-pro] text-sm sm:text-base md:text-lg text-[#AFAFAF] mt-2'>
+            <span className='font-norms-pro text-sm sm:text-base md:text-lg text-[#AFAFAF] mt-2'>
               {t("simplify-invest")}
             </span>
           </div>
@@ -115,12 +115,12 @@ export default function AssetManagementPage() {
             {/* Text */}
             <div className='max-w-[500px] w-full flex flex-col gap-3 sm:gap-3.5 justify-center'>
               <div
-                className='inline-block text-2xl sm:text-3xl md:text-4xl font-[benzin-medium]
+                className='inline-block text-2xl sm:text-3xl md:text-4xl font-benzin
                 bg-[linear-gradient(270deg,_#E89548_0%,_#E46F03_100%)]
                 bg-clip-text text-transparent pb-0.5 sm:pb-1'>
                 {e.title}
               </div>
-              <div className='whitespace-pre-wrap font-[450] text-sm sm:text-base md:text-lg font-[norms-pro] text-[#AFAFAF]'>
+              <div className='whitespace-pre-wrap font-[450] text-sm sm:text-base md:text-lg font-norms-pro text-[#AFAFAF]'>
                 {e.text}
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function AssetManagementPage() {
         ))}
       </section>
       <section className=' max-w-[1240px] mx-auto flex flex-col gap-20 my-52'>
-        <div className='flex flex-col gap-2.5 items-center justify-center font-[norms-pro]'>
+        <div className='flex flex-col gap-2.5 items-center justify-center font-norms-pro'>
           <div className='text-5xl font-medium capitalize bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent'>
             {t("teamIntroducition")}
           </div>

@@ -6,7 +6,7 @@ export default function SearchJob() {
   const t = useTranslations("careers")
 
   return (
-    <div className='max-w-7xl mx-auto font-[norms-pro] flex flex-col items-center lg:flex-row justify-center lg:justify-between my-12 sm:my-16 md:my-20 gap-10 sm:gap-14 md:gap-16 px-4 sm:px-6'>
+    <div className='max-w-7xl mx-auto font-norms-pro flex flex-col items-center lg:flex-row justify-center lg:justify-between my-12 sm:my-16 md:my-20 gap-10 sm:gap-14 md:gap-16 px-4 sm:px-6'>
       <div className='flex flex-col gap-12 justify-start '>
         <div>
           <div className='font-medium text-3xl sm:text-4xl md:text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent'>

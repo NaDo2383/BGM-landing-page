@@ -15,7 +15,7 @@ interface MemberCardPropType {
 
 export default function MemberCard({ data }: MemberCardPropType) {
   return (
-    <div className='flex flex-col gap-10 font-[norms-pro] '>
+    <div className='flex flex-col gap-10 font-norms-pro '>
       <Image
         src={data.imgUrl ? data.imgUrl : "/membercardimage.png"}
         alt={data.name + " image"}
