@@ -94,7 +94,7 @@ const NewsInsightPage = () => {
                         </div>
 
                         {/* Text */}
-                        <div className='w-full md:w-1/2 font-norms-pro flex flex-col justify-between'>
+                        <div className='w-full md:w-1/2 font-norms-pro flex flex-col justify-between py-6'>
                           <h3 className='mt-3 md:mt-0 text-white leading-tight font-bold text-[18px] sm:text-[24px] md:text-[36px] line-clamp-3'>
                             {news.title}
                           </h3>

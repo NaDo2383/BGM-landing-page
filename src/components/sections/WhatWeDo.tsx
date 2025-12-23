@@ -65,7 +65,7 @@ export default function WhatWeDo() {
       <section className='bg-[#000] text-white pb-16 md:pb-20'>
         <div className='max-w-6xl mx-auto px-6'>
           <div className='text-center font-norms-pro'>
-            <h2 className='text-4xl md:text-5xl font-medium  tracking-tight'>
+            <h2 className='text-4xl md:text-5xl font-medium tracking-tight'>
               {t("title")}
             </h2>
             <p className='mt-3 text-[#afafaf] whitespace-pre-wrap'>{t("subtitle")}</p>

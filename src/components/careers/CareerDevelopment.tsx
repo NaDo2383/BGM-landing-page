@@ -18,8 +18,10 @@ export default function CareerDevelopment() {
         </div>
       </div>
 
-      <div className='font-norms-pro font-medium text-sm sm:text-base lg:text-lg px-5 sm:px-6 md:px-[25px] py-2.5 sm:py-3 md:py-[15px] mt-6 sm:mt-7 md:mt-8 bg-[linear-gradient(180deg,#4E4E4E_0%,#111111_100%)] rounded-full text-white/90'>
-        {t("pro-network")}
+      <div className='bg-[linear-gradient(180deg,#4E4E4E_0%,#232323_100%)] p-[1px] rounded-full mt-6 sm:mt-7 md:mt-8'>
+        <div className='font-norms-pro font-medium text-sm sm:text-base lg:text-lg px-5 sm:px-6 md:px-[25px] py-2.5 sm:py-3 md:py-[15px]  bg-[linear-gradient(180deg,#050505_0%,#252525_100%)] rounded-full text-[#FFFFFF]'>
+          {t("pro-network")}
+        </div>
       </div>
 
       <ClientLogos className='py-2.5 sm:py-4 lg:py-5' />

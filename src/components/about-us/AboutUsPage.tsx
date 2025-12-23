@@ -49,10 +49,10 @@ const AboutUsPage = () => {
         <section className='relative min-h-[400px] flex items-center justify-center flex-col overflow-hidden'>
           <div className='relative z-10 text-start max-w-[1440px] w-full px-4 sm:px-6 lg:px-[100px] bg-[url("/about-us-hero.png")] bg-no-repeat bg-center bg-contain'>
             <div className='flex flex-col items-center justify-center mt-14 sm:mt-20 md:mt-24'>
-              <h2 className='text-[26px] sm:text-[36px] md:text-[62px] leading-tight font-xwide bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent text-center mr-1.5 uppercase'>
+              <h2 className='text-[26px] sm:text-[36px] md:text-[62px] leading-tight font-xwide font-bold bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent text-center mr-1.5 uppercase'>
                 {t("title1")}
               </h2>
-              <span className='font-norms-pro text-xs sm:text-base md:text-lg text-[#AFAFAF] mt-2 sm:mt-2.5'>
+              <span className='font-norms-pro text-xs sm:text-base md:text-lg text-[#AFAFAF] font-medium mt-2 sm:mt-2.5'>
                 {t("whatwedo")}
               </span>
             </div>
@@ -60,19 +60,19 @@ const AboutUsPage = () => {
             <div className='z-20 mt-6 sm:mt-8 md:mt-14 w-full justify-center flex gap-2.5 sm:gap-4 md:gap-5'>
               <span
                 onClick={() => scrollTo("bg-theory")}
-                className='inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-2 sm:py-2.5 text-[#afafaf] border-2 border-transparent cursor-pointer [background:linear-gradient(#0B0B0B,#0B0B0B)_padding-box,linear-gradient(180deg,#4E4E4E_0%,#232323_100%)_border-box] text-xs sm:text-sm md:text-base text-center'>
+                className='inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-2 sm:py-2.5 text-[#FFFFFF] border-2 border-transparent cursor-pointer [background:linear-gradient(#0B0B0B,#0B0B0B)_padding-box,linear-gradient(180deg,#4E4E4E_0%,#232323_100%)_border-box] text-xs sm:text-sm md:text-base text-center'>
                 {t("BGTheory")}
               </span>
 
               <span
                 onClick={() => scrollTo("asset-mamangement")}
-                className='inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-2 sm:py-2.5 text-[#afafaf] border-2 border-transparent cursor-pointer [background:linear-gradient(#0B0B0B,#0B0B0B)_padding-box,linear-gradient(180deg,#4E4E4E_0%,#232323_100%)_border-box] text-xs sm:text-sm md:text-base text-center'>
+                className='inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-2 sm:py-2.5 text-[#FFFFFF] border-2 border-transparent cursor-pointer [background:linear-gradient(#0B0B0B,#0B0B0B)_padding-box,linear-gradient(180deg,#4E4E4E_0%,#232323_100%)_border-box] text-xs sm:text-sm md:text-base text-center'>
                 {t("BGMAssetmanagement")}
               </span>
 
               <span
                 onClick={() => scrollTo("team")}
-                className='inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-2 sm:py-2.5 text-[#afafaf] border-2 border-transparent cursor-pointer [background:linear-gradient(#0B0B0B,#0B0B0B)_padding-box,linear-gradient(180deg,#4E4E4E_0%,#232323_100%)_border-box] text-xs sm:text-sm md:text-base text-center'>
+                className='inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-2 sm:py-2.5 text-[#FFFFFF] border-2 border-transparent cursor-pointer [background:linear-gradient(#0B0B0B,#0B0B0B)_padding-box,linear-gradient(180deg,#4E4E4E_0%,#232323_100%)_border-box] text-xs sm:text-sm md:text-base text-center'>
                 {t("Team introduction")}
               </span>
             </div>
@@ -83,7 +83,7 @@ const AboutUsPage = () => {
 
         <section id='asset-mamangement' className='w-full bg-[#000]'>
           <div className='flex flex-col justify-center items-center max-w-7xl mx-auto gap-2 sm:gap-2.5'>
-            <div className='text-[28px] sm:text-[36px] md:text-[45px] font-[500] font-norms-pro bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent whitespace-pre text-center'>
+            <div className='text-[28px] sm:text-[36px] md:text-[45px] font-medium font-norms-pro bg-[linear-gradient(92.65deg,#FFFFFF_17.06%,#999999_99.58%)] bg-clip-text text-transparent whitespace-pre text-center'>
               {t("bgm-name")}
             </div>
             <div className='flex flex-col gap-4 sm:gap-5 md:gap-6 max-w-[1096px] text-center font-norms-pro text-[#afafaf] text-sm sm:text-base md:text-lg'>

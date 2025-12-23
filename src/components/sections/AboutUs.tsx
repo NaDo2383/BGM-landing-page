@@ -63,7 +63,7 @@ const AboutUs = ({ bgcolor = "#000000", id, imageColoredBg }: aboutUsPropsType) 
                   flex flex-wrap items-center justify-center md:justify-start
                   gap-1.5 sm:gap-2
                   text-center md:text-left
-                  font-[850] font-norms-pro
+                  font-medium font-norms-pro
                 '>
                 <h2 className='text-white text-xl sm:text-2xl lg:text-[40px] leading-tight'>
                   {t("title")}

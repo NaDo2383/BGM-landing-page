@@ -31,7 +31,7 @@ export default function Card({ title, description, icon }: CardProps) {
         )}
 
         {/* Title */}
-        <h3 className='text-[24px] text-white font-[850px] font-[BGMfreigeist]'>
+        <h3 className='text-[24px] text-white font-[850px] font-freigeist-black'>
           {title}
         </h3>
 

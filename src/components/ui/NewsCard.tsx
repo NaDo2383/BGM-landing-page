@@ -64,7 +64,7 @@ export default function NewsCard({
         </h3>
 
         <p
-          className='mt-1.5 sm:mt-2 text-white/90 leading-5 sm:leading-6 text-[13px] sm:text-sm md:text-[15px] line-clamp-3'
+          className='mt-1.5 sm:mt-2 text-[#AFAFAF] leading-5 sm:leading-6 text-[13px] sm:text-sm md:text-[15px] line-clamp-3'
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </motion.div>
