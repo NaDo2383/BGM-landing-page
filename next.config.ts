@@ -9,6 +9,7 @@ const shimCanvas = path.resolve(__dirname, "src/shims/canvas.js")
 const emptyShim = path.resolve(__dirname, "src/shims/empty.ts")
 
 const nextConfig: NextConfig = {
+  output: 'export',
   // Make Turbopack (dev) respect aliases too
   experimental: {
     turbo: {
