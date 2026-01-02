@@ -46,10 +46,10 @@ export default function CapabilitiesSection() {
           {/* Heading */}
           <div className='flex flex-col gap-2 font-norms-pro'>
             <div className='flex flex-wrap items-center justify-center gap-2 text-center font-medium'>
-              <h2 className=' text-white text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
+              <h2 className=' text-white text-2xl sm:text-3xl lg:text-5xl leading-tight'>
                 {t("title1")}
               </h2>
-              <h2 className=' text-[#E85211] text-2xl sm:text-3xl lg:text-[40px] leading-tight'>
+              <h2 className=' text-[#E85211] text-2xl sm:text-3xl lg:text-5xl leading-tight'>
                 {t("title2")}
               </h2>
             </div>

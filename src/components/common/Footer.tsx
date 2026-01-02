@@ -1,7 +1,7 @@
 "use client"
 
 import { Phone, Mail } from "lucide-react"
-import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6"
+import { FaFacebookF, FaYoutube } from "react-icons/fa6"
 import { FaMapMarkerAlt } from "react-icons/fa"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
@@ -9,6 +9,19 @@ import Link from "next/link"
 
 export default function Footer() {
   const t = useTranslations("footer")
+
+  const socialData = [
+    {
+      Icon: FaFacebookF,
+      href: "https://www.facebook.com/profile.php?id=61553721394493",
+      label: "Facebook",
+    },
+    {
+      Icon: FaYoutube,
+      href: "https://www.youtube.com/@BGMAssetManagementGrandBull",
+      label: "YouTube",
+    },
+  ]
 
   return (
     <div className=' font-norms-pro text-white border-t border-[#434343]  '>
@@ -29,14 +42,18 @@ export default function Footer() {
 
               {/* Social Icons */}
               <div className='flex gap-2.5 sm:gap-3 mt-4'>
-                {[FaFacebookF, FaInstagram, FaXTwitter].map((Icon, i) => (
-                  <div
+                {socialData.map((item, i) => (
+                  <Link
                     key={i}
-                    className='w-9 h-9 sm:w-[42px] sm:h-[42px] md:w-[50px] md:h-[50px] rounded-full bg-[linear-gradient(180deg,#FFBD80_0%,#E46F03_50.48%,#E46F03_100%)] flex items-center justify-center hover:scale-110 transition'>
-                    <Icon size={16} className='sm:hidden' />
-                    <Icon size={18} className='hidden sm:inline md:hidden' />
-                    <Icon size={20} className='hidden md:inline' />
-                  </div>
+                    href={item.href}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    aria-label={item.label}
+                    className='w-9 h-9 sm:w-[42px] sm:h-[42px] md:w-[50px] md:h-[50px] rounded-full bg-[linear-gradient(180deg,#FFBD80_0%,#E46F03_50.48%,#E46F03_100%)] flex items-center justify-center hover:scale-110 transition-transform active:scale-95'>
+                    <item.Icon size={16} className='sm:hidden' />
+                    <item.Icon size={18} className='hidden sm:inline md:hidden' />
+                    <item.Icon size={20} className='hidden md:inline' />
+                  </Link>
                 ))}
               </div>
             </div>
