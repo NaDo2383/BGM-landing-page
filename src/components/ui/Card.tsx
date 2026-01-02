@@ -31,9 +31,7 @@ export default function Card({ title, description, icon }: CardProps) {
         )}
 
         {/* Title */}
-        <h3 className='text-[24px] text-white font-[850px] font-freigeist-black'>
-          {title}
-        </h3>
+        <h3 className='text-[24px] text-white font-[850px]'>{title}</h3>
 
         {/* Description */}
         <p className='mt-1 text-lg font-norms-pro leading-6 text-[#afafaf] line-clamp-6 whitespace-pre-wrap capitalize'>
