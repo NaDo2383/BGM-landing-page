@@ -69,9 +69,11 @@ export default function Footer() {
                   <button className='text-sm sm:text-base text-white/80 text-left hover:text-white transition'>
                     {t("terms-of-service")}
                   </button>
-                  <button className='text-sm sm:text-base text-white/80 text-left hover:text-white transition'>
-                    {t("privacy-policy")}
-                  </button>
+                  <Link
+                    href={"/documents"}
+                    className='text-sm sm:text-base text-white/80 text-left hover:text-white transition'>
+                    {t("documents")}
+                  </Link>
                 </div>
 
                 <div className='flex flex-col gap-3 sm:gap-4'>

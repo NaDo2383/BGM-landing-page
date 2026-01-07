@@ -80,7 +80,8 @@
     "asset-management": "Asset Management",
     "career": "Careers",
     "news-insights": "News & Insight",
-    "contact": "Contacts"
+    "contact": "Contacts",
+    "documents": "Documets"
   },
   "emailAlerts": {
     "title": "Email Alerts",
@@ -241,5 +242,15 @@
     "fundeManagerName3": "Aminaa B",
     "teamIntroducition": "Team Introducition",
     "teamIntroducitionText": "Speak directly with our investment professionals to explores \ntrategies tailored to your goals."
+  },
+  "docs": {
+    "sonorhol-zorchil": "Conflict of Interest Procedure",
+    "uil-ajillagaa": "Operational Procedure",
+    "hamtran ajillah": "Stakeholder Engagement Policy",
+    "zalgamj halaa": "Succession Policy",
+    "tsalin": "Compensation & Incentive Policy",
+    "Procedures": "Procedures",
+    "Policies": "Policies",
+    "download": "Open"
   }
 }
