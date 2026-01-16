@@ -93,7 +93,7 @@ const AboutUsPage = () => {
           </div>
         </section>
 
-        <section className='relative flex flex-col justify-center items-center max-w-7xl mx-auto gap-8 sm:gap-10 md:gap-12 bg-[url("/bg-about-us.png")] bg-center min-h-[506px] lg:min-w-[1440px] py-2.5 md:py-0'>
+        <section className='relative flex flex-col justify-center items-center max-w-7xl mx-auto gap-8 sm:gap-10 md:gap-12 bg-[url("https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534868/migrated_assets/bg-about-us.png")] bg-center min-h-[506px] lg:min-w-[1440px] py-2.5 md:py-0'>
           <div className='absolute inset-0 pointer-events-none'></div>
 
           <div className='flex flex-col lg:flex-row justify-between relative z-10 gap-6 sm:gap-10 md:gap-16 mt-4.5 md:mt-0.5'>

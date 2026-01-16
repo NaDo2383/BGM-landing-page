@@ -34,21 +34,24 @@ export default function AssetManagementPage() {
     {
       title: t("fundeManagerTitle1"),
       name: t("fundeManagerName1"),
-      imgUrl: "/billy.png",
+      imgUrl:
+        "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534861/migrated_assets/billy.png",
       number: "+976 88291809",
       mail: "bilegt.g@balancedgrowth.mn",
     },
     {
       title: t("fundeManagerTitle2"),
       name: t("fundeManagerName2"),
-      imgUrl: "/junai.png",
+      imgUrl:
+        "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534871/migrated_assets/junai.png",
       number: "+976 94247272",
       mail: "oyunjunai@balancedgrowth.mn",
     },
     {
       title: t("fundeManagerTitle3"),
       name: t("fundeManagerName3"),
-      imgUrl: "/amina.png",
+      imgUrl:
+        "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534867/migrated_assets/amina.png",
       number: "+976 99208523",
       mail: "aminaa@capitalgrowth.mn",
     },

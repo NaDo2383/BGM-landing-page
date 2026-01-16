@@ -9,16 +9,20 @@ export default function StudentsGraduates() {
   const sample = [
     {
       name: t("career-journey"),
-      path: "/careers-pic-2.png",
+      path: "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534859/migrated_assets/careers-pic-2.png",
       text: t("career-journey-text"),
     },
-    { name: t("early-bird"), path: "/careers-pic-1.png", text: t("early-bird-text") },
+    {
+      name: t("early-bird"),
+      path: "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534858/migrated_assets/careers-pic-1.png",
+      text: t("early-bird-text"),
+    },
   ]
 
   return (
     <section
       id='students-and-graduates'
-      className="max-w-7xl mx-auto flex flex-col items-center justify-center my-12 sm:my-16 md:my-20 pb-12 sm:pb-16 md:pb-24 gap-10 sm:gap-14 md:gap-16 bg-[url('/student-section-bg.png')] bg-cover bg-center px-4 sm:px-6">
+      className="max-w-7xl mx-auto flex flex-col items-center justify-center my-12 sm:my-16 md:my-20 pb-12 sm:pb-16 md:pb-24 gap-10 sm:gap-14 md:gap-16 bg-[url('https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534726/migrated_assets/student-section-bg.png')] bg-cover bg-center px-4 sm:px-6">
       <div className='font-norms-pro text-center'>
         <div className='font-medium text-3xl sm:text-4xl md:text-5xl bg-[linear-gradient(92.65deg,#FFFFFF,#AAAAAA)] bg-clip-text text-transparent'>
           {t("students-and-graduates")}

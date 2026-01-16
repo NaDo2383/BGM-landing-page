@@ -13,13 +13,13 @@ export default function TeamSectionCarousel() {
         name: t("ceo-name"),
         pos: t("ceo-pos"),
         text: t("ceo-creeting"),
-        img: "ceo.png",
+        img: "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534860/migrated_assets/ceo.png",
       },
       {
         name: t("cio-name"),
         pos: t("cio-pos"),
         text: t("cio-creeting"),
-        img: "cio.png",
+        img: "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534869/migrated_assets/cio.png",
       },
     ],
     [t]
@@ -112,7 +112,7 @@ export default function TeamSectionCarousel() {
                   <div className='relative w-full md:w-[460px] mx-auto md:mx-0'>
                     <div className='relative w-full aspect-[23/27] md:aspect-auto md:h-[540px] overflow-hidden rounded-xl md:rounded-2xl'>
                       <Image
-                        src={`/${m.img}`}
+                        src={m.img}
                         alt={`${m.name} portrait`}
                         fill
                         sizes='(max-width: 768px) 90vw, (max-width: 1200px) 40vw, 460px'

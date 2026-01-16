@@ -24,7 +24,7 @@ export default function SearchJob() {
       </div>
       <div className='relative w-full max-w-[715px] aspect-[715/401] shrink-0 '>
         <Image
-          src='/search-job-img.png'
+          src='https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534725/migrated_assets/search-job-img.png'
           alt='many people crossing the road'
           fill
           className='object-contain '

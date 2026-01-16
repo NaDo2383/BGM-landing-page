@@ -56,7 +56,7 @@ export default function LifeAtBGM() {
 
             <div
               className="
-                bg-[url('/career-card-bg.gif')] bg-center bg-auto z-10
+                bg-[url('https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534856/migrated_assets/career-card-bg.gif')] bg-center bg-auto z-10
                 rounded-[20px] md:rounded-[25px]
                 w-full max-w-[331px]
                 h-[130px] sm:h-[145px] md:h-[153px]

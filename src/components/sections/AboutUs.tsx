@@ -38,8 +38,8 @@ const AboutUs = ({ bgcolor = "#000000", id, imageColoredBg }: aboutUsPropsType) 
             <Image
               src={
                 imageColoredBg
-                  ? "/about-us-card-image-colored.png"
-                  : "/about-us-card-image.png"
+                  ? "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534855/migrated_assets/about-us-card-image-colored.png"
+                  : "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534724/migrated_assets/about-us-card-image.png"
               }
               alt='About us'
               fill

@@ -122,7 +122,9 @@ const NewsInsightPage = () => {
           <div className='w-full md:w-3/5 aspect-[16/9] sm:aspect-[3/2] md:aspect-[4/3] bg-[linear-gradient(#262626,#111111,#262626)] rounded-[18px] sm:rounded-[22px] md:rounded-[25px] p-4 sm:p-6 md:p-7'>
             <div className='rounded-[12px] sm:rounded-[14px] md:rounded-[15px] overflow-hidden relative w-full aspect-[16/9] sm:aspect-[3/2] md:aspect-[4/3]'>
               <Image
-                src={"/outlook-sample.png"}
+                src={
+                  "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534873/migrated_assets/outlook-sample.png"
+                }
                 alt={"outlook image"}
                 fill
                 sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
