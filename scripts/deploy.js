@@ -25,7 +25,7 @@ try {
   // 2. Copy Standalone (Base)
   if (!fs.existsSync(standalone)) {
     console.error(
-      '❌ Error: .next/standalone not found. Please run "npm run build" first.'
+      '❌ Error: .next/standalone not found. Please run "npm run build" first.',
     )
     process.exit(1)
   }
@@ -66,17 +66,17 @@ try {
   if (process.platform === "win32") {
     // Windows: Use PowerShell Compress-Archive
     execSync(
-      `powershell -Command "Compress-Archive -Path '${deploy}' -DestinationPath '${zipOutput}' -Force"`,
-      { stdio: "inherit" }
+      `powershell -Command "cd '${deploy}'; Compress-Archive -Path * -DestinationPath '${zipOutput}' -Force"`,
+      { stdio: "inherit" },
     )
   } else {
     // Linux/Mac: Use zip command
-    execSync(`zip -r deploy.zip deploy`, { cwd: root, stdio: "inherit" })
+    execSync(`zip -r "${zipOutput}" .`, { cwd: deploy, stdio: "inherit" })
   }
 
   // 7. Cleanup
   console.log("   Cleaning up temporary deploy folder...")
-  fs.rmSync(deploy, { recursive: true, force: true })
+  // fs.rmSync(deploy, { recursive: true, force: true })
 
   console.log('\n✅ "deploy.zip" is ready! You can now copy it to your server.')
 } catch (error) {
