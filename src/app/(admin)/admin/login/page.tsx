@@ -14,7 +14,7 @@ export default function AdminLogin() {
     try {
       await login(email, password)
       sessionStorage.setItem("admin", "true")
-      router.push("/admin/news")
+      router.push("/admin")
     } catch (e) {
       console.error("submit error: ", e)
       setError("Invalid credentials")

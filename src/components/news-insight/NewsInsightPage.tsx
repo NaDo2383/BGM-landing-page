@@ -10,6 +10,7 @@ import NewsCard from "@/components/ui/NewsCard"
 import NewsletterList from "./NewsletterList"
 import LatestNewsPanel from "./LatestNewsPanel"
 import SmallHero from "./SmallHero"
+import OutlookSection from "./OutlookSection"
 import axios from "axios"
 import { HeroNewsCardSkeleton, NewsCardSkeleton } from "./HeroNewsCardSkeleton"
 
@@ -114,52 +115,7 @@ const NewsInsightPage = () => {
         </div>
       </section>
 
-      <section
-        id='outlook'
-        className='bg-[#121212] min-h-[520px] md:min-h-[756px] py-12 sm:py-16 md:py-24'>
-        <div className='max-w-[1280px] mx-auto w-full flex flex-col md:flex-row gap-6 sm:gap-7 md:gap-8 px-4 sm:px-6 md:px-0'>
-          {/* Зурагтай блок */}
-          <div className='w-full md:w-3/5 aspect-[16/9] sm:aspect-[3/2] md:aspect-[4/3] bg-[linear-gradient(#262626,#111111,#262626)] rounded-[18px] sm:rounded-[22px] md:rounded-[25px] p-4 sm:p-6 md:p-7'>
-            <div className='rounded-[12px] sm:rounded-[14px] md:rounded-[15px] overflow-hidden relative w-full aspect-[16/9] sm:aspect-[3/2] md:aspect-[4/3]'>
-              <Image
-                src={
-                  "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534873/migrated_assets/outlook-sample.png"
-                }
-                alt={"outlook image"}
-                fill
-                sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                className='object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]'
-                priority={false}
-              />
-            </div>
-          </div>
-
-          {/* Текст тал */}
-          <div className='flex-1 flex flex-col justify-between px-1 sm:px-0'>
-            <div className='mt-6 sm:mt-10 md:mt-16 flex flex-col gap-4 sm:gap-5 md:gap-6'>
-              <div className='text-2xl sm:text-3xl md:text-4xl uppercase text-white whitespace-pre font-benzin-bold leading-tight'>
-                {"2025 September \n& FUTURE"}
-              </div>
-              <div className='font-norms-pro underline text-base sm:text-xl md:text-2xl font-[450] text-white/90'>
-                Global Outlook 09/2025
-              </div>
-            </div>
-
-            <div className='flex flex-wrap gap-2.5 sm:gap-3.5 md:gap-3.5 font-norms-pro font-semibold mt-6 sm:mt-10 md:mt-0 mb-10 sm:mb-14 md:mb-20'>
-              <Link href={"/outlook/2024"}>
-                <div className='px-4 sm:px-5 py-2 sm:py-2.5 rounded-[12px] sm:rounded-[15px] border border-[#E89548] cursor-pointer text-sm sm:text-base'>
-                  2024 Global Outlook
-                </div>
-              </Link>
-              <Link href={"/outlook/2025"}>
-                <div className='px-4 sm:px-5 py-2 sm:py-2.5 rounded-[12px] sm:rounded-[15px] border border-[#E89548] cursor-pointer bg-[linear-gradient(#E89548,#E87811)] text-sm sm:text-base'>
-                  2025 Global Outlook
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <OutlookSection />
 
       <section
         id='news-letter'

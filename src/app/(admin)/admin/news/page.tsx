@@ -210,7 +210,7 @@ export default function NewsAdminPage() {
   }
 
   return (
-    <div className='p-6 my-28 max-w-[1240px] mx-auto bg-[#1a1a1a] text-white min-h-screen'>
+    <div className='p-6 lg:p-10 max-w-[1240px] mx-auto text-white min-h-screen'>
       {/* Toast Notification */}
       {toast && (
         <div

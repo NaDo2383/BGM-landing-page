@@ -1,11 +1,31 @@
 "use client"
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { useTranslations } from "next-intl"
 import { useRouter } from "next/navigation"
+import axios from "axios"
+
+interface OutlookItem {
+  year: number
+}
 
 const SmallHero = ({ year }: { year: string }) => {
   const t = useTranslations("outlook")
   const router = useRouter()
+  const [years, setYears] = useState<number[]>([])
+
+  useEffect(() => {
+    const fetchYears = async () => {
+      try {
+        const res = await axios.get<OutlookItem[]>("/api/outlook")
+        const uniqueYears = [...new Set(res.data.map((item) => item.year))]
+          .sort((a, b) => a - b)
+        setYears(uniqueYears)
+      } catch (err) {
+        console.error("Failed to fetch outlook years:", err)
+      }
+    }
+    fetchYears()
+  }, [])
 
   return (
     <section className='relative min-h-[400px] flex items-center justify-center flex-col overflow-hidden '>
@@ -21,24 +41,18 @@ const SmallHero = ({ year }: { year: string }) => {
           </span>
         </div>
         <div className='z-20 mt-14 w-full justify-center flex gap-5'>
-          <span
-            onClick={() => router.push("/outlook/2024")}
-            className={`font-norms-pro cursor-pointer font-bold text-[${
-              +year == 2024 ? "#fff" : "#E89548"
-            }] border border-[#E89548] ${
-              +year == 2024 && "bg-[#E89548]"
-            } px-5 py-2.5 rounded-full`}>
-            2024
-          </span>
-          <span
-            onClick={() => router.push("/outlook/2025")}
-            className={`font-norms-pro cursor-pointer font-bold text-[${
-              +year == 2025 ? "#fff" : "#E89548"
-            }] border border-[#E89548] ${
-              +year == 2025 && "bg-[#E89548]"
-            } px-5 py-2.5 rounded-full`}>
-            2025
-          </span>
+          {years.map((y) => (
+            <span
+              key={y}
+              onClick={() => router.push(`/outlook/${y}`)}
+              className={`font-norms-pro cursor-pointer font-bold text-[${
+                +year === y ? "#fff" : "#E89548"
+              }] border border-[#E89548] ${
+                +year === y && "bg-[#E89548]"
+              } px-5 py-2.5 rounded-full`}>
+              {y}
+            </span>
+          ))}
         </div>
       </div>
     </section>
@@ -46,3 +60,4 @@ const SmallHero = ({ year }: { year: string }) => {
 }
 
 export default SmallHero
+
