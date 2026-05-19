@@ -47,14 +47,6 @@ export default function AssetManagementPage() {
       number: "+976 94247272",
       mail: "oyunjunai@balancedgrowth.mn",
     },
-    {
-      title: t("fundeManagerTitle3"),
-      name: t("fundeManagerName3"),
-      imgUrl:
-        "https://res.cloudinary.com/dksxwp1ci/image/upload/v1768534867/migrated_assets/amina.png",
-      number: "+976 99208523",
-      mail: "aminaa@capitalgrowth.mn",
-    },
   ]
 
   return (

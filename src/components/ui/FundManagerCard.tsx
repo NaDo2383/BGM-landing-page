@@ -1,7 +1,7 @@
 import Image from "next/image"
 import React from "react"
 
-interface dataType {
+interface DataType {
   title: string
   name: string
   imgUrl?: string
@@ -10,7 +10,7 @@ interface dataType {
 }
 
 interface FundManagerCardPropType {
-  data: dataType
+  data: DataType
 }
 
 export default function FundManagerCard({ data }: FundManagerCardPropType) {
